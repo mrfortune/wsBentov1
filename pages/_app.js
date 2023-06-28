@@ -1,4 +1,4 @@
-import Layout from '../components/layout';
+import Layout from './layout';
 import  '../styles/styles.css';
 import { ThemeProvider } from 'next-themes';
 import { NextUIProvider, Text } from "@nextui-org/react"
