@@ -1,10 +1,26 @@
-.container {
+
+.main {
   min-height: 100vh;
-  padding: 0 0.5rem;
+  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.footer {
+  display: flex;
+  flex: 1;
+  border-top: 1px solid #eaeaea;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
 }
 
 .title a {
@@ -19,13 +35,9 @@
 }
 
 .title {
-  margin: 0 0 1rem;
+  margin: 0;
   line-height: 1.15;
-  font-size: 3.6rem;
-}
-
-.title {
-  text-align: center;
+  font-size: 4rem;
 }
 
 .title,
@@ -33,10 +45,19 @@
   text-align: center;
 }
 
-
 .description {
+  margin: 4rem 0;
   line-height: 1.5;
   font-size: 1.5rem;
+}
+
+.code {
+  background: #fafafa;
+  border-radius: 5px;
+  padding: 0.75rem;
+  font-size: 1.1rem;
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+    Bitstream Vera Sans Mono, Courier New, monospace;
 }
 
 .grid {
@@ -44,14 +65,11 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-
   max-width: 800px;
-  margin-top: 3rem;
 }
 
 .card {
   margin: 1rem;
-  flex-basis: 45%;
   padding: 1.5rem;
   text-align: left;
   color: inherit;
@@ -59,6 +77,7 @@
   border: 1px solid #eaeaea;
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
+  max-width: 300px;
 }
 
 .card:hover,
@@ -68,7 +87,7 @@
   border-color: #0070f3;
 }
 
-.card h3 {
+.card h2 {
   margin: 0 0 1rem 0;
   font-size: 1.5rem;
 }
@@ -81,6 +100,7 @@
 
 .logo {
   height: 1em;
+  margin-left: 0.5rem;
 }
 
 @media (max-width: 600px) {
@@ -88,4 +108,64 @@
     width: 100%;
     flex-direction: column;
   }
+}
+
+@media (prefers-color-scheme: dark) {
+  .card,
+  .footer {
+    border-color: #222;
+  }
+  .code {
+    background: #111;
+  }
+  .logo img {
+    filter: invert(1);
+  }
+}
+
+.container p {
+  margin: 1.5rem 0;
+}
+
+.card {
+  max-width: 60rem;
+  box-shadow: -10px 10px 80px rgba(255, 255, 255, 0.1);
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 2rem;
+  margin: 0 auto;
+}
+
+.inlineCode {
+  color: #be00ff;
+  font-size: 16px;
+  white-space: pre-wrap;
+}
+
+.inlineCode::before,
+.inlineCode::after {
+  content: '`';
+}
+
+.hr {
+  border: 0;
+  border-top: 1px solid #333;
+  margin: 1.5rem 0;
+}
+
+.bgWrap {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.bgText {
+  margin: 0;
+  font-size: 2rem;
+  line-height: 3rem;
+  text-align: center;
+  padding-top: 40vh;
+  text-shadow: 1px 1px 1px #3c5c5e;
 }
