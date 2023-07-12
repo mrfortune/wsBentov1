@@ -126,7 +126,7 @@ export default function DrawerAppBar (props) {
             worldshaker
           </Typography>
           <Box alignItems="center" sx={{ display: { xs: 'none', sm: 'none', md:'flex', xl:'flex', lg:'flex' } }}>
-            {/* {navLinks.map((link, id) => {
+            {navLinks.map((link, id) => {
               if (link.name != "Contact"){
                 return(
                   <Link key={id} href={link.path} className={currentRoute === "/" ? "nav.active" : "nonActive"}>
@@ -145,7 +145,7 @@ export default function DrawerAppBar (props) {
             </Link>
           </Button> );
               }
-        })} */}
+        })}
        
           </Box>
         </Toolbar>
