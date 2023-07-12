@@ -41,11 +41,6 @@ const navLinks = [
   },
   {
     id: "3",
-    name: "Devices",
-    path: "/devices",
-  },
-  {
-    id: "3",
     name: "Contact",
     path: "/contact",
   },
