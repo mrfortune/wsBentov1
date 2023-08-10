@@ -56,28 +56,29 @@ export default function Home() {
             width: "100%",
           }}
         >
-          <Grid  container spacing={2} mt={2} sx={{ maxWidth: "lg" }}>
+          <Grid  container spacing={4} mt={2} sx={{ maxWidth: "lg" }}>
             <Grid item xs={12} sm={12} md={7} lg={7} xl={7} pt={10}>
               <Text h1 className="boujee-text"  css={{
-                  marginBottom:"$6",
+                  marginBottom:"$7",
                   marginTop:"$10",
                   
                 }}>
-                <span>Impactful</span><br></br> Digital Business <span><br></br>Transformation</span>
+              Elevating Businesses with Seamless Digital Metamorphosis
               </Text>
               <Text
-                className="headerBody"
+              h4
+                // className="headerBody"
                 color="#fafafa"
                 css={{
-                  fontWeight: "400",
-                  marginBottom:"$6",
+                  fontWeight: "500",
+                  marginBottom:"$10",
                   textAlign:'left'
                 }}
               >
-                Identifying the right problems through user research methodologies to design and deliver human-centered solutions.
+               Unveiling precise challenges via advanced user research methods, designing and delivering solutions centered around people.
               </Text>
               
-              <Box component="div" sx={{ display: {xs:"block", sm:"block", md:"none", lg:"none", xl:"none"} }}>
+              <Box component="div" mb={5} sx={{ display: {xs:"block", sm:"block", md:"none", lg:"none", xl:"none"} }}>
               <motion.div
                       initial={{ opacity: 0 }}
                       whileInView={{ opacity: 1 }}
@@ -85,12 +86,12 @@ export default function Home() {
                       transition={{ duration: 1 }}
                     >
  <Image
-                src="assets/blackLadyexec3.png"
+                src="assets/blackLadyExec4.png"
                 width={300}
                 height={300}
                 alt="Black Lady Exec" 
                 loader={myLoader}
-                blurDataURL="/assets/blur-image.jpg"
+                blurDataURL="assets/blur-image.jpg"
    placeholder="blur"
               ></Image>
               </motion.div>
@@ -114,7 +115,7 @@ export default function Home() {
                       viewport={{ once: true }}
                       transition={{ duration: 1 }}
                     ><Image
-                src="assets/blackLadyexec3.png"
+                src="assets/blackLadyExec4.png"
                 width={400}
                 height={400}
                 alt="Black Lady Exec"
@@ -123,7 +124,7 @@ export default function Home() {
               ></Image>
               </motion.div>
             </Grid>
-            <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
+            {/* <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
           <motion.div
                       initial={{ opacity: 0 }}
                       whileInView={{ opacity: 1 }}
@@ -143,11 +144,38 @@ export default function Home() {
                       >
                       </Image>
                     </motion.div>
-          </Grid>
+          </Grid> */}
           </Grid>
         </Box>
       </Box>
-    
+    <Box  className="homePage work"
+        direction="row"
+        display="flex"
+        justifyContent="center"
+        alignItems="center"
+        component="section">
+          <Box component="div" maxWidth="lg">
+    <motion.div
+                      initial={{ opacity: 0 }}
+                      whileInView={{ opacity: 1 }}
+                      viewport={{ once: true }}
+                      transition={{ duration: 1 }}
+                    >
+                      <Image
+                        src="assets/workcbanner.png"
+                         width={1200}
+                         height={150}
+                        alt="Work Banner"
+                        layout="responsive"
+                        loader={myLoader}
+                       sizes="(max-width: 1200px) 100vw,
+               (max-width: 720px) 100vw, 100vw, 
+               (max-width: 500px) 100vw, 100vw"
+                      >
+                      </Image>
+                    </motion.div>
+                    </Box>
+    </Box>
       <Box
         className="homePage"
         direction="row"
@@ -165,7 +193,7 @@ export default function Home() {
         <Grid item xs={12} sm={12} md={12} lg={12} xl={12} pt={0}>
           <Typography variant="h2" sx={{textAlign:"center"}}> What We Do</Typography>
           </Grid>
-          <Grid item xs={12} sm={6} md={4} lg={4} xl={4} pt={0}>
+          <Grid item xs={12} sm={12} md={4} lg={4} xl={4} pt={0}>
             <Box component="div" sx={{ textAlign: "center" }}>
               <Image src="assets/discover.png" 
               width={88} 
@@ -189,7 +217,7 @@ export default function Home() {
             </Typography>
           </Grid>
          
-          <Grid item xs={12} sm={6} md={4} lg={4} xl={4}>
+          <Grid item xs={12} sm={12} md={4} lg={4} xl={4}>
             <Box component="div" sx={{ textAlign: "center" }}>
               <Image src="assets/design1.png" width={88} height={88} alt="Design" layout="fixed" loader={myLoader}></Image>
             </Box>
@@ -207,7 +235,7 @@ export default function Home() {
               and hi-fidelity visual designs, and prototypes
             </Typography>
           </Grid>
-          <Grid item xs={12} sm={6} md={4} lg={4} xl={4}>
+          <Grid item xs={12} sm={12} md={4} lg={4} xl={4}>
             <Box component="div" sx={{ textAlign: "center" }}>
               <Image src="assets/dev1.png" width={88} height={88} alt="Develop" layout="fixed" loader={myLoader} sizes="(max-width: 88px) 100vw,
               (max-width: 88px) 50vw,
