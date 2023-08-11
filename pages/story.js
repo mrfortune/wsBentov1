@@ -28,9 +28,10 @@ const Story = () => {
       >
         <Grid className="story" container spacing={4} sx={{ maxWidth: "md" }}>
           <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
-            <Typography variant="h1" mb={6}>
-              My Story
-            </Typography>
+            {/* <Typography variant="h1" mb={6}>
+              
+            </Typography> */}
+            <h1>My Story</h1>
           </Grid>
           <Grid item xs={4} sm={4} md={4} lg={4} xl={4}>
             <Box
@@ -59,9 +60,10 @@ const Story = () => {
             </Typography>
             </Box>
             <Box component="div">
-              <Typography variant="body1">
+              {/* <Typography variant="body1">
               Founder, Product Manager &amp; Product(UX) Designer &amp; Front-end Developer
-            </Typography>
+            </Typography> */}
+            <p>Founder, UX Researcher, Product(UX) Designer, Front End Developer, Manager</p>
             </Box>
             </Box>
           </Grid>

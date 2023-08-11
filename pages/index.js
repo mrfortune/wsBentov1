@@ -169,7 +169,7 @@ export default function Home() {
             </Grid>
             <Grid item xs={12} sm={12} md={4} lg={4} xl={4} pt={0}>
               <Box component="div" sx={{ textAlign: "center", display: 'flex', alignItems: 'center' }}>
-                <FontAwesomeIcon icon={faMagnifyingGlass} className="fa-3x" style={{ "--fa-primary-color": "#3c6818", "--fa-secondary-color": "#3c6818", marginRight: '.5rem' }} /><h3> Research</h3> {/* <Image src="assets/discover.png"
+                <FontAwesomeIcon icon={faMagnifyingGlass} className="fa-2x" style={{ "--fa-primary-color": "#3c6818", "--fa-secondary-color": "#3c6818", marginRight: '.5rem' }} /><h3> Research</h3> {/* <Image src="assets/discover.png"
                   width={88}
                   height={88}
                  alt="Research"
@@ -194,7 +194,7 @@ export default function Home() {
 
             <Grid item xs={12} sm={12} md={4} lg={4} xl={4}>
               <Box component="div" sx={{ textAlign: "center", display: 'flex', alignItems: 'center' }}>
-                <FontAwesomeIcon icon={faPencil} className="fa-3x" style={{ "--fa-primary-color": "#3c6818", "--fa-secondary-color": "#3c6818", marginRight: '.5rem' }} /><h3> Design</h3>
+                <FontAwesomeIcon icon={faPencil} className="fa-2x" style={{ "--fa-primary-color": "#3c6818", "--fa-secondary-color": "#3c6818", marginRight: '.5rem' }} /><h3> Design</h3>
 
                 {/* <Image src="assets/design1.png" width={88} height={88} alt="Design" layout="fixed" loader={myLoader}></Image> */}
               </Box>
@@ -214,7 +214,7 @@ export default function Home() {
             </Grid>
             <Grid item xs={12} sm={12} md={4} lg={4} xl={4}>
               <Box component="div" sx={{ textAlign: "center", display: 'flex', alignItems: 'center' }}>
-                <FontAwesomeIcon icon={faCode} className="fa-3x" style={{ "--fa-primary-color": "#3c6818", "--fa-secondary-color": "#3c6818", marginRight: '.5rem' }} /><h3> Develop</h3>
+                <FontAwesomeIcon icon={faCode} className="fa-2x" style={{ "--fa-primary-color": "#3c6818", "--fa-secondary-color": "#3c6818", marginRight: '.5rem' }} /><h3> Develop</h3>
                 {/* <Image src="assets/dev1.png" width={88} height={88} alt="Develop" layout="fixed" loader={myLoader} sizes="(max-width: 88px) 100vw,
               (max-width: 88px) 50vw,
               33vw"></Image> */}

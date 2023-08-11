@@ -38,14 +38,23 @@ const Contact = () => {
       >
         <Grid container spacing={2} sx={{ maxWidth: "md" }}>
           <Grid item paddingLeft={0} xs={12} sm={12} md={12} lg={12}>
-            <Typography variant="h1" mb={4}>
-              Contact Us
-            </Typography>
-            <Typography variant="body1" mb={0}>
-              183 Sterling Street<br/>
+            {/* <Typography variant="h1" mb={4}>
+             
+            </Typography> */}
+            <h1> Contact Us</h1>
+            {/* <Typography variant="body1" mb={0}>
+              </Typography> */}
+           <p>183 Sterling Street<br/>
               Brooklyn, NY 11225<br/>
-           Cell: 1.646.620.4438</Typography>
-            <Typography
+           Cell: 1.646.620.4438</p>
+           <p> <Mailto
+                email="rharris@worldshaker.com"
+                subject="Available to Discuss a new Project"
+                body="Hi Robert,"
+              >
+                Email,
+              </Mailto> or call us to discuss your project.</p>
+            {/* <Typography
               color="primary"
               variant="body"
               sx={{ textDecoration: "none", fontSize:'1rem', color:'#333' }}
@@ -57,8 +66,8 @@ const Contact = () => {
               >
                 Email,
               </Mailto> or call us to discuss your project.
-              {/* <contactform/> */}
-            </Typography>
+              {/* <contactform/> 
+            </Typography> */}
           </Grid>
         </Grid>
       </Box>

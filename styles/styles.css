@@ -265,7 +265,7 @@ h2 span {
 h3 {
   font-size: clamp(1.206rem, -3.11rem + 7.38vw, 1.953rem) !important;
   font-weight: 500;
-  margin-bottom:0px;
+  margin-bottom:0px !important;
 }
 
 h3.cardHeader {
