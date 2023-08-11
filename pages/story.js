@@ -60,7 +60,7 @@ const Story = () => {
             </Box>
             <Box component="div">
               <Typography variant="body1">
-              Founder, Product Manager &amp; Product(UX) Designer &amp; Developer
+              Founder, Product Manager &amp; Product(UX) Designer &amp; Front-end Developer
             </Typography>
             </Box>
             </Box>

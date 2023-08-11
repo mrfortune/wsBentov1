@@ -5,7 +5,13 @@ import { NextUIProvider, Text } from "@nextui-org/react"
 import myTheme from '../styles/theme/mytheme.js';
 import lightThemeTheme from '../styles/theme/lightTheme.js';
 import lightTheme from '../styles/theme/lightTheme.js';
+import { config, library } from '@fortawesome/fontawesome-svg-core';
+import '@fortawesome/fontawesome-svg-core/styles.css';
 
+config.autoAddCss = false; // Tell Font Awesome to skip adding the CSS automatically since it's being imported above
+// library.add(
+//   faGithub, faAngleDown
+// );
 export default function MyApp({ Component, pageProps }) {
   return (
     <Layout>

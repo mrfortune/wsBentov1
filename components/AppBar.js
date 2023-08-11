@@ -36,8 +36,8 @@ const navLinks = [
   },
   {
     id: "2",
-    name: "About",
-    path: "/about",
+    name: "Story",
+    path: "/story",
   },
   {
     id: "3",
