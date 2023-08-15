@@ -39,7 +39,6 @@ const Story = () => {
               flexWrap="wrap"
         justifyContent="center"
             >
-             
                 <Box component="div" mb={2}> <motion.div
                 initial={{ opacity: 0, scale: 0.5 }}
                 animate={{ opacity: 1, scale: 1 }}
@@ -55,9 +54,9 @@ const Story = () => {
                 
              
               <Box component="div">
-          <Typography variant="h3" mb={1}>
+          <h3>
               Robert S. Harris
-            </Typography>
+            </h3>
             </Box>
             <Box component="div">
               {/* <Typography variant="body1">
@@ -69,8 +68,8 @@ const Story = () => {
           </Grid>
 
           <Grid item xs={8} sm={8} md={8} lg={8} xl={8}>
-            <Typography mb={2} variant="body1">
-              Hi! I'm Robert Harris. I am a Product Manager &amp; Product/UX
+            <p>
+              I'm Robert Harris. I am a Product Manager &amp; Product/UX
               Designer. I have worked for large brands and start-ups
               successfully identifying user problems and pain-points and
               delivering products and solutions for their customers and
@@ -78,8 +77,8 @@ const Story = () => {
               Producer, Diogital Producer, Web Designer and Front-End Developer
               in which I have worked in collaboration with stakeholders, and
               cross-functional teams to deliver and launch solutions.
-            </Typography>
-            <Typography mb={2} variant="body1">
+            </p>
+            <p>
               My love for design began as a child where I would sketch for
               hours, and I developed a love for drawing characters and creating
               figures with clay. I was always trying to create something new and
@@ -88,15 +87,15 @@ const Story = () => {
               tech, business and creative work would merge into an interactive
               experience. I did not realize it at the time but that was my first
               insight into the world of user experience.
-            </Typography>
-            <Typography mb={2} variant="body1">
+            </p>
+            <p>
               My degree in business trained me to think about marketing,
               management, statistics, and the challenges involved with
               succeeding in business. I learned to develop websites, and then I
               learned online video production, photography and how to translate
               compositions into code.
-            </Typography>
-            <Typography mb={2} variant="body1">
+            </p>
+            <p>
               WorldShaker Interactive was founded to solve a problem that my
               cousin and I had identified, wrote a complete business plan for
               and designed a mock-up. Our plan did not get funded but I see it
@@ -105,13 +104,13 @@ const Story = () => {
               had developed. Glad to see that our assumptions proved to be right
               and a solution for many independent artists and users to enjoy
               unsigned artists.
-            </Typography>
-            <Typography mb={2} variant="body1">
+            </p>
+            <p>
               I am still designing soltuons to problems and who knows may come
               up with another idea that can shake the world. But, for now, I am
               happy to share my skills with companies small, medium and large to
               help them deliver better user experiences to their customers.
-            </Typography>
+            </p>
           </Grid>
         </Grid>
       </Box>

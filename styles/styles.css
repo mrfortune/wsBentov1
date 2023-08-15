@@ -288,7 +288,10 @@ h5 {
 a {
   text-decoration: none;
 }
-
+p {
+  font-size: clamp(1rem, -3.11rem + 7.38vw, 1rem) !important;
+  margin-bottom: 2rem !important;
+}
 .contact {
   display: flex;
   height: calc(100vh - 590px);
