@@ -814,7 +814,10 @@ ul.ulStyle li {
     /*background-image: url("/assets/Desktop1440_bg2.png"); */
     min-height: 45rem;
   }
-
+  .homeHero .heroText {
+   margin-left:1rem;
+   margin-right:1rem;
+  }
   .homeHero,
   .homePage {
     padding-left: 1rem;

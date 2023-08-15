@@ -46,7 +46,7 @@ const Story = () => {
               >
                   <Avatar
                   size="200px"
-                  src="http://www.worldshaker.com/assets/me3.png"
+                  src="/assets/me3.png"
                   color="gradient"
                   bordered
                 /> </motion.div>

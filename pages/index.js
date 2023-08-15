@@ -24,7 +24,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPencil } from '@fortawesome/free-solid-svg-icons';
 import { faCode } from '@fortawesome/free-solid-svg-icons';
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
+import React, { useState } from "react";
+
 export default function Home() {
+  const [isShowMore, setIsShowMore] = useState(false);
+  const toggleReadMoreLess = () => {
+    setIsShowMore(!isShowMore);
+  };
+
   return (
     <div className={styles.container}>
       <Head>
@@ -189,7 +196,10 @@ export default function Home() {
               >
                 
               </Typography> */}
-              <p>At our digital experience design and development firm, we place user-centricity at the heart of everything we do, and our UX research process is a testament to that commitment. Through meticulous research, we delve deep into the mindset of your target audience, uncovering valuable insights into their behaviors, preferences, and pain points. Our skilled researchers employ a variety of methods, from user interviews and surveys to extensive data analysis, to create a comprehensive picture of your users' needs. This invaluable knowledge fuels our design and development process, allowing us to create digital experiences that resonate on a profound level. The outcome? Seamlessly tailored solutions that not only meet user expectations but anticipate their needs, fostering engagement, loyalty, and ultimately driving your business success. With our UX research expertise, we ensure that every interaction your users have with your digital platform is not just functional, but delightful, leaving a lasting positive impression and elevating your brand in today's competitive landscape.</p>
+              <p>At our digital experience design and development firm, we place user-centricity at the heart of everything we do, and our UX research process is a testament to that commitment. Through meticulous research, we delve deep into the mindset of your target audience, uncovering valuable insights into their behaviors, preferences, and pain points.Our skilled researchers employ a variety of methods, from user interviews and surveys to extensive data analysis, to create a comprehensive picture of your users' needs. This invaluable knowledge fuels our design and development process, allowing us to create digital experiences that resonate on a profound level. The outcome? Seamlessly tailored solutions that not only meet user expectations but anticipate their needs, fostering engagement, loyalty, and ultimately driving your business success. With our UX research expertise, we ensure that every interaction your users have with your digital platform is not just functional, but delightful, leaving a lasting positive impression and elevating your brand in today's competitive landscape.</p>  
+              {/* <button onClick={toggleReadMoreLess}>
+        {isShowMore ? "Read Less" : "Read More"}
+      </button> */}
             </Grid>
 
             <Grid item xs={12} sm={12} md={4} lg={4} xl={4}>
@@ -198,7 +208,10 @@ export default function Home() {
 
                 {/* <Image src="assets/design1.png" width={88} height={88} alt="Design" layout="fixed" loader={myLoader}></Image> */}
               </Box>
-              <p>At our digital experience design and development firm, our design process is an artful fusion of user insight and creative innovation. Beginning with an immersive exploration of user research, we gain a profound understanding of your audience's needs and desires. This knowledge fuels our imaginative journey, where design concepts come to life through sketching, wireframing, and prototyping. Collaborative by nature, we work closely with you to weave your vision seamlessly into every design element. Iteration and refinement are constants as we gather feedback, resulting in harmonious interfaces that reflect your brand and engage users in a meaningful way. The culmination is a testament to our commitment—a digital experience that captivates, resonates, and leaves an enduring imprint, elevating your business in the digital realm.</p>
+              <p>At our digital experience design and development firm, our design process is an artful fusion of user insight and creative innovation. Beginning with an immersive exploration of user research, we gain a profound understanding of your audience's needs and desires. This knowledge fuels our imaginative journey, where design concepts come to life through sketching, wireframing, and prototyping. Collaborative by nature, we work closely with you to weave your vision seamlessly into every design element. Iteration and refinement are constants as we gather feedback, resulting in harmonious interfaces that reflect your brand and engage users in a meaningful way. The culmination is a testament to our commitment—a digital experience that captivates, resonates, and leaves an enduring imprint, elevating your business in the digital realm.</p> 
+              {/* <button onClick={toggleReadMoreLess}>
+        {isShowMore ? "Read Less" : "Read More"}
+      </button> */}
               {/* <Typography
                 variant="h4"
                 sx={{ color: "#333", textAlign: "center" }}
