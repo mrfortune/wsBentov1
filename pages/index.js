@@ -177,7 +177,7 @@ export default function Home() {
             <Grid item xs={12} sm={12} md={4} lg={4} xl={4} pt={0}>
             
               <Box component="div" className="grid grid-cols-3 divide-x" sx={{backgroundColor:'lightgray', padding:'1rem', borderRadius:'1rem'}}>
-
+             
               <Box component="div" sx={{ textAlign: "center", display: 'flex', alignItems: 'center'}}>
                 <FontAwesomeIcon icon={faMagnifyingGlass} className="fa-1x" style={{ "--fa-primary-color": "#3c6818", "--fa-secondary-color": "#3c6818", marginRight: '.5rem' }} /><h3 className="grid grid-cols-3 divide-x"> Research</h3> {/* <Image src="assets/discover.png"
                   width={88}
