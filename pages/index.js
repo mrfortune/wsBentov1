@@ -25,12 +25,10 @@ import { faPencil } from '@fortawesome/free-solid-svg-icons';
 import { faCode } from '@fortawesome/free-solid-svg-icons';
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import React, { useState } from "react";
+import useSWR from 'swr';
 
 export default function Home() {
-  const [isShowMore, setIsShowMore] = useState(false);
-  const toggleReadMoreLess = () => {
-    setIsShowMore(!isShowMore);
-  };
+  const [showMore, setShowMore] = useState(false);
 
   return (
     <div className={styles.container}>
@@ -176,10 +174,10 @@ export default function Home() {
             </Grid>
             <Grid item xs={12} sm={12} md={4} lg={4} xl={4} pt={0}>
             
-              <Box component="div" className="grid grid-cols-3 divide-x" sx={{backgroundColor:'lightgray', padding:'1rem', borderRadius:'1rem'}}>
+              <Box component="div" sx={{backgroundColor:'lightgray', padding:'1rem', borderRadius:'1rem'}}>
              
               <Box component="div" sx={{ textAlign: "center", display: 'flex', alignItems: 'center'}}>
-                <FontAwesomeIcon icon={faMagnifyingGlass} className="fa-1x" style={{ "--fa-primary-color": "#3c6818", "--fa-secondary-color": "#3c6818", marginRight: '.5rem' }} /><h3 className="grid grid-cols-3 divide-x"> Research</h3> {/* <Image src="assets/discover.png"
+                <FontAwesomeIcon icon={faMagnifyingGlass} className="fa-1x" style={{ "--fa-primary-color": "#3c6818", "--fa-secondary-color": "#3c6818", marginRight: '.5rem' }} /><h3> Research</h3> {/* <Image src="assets/discover.png"
                   width={88}
                   height={88}
                  alt="Research"
@@ -200,9 +198,8 @@ export default function Home() {
                 
               </Typography> */}
               <p>At our digital experience design and development firm, we place user-centricity at the heart of everything we do, and our UX research process is a testament to that commitment. Through meticulous research, we delve deep into the mindset of your target audience, uncovering valuable insights into their behaviors, preferences, and pain points.Our skilled researchers employ a variety of methods, from user interviews and surveys to extensive data analysis, to create a comprehensive picture of your users' needs. This invaluable knowledge fuels our design and development process, allowing us to create digital experiences that resonate on a profound level. The outcome? Seamlessly tailored solutions that not only meet user expectations but anticipate their needs, fostering engagement, loyalty, and ultimately driving your business success. With our UX research expertise, we ensure that every interaction your users have with your digital platform is not just functional, but delightful, leaving a lasting positive impression and elevating your brand in today's competitive landscape.</p>  
-              {/* <button onClick={toggleReadMoreLess}>
-        {isShowMore ? "Read Less" : "Read More"}
-            </button> */}
+              {/* {showMore ? text : `${text.substring(0, 250)}`} */}
+  <button className="btn" onClick={() => setShowMore(!showMore)}>{showMore ? "Show less" : "Show more"}</button>
             </Box>
             </Grid>
 

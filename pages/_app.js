@@ -1,6 +1,6 @@
 import Layout from './layout';
 import  '../styles/styles.css';
-import '../styles/globals.css';
+import './globals.css';
 import { ThemeProvider } from 'next-themes';
 import { NextUIProvider, Text } from "@nextui-org/react"
 import myTheme from '../styles/theme/mytheme.js';
