@@ -80,11 +80,11 @@ export default function Home() {
                     transition={{ duration: 1 }}
                   >
                     <Image
-                      src="assets/blackLadyExec4.png"
+                      src="/assets/blackLadyExec4.png"
                       width={300}
                       height={300}
                       alt="Black Lady Exec"
-                      loader={myLoader}
+                      
                       blurDataURL="assets/blur-image.jpg"
                       placeholder="blur"
                     ></Image>
@@ -109,11 +109,11 @@ export default function Home() {
                   viewport={{ once: true }}
                   transition={{ duration: 1 }}
                 ><Image
-                  src="assets/blackLadyExec4.png"
-                  width={400}
+                  src="/assets/blackLadyExec4.png"
+                  width={600}
                   height={400}
                   alt="Black Lady Exec"
-                  loader={myLoader}
+                
 
                 ></Image>
                 </motion.div>
@@ -173,54 +173,66 @@ export default function Home() {
               <h2> What We Do</h2>
             </Grid>
             <Grid item xs={12} sm={12} md={4} lg={4} xl={4} pt={0}>
-            
-              <Box component="div" sx={{backgroundColor:'lightgray', padding:'1rem', borderRadius:'1rem'}}>
-             
-              <Box component="div" sx={{ textAlign: "center", display: 'flex', alignItems: 'center'}}>
-                <FontAwesomeIcon icon={faMagnifyingGlass} className="fa-1x" style={{ "--fa-primary-color": "#3c6818", "--fa-secondary-color": "#3c6818", marginRight: '.5rem' }} /><h3> Research</h3> {/* <Image src="assets/discover.png"
+
+              <Box component="div" sx={{}}>
+
+                <Box component="div" sx={{ textAlign: "center", display: 'flex', alignItems: 'center' }}>
+                  <FontAwesomeIcon icon={faMagnifyingGlass} className="fa-1x" style={{ "--fa-primary-color": "#3c6818", "--fa-secondary-color": "#3c6818", marginRight: '.5rem' }} /><h4 className="m-0"> Research</h4> {/* <Image src="assets/discover.png"
                   width={88}
                   height={88}
                  alt="Research"
                   layout="fixed" loader={myLoader}></Image> */}
-              </Box>
+                </Box>
 
-              {/* <Typography
+                {/* <Typography
                 variant="h4"
                 sx={{ color: "#333", textAlign: "center", fontWeight: '500' }}
               >
                
               </Typography> */}
 
-              {/* <Typography
+                {/* <Typography
                 variant="body1"
                 sx={{ color: "#333", textAlign: "left", marginBottom: "0" }}
               >
                 
               </Typography> */}
-              <p>At our digital experience design and development firm, we place user-centricity at the heart of everything we do, and our UX research process is a testament to that commitment. Through meticulous research, we delve deep into the mindset of your target audience, uncovering valuable insights into their behaviors, preferences, and pain points.Our skilled researchers employ a variety of methods, from user interviews and surveys to extensive data analysis, to create a comprehensive picture of your users' needs. This invaluable knowledge fuels our design and development process, allowing us to create digital experiences that resonate on a profound level. The outcome? Seamlessly tailored solutions that not only meet user expectations but anticipate their needs, fostering engagement, loyalty, and ultimately driving your business success. With our UX research expertise, we ensure that every interaction your users have with your digital platform is not just functional, but delightful, leaving a lasting positive impression and elevating your brand in today's competitive landscape.</p>  
-              {/* {showMore ? text : `${text.substring(0, 250)}`} */}
-  <button className="btn" onClick={() => setShowMore(!showMore)}>{showMore ? "Show less" : "Show more"}</button>
-            </Box>
+                <ul className="list-disc">
+                  <li>Elevate your digital experiences with user-centricity at our design and development firm.</li>
+                  <li>Our meticulous UX research uncovers valuable insights into user behaviors and preferences.</li>
+                  <li>Diverse methods, from user interviews to data analysis, inform our tailored solutions.</li>
+                  <li>Craft exceptional digital experiences that anticipate user needs, fostering engagement and loyalty.</li>
+                  <li>Leave a lasting positive impression with every interaction, elevating your brand in today's competitive landscape.</li>
+                </ul>
+                {/* {showMore ? text : `${text.substring(0, 250)}`} */}
+
+              </Box>
             </Grid>
 
             <Grid item xs={12} sm={12} md={4} lg={4} xl={4}>
-            <Box component="div" sx={{backgroundColor:'lightgray', padding:'1rem', borderRadius:'1rem'}}>
-              <Box component="div" sx={{ textAlign: "center", display: 'flex', alignItems: 'center' }}>
-                <FontAwesomeIcon icon={faPencil} className="fa-1x" style={{ "--fa-primary-color": "#3c6818", "--fa-secondary-color": "#3c6818", marginRight: '.5rem' }} /><h3> Design</h3>
+              <Box component="div" sx={{}}>
+                <Box component="div" sx={{ textAlign: "center", display: 'flex', alignItems: 'center' }}>
+                  <FontAwesomeIcon icon={faPencil} className="fa-1x" style={{ "--fa-primary-color": "#3c6818", "--fa-secondary-color": "#3c6818", marginRight: '.5rem' }} /><h4 className="m-0"> Design</h4>
 
-                {/* <Image src="assets/design1.png" width={88} height={88} alt="Design" layout="fixed" loader={myLoader}></Image> */}
-              </Box>
-              <p>At our digital experience design and development firm, our design process is an artful fusion of user insight and creative innovation. Beginning with an immersive exploration of user research, we gain a profound understanding of your audience's needs and desires. This knowledge fuels our imaginative journey, where design concepts come to life through sketching, wireframing, and prototyping. Collaborative by nature, we work closely with you to weave your vision seamlessly into every design element. Iteration and refinement are constants as we gather feedback, resulting in harmonious interfaces that reflect your brand and engage users in a meaningful way. The culmination is a testament to our commitment—a digital experience that captivates, resonates, and leaves an enduring imprint, elevating your business in the digital realm.</p> 
-              {/* <button onClick={toggleReadMoreLess}>
+                  {/* <Image src="assets/design1.png" width={88} height={88} alt="Design" layout="fixed" loader={myLoader}></Image> */}
+                </Box>
+                <ul className="list-disc">
+                  <li>Our design process blends user insight and creative innovation for digital experiences.</li>
+                  <li>Concepts come alive through sketching, wireframing, and prototyping.</li>
+                  <li>Collaborative approach integrates your vision seamlessly into designs.</li>
+                  <li>Iteration and feedback refine interfaces, reflecting your brand and engaging users.</li>
+                  <li>Result: Captivating, resonating digital experiences that elevate your business.</li>
+                </ul>
+                {/* <button onClick={toggleReadMoreLess}>
         {isShowMore ? "Read Less" : "Read More"}
       </button> */}
-              {/* <Typography
+                {/* <Typography
                 variant="h4"
                 sx={{ color: "#333", textAlign: "center" }}
               >
                
               </Typography> */}
-              {/* <Typography
+                {/* <Typography
                 variant="body1"
                 sx={{ color: "#333", textAlign: "left", marginBottom: "0" }}
               >
@@ -229,28 +241,35 @@ export default function Home() {
               </Box>
             </Grid>
             <Grid item xs={12} sm={12} md={4} lg={4} xl={4}>
-            <Box component="div" sx={{backgroundColor:'lightgray', padding:'1rem', borderRadius:'1rem'}}>
-              <Box component="div" sx={{ textAlign: "center", display: 'flex', alignItems: 'center' }}>
-                <FontAwesomeIcon icon={faCode} className="fa-1x" style={{ "--fa-primary-color": "#3c6818", "--fa-secondary-color": "#3c6818", marginRight: '.5rem' }} /><h3> Develop</h3>
-                {/* <Image src="assets/dev1.png" width={88} height={88} alt="Develop" layout="fixed" loader={myLoader} sizes="(max-width: 88px) 100vw,
+              <Box component="div" sx={{}}>
+                <Box component="div" sx={{ textAlign: "center", display: 'flex', alignItems: 'center' }}>
+                  <FontAwesomeIcon icon={faCode} className="fa-1x" style={{ "--fa-primary-color": "#3c6818", "--fa-secondary-color": "#3c6818", marginRight: '.5rem' }} /><h4 className="m-0"> Develop</h4>
+                  {/* <Image src="assets/dev1.png" width={88} height={88} alt="Develop" layout="fixed" loader={myLoader} sizes="(max-width: 88px) 100vw,
               (max-width: 88px) 50vw,
               33vw"></Image> */}
-              </Box>
+                </Box>
 
-              {/* <Typography
+                {/* <Typography
                 variant="h4"
                 sx={{ color: "#333", textAlign: "center" }}
               >
                
               </Typography> */}
 
-              <p>  At our digital experience design and development firm, our development process is a symphony of technical expertise and creative ingenuity. Guided by the user-centric designs, we meticulously code and craft every element, ensuring functionality, responsiveness, and seamless interactions. Our skilled developers seamlessly integrate dynamic features and functionalities, breathing life into the designs and creating an immersive user experience. Collaboration with our design team and your input remains pivotal as we navigate the intricacies of development. Rigorous testing and optimization guarantee a flawless performance across devices and browsers, culminating in the deployment of a robust and captivating digital platform. Our development process stands as a testament to our commitment to excellence, delivering digital experiences that not only meet but exceed expectations, empowering your business in the digital landscape.</p>
-              {/* <Typography
+
+                {/* <Typography
                 variant="body1"
                 sx={{ color: "#333", textAlign: "left", marginBottom: "0" }}
               >
              
               </Typography> */}
+                <ul className="list-disc">
+                  <li>Development process is a symphony of technical expertise and creative ingenuity.</li>
+                  <li>Ensure functionality, responsiveness, and seamless interactions.</li>
+                  <li>Skilled developers integrate dynamic features, creating immersive user experiences.</li>
+                  <li>Rigorous testing and optimization ensure flawless performance across devices and browsers.</li>
+                  <li>Culmination: Deployment of robust and captivating digital platform.</li>
+                </ul>
               </Box>
             </Grid>
           </Grid>

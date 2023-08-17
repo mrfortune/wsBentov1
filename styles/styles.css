@@ -106,22 +106,22 @@ nav .contactButton:hover a {
   font-size:.75rem;
 } */
 .MuiTypography-h1.caseStudyHeads {
-  font-size: clamp(1.953rem, -3.11rem + 7.38vw, 3.247rem);
+  font-size: clamp(1.953rem, -.22rem + 1.6vw, 3.247rem);
 }
 
 .MuiTypography-h1.display {
-  font-size: clamp(1.602rem, -3.11rem + 7.38vw, 3.247rem);
+  font-size: clamp(1.602rem, -.22rem + 1.6vw, 3.247rem);
   color: #fafafa;
   background-clip: text;
   -webkit-background-clip: text;
 }
 
 .MuiTypography-h1 {
-  font-size: clamp(1.953rem, -3.11rem + 7.38vw, 3.247rem) !important;
+  font-size: clamp(1.953rem, -.22rem + 1.6vw, 3.247rem) !important;
 }
 
 .MuiTypography-body1 {
-  font-size: clamp(1rem, -3.11rem + 7.38vw, 1rem);
+  font-size: clamp(1rem, -.22rem + 1.6vw, 1rem);
   margin-bottom: 2rem;
 }
 
@@ -164,7 +164,7 @@ width:63%
 }
 
 /* .homeHero .heroText h1.boujee-text {
-  font-size: clamp(1.953rem, -3.11rem + 7.38vw, 4.768rem);
+  font-size: clamp(1.953rem, -.22rem + 1.6vw, 4.768rem);
   /* --bg-size: 400%;
   --color-one: hsl(200 19% 18%);
   --color-two: hsl(212 96% 44%);
@@ -184,7 +184,7 @@ width:63%
   letter-spacing: 1px;
 } */
 .homeHero .heroText h1.h1Header {
-  font-size: clamp(1.953rem, -3.11rem + 7.38vw, 3.247rem) !important;
+  font-size: clamp(1.602rem, -.22rem + 1.6vw, 3.247rem) !important;
   color: #07e9eb;
   line-height: 1;
   text-transform: uppercase;
@@ -197,7 +197,7 @@ width:63%
 }
 
 .headerBody {
-  font-size: clamp(1rem, -3.11rem + 7.38vw, 1rem);
+  font-size: clamp(1rem, -.22rem + 1.6vw, 1rem);
   /* background-image: linear-gradient(to bottom, #CBCBCB, #FF5B19); */
   font-weight: 400;
   /* background-clip: text;
@@ -211,11 +211,11 @@ width:63%
 }
 
 .MuiTypography-body2 {
-  font-size: clamp(1rem, -3.11rem + 7.38vw, 1.02rem);
+  font-size: clamp(1rem, -.22rem + 1.6vw, 1.02rem);
 }
 
 .MuiTypography-h2 {
-  font-size: clamp(1.324rem, -3.11rem + 7.38vw, 2.887rem) !important;
+  font-size: clamp(1.324rem, -.22rem + 1.6vw, 2.887rem) !important;
   font-weight: 600;
 }
 
@@ -224,21 +224,21 @@ width:63%
 }
 
 .MuiTypography-h3 {
-  font-size: clamp(1.206rem, -3.11rem + 7.38vw, 1.953rem) !important;
+  font-size: clamp(1.206rem, -.22rem + 1.6vw, 1.953rem) !important;
   font-weight: 500;
 }
 
 .MuiTypography-h3.cardHeader {
-  font-size: clamp(1rem, -3.11rem + 7.38vw, 1.953rem);
+  font-size: clamp(1rem, -.22rem + 1.6vw, 1.953rem);
 }
 
 .MuiTypography-h4 {
-  font-size: clamp(1.025rem, -3.11rem + 7.38vw, 1.563rem) !important;
+  font-size: clamp(1.025rem, -.22rem + 1.6vw, 1.563rem) !important;
   font-weight: 500;
 }
 
 .MuiTypography-h5 {
-  font-size: clamp(1rem, -3.11rem + 7.38vw, 1.25rem) !important;
+  font-size: clamp(1rem, -.22rem + 1.6vw, 1.25rem) !important;
   font-weight: 500;
   text-align: center;
   margin-bottom: 4rem;
@@ -246,21 +246,21 @@ width:63%
 }
 
 .MuiTypography-subtitle1 {
-  font-size: clamp(0.875rem, -3.11rem + 7.38vw, 1.02rem);
+  font-size: clamp(0.875rem, -.22rem + 1.6vw, 1.02rem);
 }
 
 .MuiTypography-body2 {
-  font-size: clamp(1rem, -3.11rem + 7.38vw, 1.02rem);
+  font-size: clamp(1rem, -.22rem + 1.6vw, 1.02rem);
 }
 h1{
-  font-size: clamp(1.953rem, -3.11rem + 7.38vw, 3.247rem) !important;
+  font-size: clamp(1.602rem, -.22rem + 1.6vw, 3.247rem) !important;
   color: #07e9eb;
   line-height: 1;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 h2 {
-  font-size: clamp(1.324rem, -3.11rem + 7.38vw, 2.887rem) !important;
+  font-size: clamp(1.424rem, -.22rem + 1.6vw, 2.887rem) !important;
   font-weight: 600;
 }
 
@@ -269,33 +269,37 @@ h2 span {
 }
 
 h3 {
-  font-size: clamp(1.206rem, -3.11rem + 7.38vw, 1.953rem) !important;
+  font-size: clamp(1.266rem, -.22rem + 1.6vw, 1.802rem) !important;
   font-weight: 500;
   margin-bottom:0px !important;
 }
 
 h3.cardHeader {
-  font-size: clamp(1rem, -3.11rem + 7.38vw, 1.953rem);
+  font-size: clamp(1rem, -.22rem + 1.6vw, 1.802rem);
+  margin-bottom:0px !important;
 }
 
 h4 {
-  font-size: clamp(1.025rem, -3.11rem + 7.38vw, 1.563rem) !important;
+  font-size: clamp(1.025rem, -.22rem + 1.6vw, 1.424rem) !important;
   font-weight: 500;
+  margin-bottom:0px;
 }
 
 h5 {
-  font-size: clamp(1rem, -3.11rem + 7.38vw, 1.25rem) !important;
+  font-size: clamp(1rem, -.22rem + 1.6vw, 1.266rem) !important;
   font-weight: 500;
   text-align: center;
   margin-bottom: 4rem;
   text-transform: uppercase;
 }
-
+h6 {
+  font-size: clamp(1rem, -.22rem + 1.6vw, 1.125rem) !important;
+}
 a {
   text-decoration: none;
 }
 p {
-  font-size: clamp(1rem, -3.11rem + 7.38vw, 1rem) !important;
+  font-size: clamp(1rem, -.22rem + 1.6vw, 1rem) !important;
   margin-bottom: 2rem !important;
 }
 .contact {
@@ -346,7 +350,7 @@ p {
 }
 
 nav .MuiToolbar-root {
-  min-height: 5rem;
+  min-height: 4rem;
 }
 
 .lineClamp {
@@ -617,7 +621,7 @@ ul.ulStyle {
 }
 
 ul.ulStyle li {
-  font-size: clamp(0.8rem, -3.11rem + 7.38vw, 1rem);
+  font-size: clamp(0.8rem, -.22rem + 1.6vw, 1rem);
 }
 
 .footerBG ul,
@@ -655,7 +659,6 @@ ul.ulStyle li {
     align-items: center;
     text-align: center;
     width: 100%;
-    padding-left: 1rem;
   }
 
   .story {
@@ -697,7 +700,7 @@ ul.ulStyle li {
     margin-right:1rem;
   } */
   .MuiTypography-body1.headerBody {
-    font-size: clamp(0.9rem, -3.11rem + 7.38vw, 1rem);
+    font-size: clamp(0.9rem, -.22rem + 1.6vw, 1rem);
     font-weight: 500;
     background-clip: text;
     -webkit-background-clip: text;
