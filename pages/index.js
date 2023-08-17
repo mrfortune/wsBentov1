@@ -25,8 +25,15 @@ import { faPencil } from '@fortawesome/free-solid-svg-icons';
 import { faCode } from '@fortawesome/free-solid-svg-icons';
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import React, { useState } from "react";
+
+//useSWR allows the use of SWR inside function components
+
 import useSWR from 'swr';
 
+
+//Write a fetcher function to wrap the native fetch function and return the result of a call to url in json format
+
+const fetcher = (url) => fetch(url).then((res) => res.json());
 export default function Home() {
   const [showMore, setShowMore] = useState(false);
 
@@ -41,91 +48,89 @@ export default function Home() {
         className="homeHero"
         padding={0}
         direction="column"
-        display="flex"
+        display="grid"
         alignItems="center"
         justifyContent="center"
         sx={{ width: "100%" }}
       >
-        <Box component="header" maxWidth="lg">
-          <Box
-            className="heroText"
-            component="div"
-            sx={{
-              display: "flex",
-              textAlign: {
-                xs: "center",
-                sm: "center",
-                md: "left",
-                lg: "left",
-                xl: "left",
-              },
-              height: "auto",
-              width: "100%",
-            }}
-          >
-            <Grid container spacing={4} mt={2} sx={{ maxWidth: "lg" }}>
-              <Grid item xs={12} sm={12} md={6} lg={6} xl={6} pt={10}>
-                <h1 className="h1Header">
-                  Elevating Businesses with Seamless Digital Metamorphosis
-                </h1>
-                <p className="body">
-                  Unveiling precise challenges via advanced user research methods, designing and delivering solutions centered around people.
-                </p>
 
-                <Box component="div" mb={5} sx={{ display: { xs: "block", sm: "block", md: "none", lg: "none", xl: "none" } }}>
-                  <motion.div
-                    initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 1 }}
-                  >
-                    <Image
-                      src="/assets/blackLadyExec4.png"
-                      width={300}
-                      height={300}
-                      alt="Black Lady Exec"
-                      
-                      blurDataURL="assets/blur-image.jpg"
-                      placeholder="blur"
-                    ></Image>
-                  </motion.div>
-                </Box>
-                <Box component="div" display="flex" sx={{ justifyContent: { xs: "center", sm: "center", md: "left", lg: "left", xl: "left" } }}>
-                  <Button size="lg" color="secondary" css={{ borderRadius: "$2xl" }} >
-                    <Link
-                      href="/contact"
-                      css={{ color: "primaryLinkText", fontSize: '$sm', fontWeight: "$normal" }}
-                    >
-                      Let's Talk About Your Project
-                    </Link>
-                  </Button>
-                </Box>
+        <Grid container spacing={4} mt={2} sx={{ maxWidth: "lg" }}>
+          <Grid item xs={12} sm={12} md={6} lg={6} xl={6} pt={10} >
+            <Box
+              className="heroText"
+              component="div"
+              maxwidth="lg"
+              sx={{
+                display: "flex",
+                textAlign: {
+                  xs: "center",
+                  sm: "center",
+                  md: "left",
+                  lg: "left",
+                  xl: "left",
+                },
 
-              </Grid>
-              <Grid item xs={12} sm={12} md={6} lg={6} xl={6} sx={{ display: { xs: "none", sm: "none", md: "block", lg: "block", xl: "block" } }}>
+                height: "auto",
+                width: "100%",
+              }}
+            >
+              <h1 className="h1Header">
+                Elevating Businesses with Seamless Digital Metamorphosis
+              </h1>
+              <p className="body">
+                Unveiling precise challenges via advanced user research methods, designing and delivering solutions centered around people.
+              </p>
+            
+              <Box component="div" mb={5} sx={{ display: { xs: "block", sm: "block", md: "none", lg: "none", xl: "none" } }}>
                 <motion.div
                   initial={{ opacity: 0 }}
                   whileInView={{ opacity: 1 }}
                   viewport={{ once: true }}
                   transition={{ duration: 1 }}
-                ><Image
-                  src="/assets/blackLadyExec4.png"
-                  width={600}
-                  height={400}
-                  alt="Black Lady Exec"
-                
+                >
+                  <Image
+                    src="/assets/blackLadyExec4.png"
+                    width={300}
+                    height={300}
+                    alt="Black Lady Exec"
 
-                ></Image>
+                    blurDataURL="assets/blur-image.jpg"
+                    placeholder="blur"
+                  ></Image>
                 </motion.div>
-              </Grid>
 
-            </Grid>
-          </Box>
-        </Box>
+              </Box>
+  <Button size="lg" color="secondary" css={{ borderRadius: "$2xl" }} >
+                <Link
+                  href="/contact"
+                  css={{ color: "primaryLinkText", fontSize: '$sm', fontWeight: "$normal" }}
+                >
+                  Let's Talk About Your Project
+                </Link>
+              </Button>
 
+
+            </Box>
+          </Grid>
+          <Grid item xs={12} sm={12} md={6} lg={6} xl={6} sx={{ display: { xs: "none", sm: "none", md: "block", lg: "block", xl: "block" } }}>
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 1 }}
+            ><Image
+              src="/assets/blackLadyExec4.png"
+              width={600}
+              height={400}
+              alt="Black Lady Exec"
+
+
+            ></Image>
+            </motion.div>
+          </Grid>
+
+        </Grid>
       </Box>
-      <main>
-
         <Box className="homePage work"
           direction="row"
           display="flex"
@@ -140,15 +145,11 @@ export default function Home() {
               transition={{ duration: 1 }}
             >
               <Image
-                src="assets/workcbanner.png"
+                src="/assets/workcbanner.png"
                 width={1200}
                 height={150}
                 alt="Work Banner"
                 layout="responsive"
-                loader={myLoader}
-                sizes="(max-width: 1200px) 100vw,
-               (max-width: 720px) 100vw, 100vw, 
-               (max-width: 500px) 100vw, 100vw"
               >
               </Image>
             </motion.div>
@@ -338,7 +339,6 @@ export default function Home() {
                           src="/assets/wgsrBlob2.png"
                           width={600}
                           height={600}
-                          loader={myLoader}
                           layout="responsive"
                           alt="West-Side German Shepherd Rescue"
                         >
@@ -371,12 +371,11 @@ export default function Home() {
                     transition={{ duration: 1 }}
                   >
                     <Image
-                      src="/fadeBlob2.png"
+                      src="/assets/fadeBlob2.png"
                       width={600}
                       height={600}
                       alt=""
                       layout="responsive"
-                      loader={myLoader}
                     ></Image>
                   </motion.div>
                 </Box>
@@ -453,11 +452,10 @@ export default function Home() {
                     transition={{ duration: 1 }}
                   >
                     <Image
-                      src="/wineBlob2.png"
+                      src="/assets/wineBlob2.png"
                       width={600}
                       height={600}
                       layout="responsive"
-                      loader={myLoader}
                       alt=""
                     ></Image>
                   </motion.div>
@@ -466,7 +464,7 @@ export default function Home() {
             </Grid>
           </Grid>
         </Box>
-      </main>
+     
 
       {/* <footer>
         <a

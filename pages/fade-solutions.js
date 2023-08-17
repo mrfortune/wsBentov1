@@ -43,13 +43,12 @@ const FadeDesign = () => {
           <Grid item xs={12} lg={12} xl={12} md={12} sm={12}>
             <Box component="div">
               <Image layout="responsive"
-                loader={myLoader}
-                src="assets/fadeMacBookDesktop.png"
+                src="/assets/fadeMacBookDesktop.png"
                 width={960}
                 height={648}
                 alt="WGSR Hero"
                 quality={75}
-                blurDataURL="/images/path-to-blur-image.jpg"
+                blurDataURL="/assets/path-to-blur-image.jpg"
    placeholder="blur"
               ></Image>
             </Box>
@@ -168,7 +167,7 @@ const FadeDesign = () => {
               unique offering.
             </Typography>
             <Typography variant="body2">Observations:</Typography>
-            <Box component="ul" className="ulStyle">
+            <ul className="list-disc">
               <li>
                 Dashboards all have analytics and charts and features to analyse
                 the data.
@@ -186,7 +185,7 @@ const FadeDesign = () => {
                 Campaign management features such as 'Create a Campaign',
                 'Start/Stop a Campaign'.
               </li>
-            </Box>
+            </ul>
           </Grid>
 
           <Grid item xs={12} lg={12} md={12} mb={8}>
@@ -210,8 +209,8 @@ const FadeDesign = () => {
             >
               <Image layout="responsive" layout="responsive"
                 className="imageBorderradius"
-                src="assets/comparacampaign.png"
-                loader={myLoader}
+                src="/assets/comparacampaign.png"
+        
                 width={540}
                 height={182}
                 alt=""
@@ -227,8 +226,8 @@ const FadeDesign = () => {
               alignItems="center"
             >
               <Image layout="responsive"
-                loader={myLoader}
-                src="assets/comparamanusers.png"
+            
+                src="/assets/comparamanusers.png"
                 width={543}
                 height={182}
                 alt=""
@@ -248,12 +247,12 @@ const FadeDesign = () => {
               alignItems="center"
             >
               <Image layout="responsive"
-                src="assets/fadepersona.png"
+                src="/assets/fadepersona.png"
                 className="imageBorderradius"
-                alt=""
+                alt="Persona"
                 height={636}
                 width={900}
-                loader={myLoader}
+
               />
             </Box>
           </Grid>
@@ -275,10 +274,9 @@ const FadeDesign = () => {
              
             >
               <Image layout="responsive"
-                loader={myLoader}
-                src="assets/FadeJourneyMap.png"
+                src="/assets/FadeJourneyMap.png"
                 className="imageBorderradius"
-                alt=""
+                alt="Journey Map"
                 height={675}
                 width={900}
               />
@@ -323,8 +321,8 @@ const FadeDesign = () => {
             >
               <Image layout="responsive"
                 loader={myLoader}
-                src="assets/FadeB2B_Page_userflow1.png"
-                alt=""
+                src="/assets/FadeB2B_Page_userflow1.png"
+                alt="User Flow"
                 className="imageBorderradius"
                 height={506}
                 width={900}
@@ -340,10 +338,10 @@ const FadeDesign = () => {
             
             >
               <Image layout="responsive"
-                loader={myLoader}
-                src="assets/FadeB2B_Page_userflow2.png"
+              
+                src="/assets/FadeB2B_Page_userflow2.png"
                 className="imageBorderradius"
-                alt=""
+                alt="User Flow"
                 height={506}
                 width={900}
               />
@@ -359,9 +357,9 @@ const FadeDesign = () => {
               alignItems="center"
             >
               <Image layout="responsive"
-                loader={myLoader}
-                src="assets/FadeB2B_Page_sitemap1.png"
-                alt=""
+               
+                src="/assets/FadeB2B_Page_sitemap1.png"
+                alt="Site Map"
                 className="imageBorderradius"
                 height={506}
                 width={900}
@@ -377,9 +375,9 @@ const FadeDesign = () => {
              
             >
               <Image layout="responsive"
-                loader={myLoader}
-                src="assets/FadeB2B_Page_sitemap2.png"
-                alt=""
+             
+                src="/assets/FadeB2B_Page_sitemap2.png"
+                alt="Site Map 2"
                 className="imageBorderradius"
                 height={506}
                 width={900}
@@ -395,8 +393,7 @@ const FadeDesign = () => {
              
             >
               <Image layout="responsive"
-                loader={myLoader}
-                src="assets/FadeB2B_Page_sitemap3.png"
+                src="/assets/FadeB2B_Page_sitemap3.png"
                 alt=""
                 className="imageBorderradius"
                 height={506}
@@ -416,8 +413,7 @@ const FadeDesign = () => {
               
             >
               <Image layout="responsive"
-                loader={myLoader}
-                src="assets/earlysketches.png"
+                src="/assets/earlysketches.png"
                 height={560}
                 width={900}
                 className="imageBorderradius"
@@ -434,8 +430,8 @@ const FadeDesign = () => {
               
             >
               <Image layout="responsive"
-                loader={myLoader}
-                src="assets/midfidelity.png"
+            
+                src="/assets/midfidelity.png"
                 height={352}
                 width={900}
                 className="imageBorderradius"
@@ -459,8 +455,7 @@ const FadeDesign = () => {
              
             >
               <Image layout="responsive"
-               loader={myLoader}
-                src="assets/PublisherFlow_FinalWelcome.png"
+                src="/assets/PublisherFlow_FinalWelcome.png"
                 width={900}
                 height={640}
                 alt=""
@@ -477,8 +472,7 @@ const FadeDesign = () => {
               
             >
               <Image layout="responsive"
-                loader={myLoader}
-                src="assets/SignUpFlow_FinalSignup.png"
+                src="/assets/SignUpFlow_FinalSignup.png"
                 width={900}
                 height={640}
                 alt=""
@@ -495,8 +489,7 @@ const FadeDesign = () => {
              
             >
               <Image layout="responsive"
-                loader={myLoader}
-                src="assets/PublisherFlow_FinalManageUsers.png"
+                src="/assets/PublisherFlow_FinalManageUsers.png"
                 className="imageBorderradius"
                 width={900}
                 height={640}
@@ -513,8 +506,7 @@ const FadeDesign = () => {
              
             >
               <Image layout="responsive"
-                loader={myLoader}
-                src="assets/PublisherFlow_FinalOverview.png"
+                src="/assets/PublisherFlow_FinalOverview.png"
                 width={720}
                 height={1080}
                 className="imageBorderradius"
@@ -541,8 +533,7 @@ const FadeDesign = () => {
               
             >
               <Image layout="responsive"
-                loader={myLoader}
-                src="assets/FadeUsabilityTest_LoriMarion_2.gif"
+                src="/assets/FadeUsabilityTest_LoriMarion_2.gif"
                 width="640"
                 height="378"
                 alt="Usability Testing"

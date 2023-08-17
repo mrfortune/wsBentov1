@@ -106,7 +106,8 @@ nav .contactButton:hover a {
   font-size:.75rem;
 } */
 .MuiTypography-h1.caseStudyHeads {
-  font-size: clamp(1.953rem, -.22rem + 1.6vw, 3.247rem);
+  font-size: clamp(1.953rem, -.22rem + 1.6vw, 3.247rem) !important;
+  font-weight:800;
 }
 
 .MuiTypography-h1.display {
@@ -121,7 +122,7 @@ nav .contactButton:hover a {
 }
 
 .MuiTypography-body1 {
-  font-size: clamp(1rem, -.22rem + 1.6vw, 1rem);
+  font-size: clamp(1rem, -.22rem + 1.6vw, 1rem) !important;
   margin-bottom: 2rem;
 }
 
@@ -205,7 +206,7 @@ width:63%
   color: #fafafa;
 }
 
-.homeHero header .heroText p.body {
+.homeHero .heroText p.body {
   text-transform: none;
   color: #fafafa;
 }
@@ -250,7 +251,8 @@ width:63%
 }
 
 .MuiTypography-body2 {
-  font-size: clamp(1rem, -.22rem + 1.6vw, 1.02rem);
+  font-size: clamp(1rem, -.22rem + 1.6vw, 1.02rem) !important;
+  font-weight:500;
 }
 h1{
   font-size: clamp(1.602rem, -.22rem + 1.6vw, 3.247rem) !important;
@@ -654,8 +656,8 @@ ul.ulStyle li {
     min-height: 48rem;
   }
 
-  .homeHero header .heroText,
-  .homeHero header .heroText p {
+  .homeHero .heroText,
+  .homeHero .heroText p {
     align-items: center;
     text-align: center;
     width: 100%;
@@ -777,7 +779,7 @@ ul.ulStyle li {
     padding-right: 1rem;
   }
 
-  .homeHero header .heroText h4 {
+  .homeHero .heroText h4 {
     text-align: center;
   }
 

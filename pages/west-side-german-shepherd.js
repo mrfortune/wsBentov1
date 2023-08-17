@@ -91,8 +91,7 @@ const WestSide = () => {
               Redesigning West Side German Shepherd's Website for Enhanced Canine Connections
               </Typography>
               <Image layout="responsive" layout="responsive"
-                loader={myLoader}
-                src="wgsr_hero_study.png"
+                src="/assets/wgsr_hero_study.png"
                 width={900}
                 height={506}
                 alt="WGSR Hero"
@@ -166,9 +165,8 @@ const WestSide = () => {
             </Typography>
             <Box component="div" mt={6} mb={6}>
               <Image layout="responsive"
-                loader={myLoader}
                 className="imageBorderradius"
-                src="wgsrpresent.png"
+                src="/assets/wgsrpresent.png"
                 alt=""
                 width={900}
                 height={705}
@@ -238,28 +236,28 @@ const WestSide = () => {
               1.Tell me about your experience of finding and adopting your dog
               online.
             </Typography>
-            <Box component="ul" className="ulStyle" mb={6}>
+            <ul className="list-disc">
               <li>Website used</li>
               <li>Timeline (from first search to adoption)</li>
               <li>Adoption application process</li>
               <li>Retrieving dog</li>
-            </Box>
+            </ul>
 
             <Typography variant="body1">
               2. What drew you to your dog specifically?
             </Typography>
-            <Box component="ul" className="ulStyle" mb={6}>
+            <ul className="list-disc">
               <li>
                 Did you have any special considerations when searching for your
                 dog? (e.g. good with cats/other dogs/kids, male/female, age,
                 housebroken)
               </li>
-            </Box>
+            </ul>
             <Typography variant="body1">
               3. Why did you use (website they answered in survey) over other
               websites?
             </Typography>
-            <Box component="ul" className="ulStyle" mb={6}>
+            <ul className="list-disc">
               <li>
                 Was there anything that stood out to you as something the site
                 did well?
@@ -272,17 +270,17 @@ const WestSide = () => {
                 If you were to looking to adopt another dog, would you use this
                 website again? Why?
               </li>
-            </Box>
+            </ul>
             <Typography variant="body1">
               4. Have you ever volunteered with or donated to a shelter or
               rescue? How was that experience?
             </Typography>
-            <Box component="ul" className="ulStyle" mb={6}>
+            <ul className="list-disc">
               <li>
                 Have you ever/would you ever consider hosting a foster dog?
                 Elaborate.
               </li>
-            </Box>
+            </ul>
           </Grid>
           <Grid item xs={12} sm={12} lg={12} mb={8}>
             <Typography variant="h2">3.User Survey</Typography>
@@ -290,24 +288,8 @@ const WestSide = () => {
               We created a survey and solicited parcipants to participate via
               social media platforms.
             </Typography>
-            <Typography variant="body1">
-              We are students in a User Experience design course looking to
-              evaluate the effectiveness of a local dog rescue’s website.
-              Through this survey, we hope to gather information about what
-              steps of the dog adoption process are most important to the
-              adopters.
-            </Typography>
-            <Typography variant="body1">
-              For this survey we are asking specifically about dog adoption. In
-              this case, the word adoption is defined as obtaining a dog through
-              an animal shelter or animal rescue.
-            </Typography>
-            <Typography variant="body1">
-              The survey is 11 questions long and should take less than 10
-              minutes. For questions or comments, you can contact us at
-              madeline.lipkin@gmail.com.
-            </Typography>
-            <Typography variant="body1">Thank you for your time!</Typography>
+       
+         
           </Grid>
           <Grid item xs={12} sm={12} md={12} lg={12} xl={12} mb={8}>
             <Typography variant="h2">4. Competitive Analysis</Typography>
@@ -320,7 +302,7 @@ const WestSide = () => {
             <Box component="div" mb={6}>
               <Image layout="responsive"
                 loader={myLoader}
-                src="WGSRCompetitive-Analysis1.png"
+                src="/assets/WGSRCompetitive-Analysis1.png"
                 className="imageBorderradius"
                 alt="West Side Competitive Analysis 1"
                 height={506}
@@ -330,7 +312,7 @@ const WestSide = () => {
             <Box component="div" mb={6}>
               <Image layout="responsive"
                 loader={myLoader}
-                src="WGSRCompetitive-Analysis2.png"
+                src="/assets/WGSRCompetitive-Analysis2.png"
                 className="imageBorderradius"
                 alt="West Side User Flow"
                 height={506}
@@ -340,7 +322,7 @@ const WestSide = () => {
             <Box component="div" mb={6}>
               <Image layout="responsive"
                 loader={myLoader}
-                src="WGSRCompetitive-Analysis3.png"
+                src="/assets/WGSRCompetitive-Analysis3.png"
                 className="imageBorderradius"
                 alt="West Side User Flow"
                 height={506}
@@ -350,7 +332,7 @@ const WestSide = () => {
             <Box component="div" mb={6}>
               <Image layout="responsive"
                 loader={myLoader}
-                src="WGSRCompetitive-Analysis4.png"
+                src="/assets/WGSRCompetitive-Analysis4.png"
                 className="imageBorderradius"
                 alt="West Side User Flow"
                 height={506}
@@ -379,8 +361,8 @@ const WestSide = () => {
             </Box>
             <Box component="div" mb={6}>
               <Image layout="responsive"
-                loader={myLoader}
-                src="WGSRComparative-Analysis1.png"
+               
+                src="/assets/WGSRComparative-Analysis1.png"
                 className="imageBorderradius"
                 alt="West Side User Flow"
                 height={506}
@@ -397,9 +379,9 @@ const WestSide = () => {
             </Typography>
             <Box component="div">
               <Image layout="responsive"
-                loader={myLoader}
+                
                 className="imageBorderradius"
-                src="WGSRAffinity-Map.png"
+                src="/assets/WGSRAffinity-Map.png"
                 width={900}
                 height={506}
                 alt=""
@@ -413,13 +395,14 @@ const WestSide = () => {
             <Typography variant="h2">Persona:Carol Olsen</Typography>
             <Box component="div" mb={6}>
               <Image layout="responsive"
-                loader={myLoader}
+                
                 className="imageBorderradius"
-                src="wsgrpersona.jpg"
+                src="/assets/wsgrpersona.jpg"
                 alt="West Side Persona"
                 height={720}
                 width={1280}
-              ></Image>
+              >
+              </Image>
             </Box>
             <Typography variant="h2">User Need</Typography>
             <Typography variant="body1">
@@ -447,9 +430,9 @@ const WestSide = () => {
             <Typography variant="body1"> </Typography>
             <Box component="div">
               <Image layout="responsive"
-                loader={myLoader}
+               
                 className="imageBorderradius"
-                src="WGSRUser-Flow.png"
+                src="/assets/WGSRUser-Flow.png"
                 alt="West Side User Flow"
                 height={610}
                 width={900}
@@ -460,9 +443,9 @@ const WestSide = () => {
             <Typography variant="h2">Site Map</Typography>
             <Box component="div">
               <Image layout="responsive"
-                loader={myLoader}
+               
                 className="imageBorderradius"
-                src="wgsrsitemapPresentation.png"
+                src="/assets/wgsrsitemapPresentation.png"
                 alt="West Side Sitemap"
                 height={526}
                 width={900}
@@ -473,9 +456,9 @@ const WestSide = () => {
             <Typography variant="h2">Sketches</Typography>
             <Box component="div" mb={6}>
               <Image layout="responsive"
-                loader={myLoader}
+                
                 className="imageBorderradius"
-                src="wgsrsketcheshome.png"
+                src="/assets/wgsrsketcheshome.png"
                 alt="West Side Sitemap"
                 height={506}
                 width={900}
@@ -483,9 +466,9 @@ const WestSide = () => {
             </Box>
             <Box component="div" mb={6}>
               <Image layout="responsive"
-                loader={myLoader}
+                
                 className="imageBorderradius"
-                src="wgsrsketchesDogs.png"
+                src="/assets/wgsrsketchesDogs.png"
                 alt="West Side Sitemap"
                 height={506}
                 width={900}
@@ -493,9 +476,9 @@ const WestSide = () => {
             </Box>
             <Box component="div" mb={6}>
               <Image layout="responsive"
-                loader={myLoader}
+                
                 className="imageBorderradius"
-                src="wgsrsketchesMobileMenu.png"
+                src="/assets/wgsrsketchesMobileMenu.png"
                 alt="West Side Sitemap"
                 height={506}
                 width={900}
@@ -503,9 +486,9 @@ const WestSide = () => {
             </Box>
             <Box component="div" mb={6}>
               <Image layout="responsive"
-                loader={myLoader}
+              
                 className="imageBorderradius"
-                src="wgsrsketchesDesktop.png"
+                src="/assets/wgsrsketchesDesktop.png"
                 alt="West Side Sitemap"
                 height={506}
                 width={900}
@@ -522,9 +505,8 @@ const WestSide = () => {
             </Typography>
             <Box component="div" mb={6}>
               <Image layout="responsive"
-                loader={myLoader}
                 className="imageBorderradius"
-                src="wgsrmidFidelity.png"
+                src="/assets/wgsrmidFidelity.png"
                 alt="West Side Mid-Fi Wireframe"
                 height={506}
                 width={900}
@@ -533,9 +515,8 @@ const WestSide = () => {
 
             <Box component="div" mb={6}>
               <Image layout="responsive"
-                loader={myLoader}
                 className="imageBorderradius"
-                src="wgsrmidFidelity2.png"
+                src="/assets/wgsrmidFidelity2.png"
                 alt="West Side Mid-Fi Wireframe"
                 height={506}
                 width={900}
@@ -550,9 +531,9 @@ const WestSide = () => {
             </Typography>
             <Box component="div" mb={6}>
               <Image layout="responsive"
-                loader={myLoader}
+                
                 className="imageBorderradius"
-                src="wgsrHifidelity1.png"
+                src="/assets/wgsrHifidelity1.png"
                 alt="West Side Mid-Fi Wireframe"
                 height={506}
                 width={900}
@@ -561,9 +542,8 @@ const WestSide = () => {
 
             <Box component="div" mb={6}>
               <Image layout="responsive"
-                loader={myLoader}
                 className="imageBorderradius"
-                src="wgsrHifidelity2.png"
+                src="/assets/wgsrHifidelity2.png"
                 alt="West Side Mid-Fi Wireframe"
                 height={506}
                 width={900}
