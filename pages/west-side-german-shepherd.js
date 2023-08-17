@@ -84,12 +84,12 @@ const WestSide = () => {
         <Grid container spacing={2} maxWidth="sm">
           <Grid item xs={12} lg={12}>
             <Box component="div" mt={4} mb={3} sx={{ textAlign: "left" }}>
-              <Typography variant="h1" className="caseStudyHeads">
-              Pawsitively Transformed
-              </Typography>
-              <Typography variant="body1">
-              Redesigning West Side German Shepherd's Website for Enhanced Canine Connections
-              </Typography>
+              <h1 className="caseStudyHeads">
+                Pawsitively Transformed
+              </h1>
+              <p>
+                Redesigning West Side German Shepherd's Website for Enhanced Canine Connections
+              </p>
               <Image layout="responsive" layout="responsive"
                 src="/assets/wgsr_hero_study.png"
                 width={900}
@@ -108,28 +108,28 @@ const WestSide = () => {
             >
               <Grid container spacing={2} sx={{ maxWidth: "md" }}>
                 <Grid item xs={12} sm={12} md={3} lg={3} xl={3}>
-                  <Typography variant="body2">Client </Typography>
-                  <Typography variant="body1">
+                  <h6>Client </h6>
+                  <p>
                     West Side German Shepherd Rescue - sheprescue.org
-                  </Typography>
+                  </p>
                 </Grid>
                 <Grid item xs={12} sm={12} md={3} lg={3} xl={3}>
-                  <Typography variant="body2">Year</Typography>
-                  <Typography variant="body1">2021</Typography>
+                  <h6>Year</h6>
+                  <p>2021</p>
                 </Grid>
                 <Grid item xs={12} sm={12} md={3} lg={3} xl={3}>
-                  <Typography variant="body2">Role</Typography>
-                  <Typography variant="body1">Information Architect</Typography>
+                  <h6>Role</h6>
+                  <p>Information Architect</p>
                 </Grid>
 
                 <Grid item xs={12} sm={12} md={3} lg={3} xl={3}>
-                  <Typography variant="body2">What I Did</Typography>
-                  <Typography variant="body1">
+                  <h6>What I Did</h6>
+                  <p>
                     My principal role was Information Architect and I
                     collaborated on research and visual design. I drew low
                     fidelity sketches with pencil and paper, designed site maps,
                     user flows and conducted usability testing.
-                  </Typography>
+                  </p>
                 </Grid>
               </Grid>
             </Box>
@@ -147,22 +147,22 @@ const WestSide = () => {
       >
         <Grid container mt={6} spacing={0} sx={{ maxWidth: "sm" }}>
           <Grid item xs={12} md={12} lg={12} mb={8}>
-            <Typography variant="h5">Overview</Typography>
-            <Typography variant="h2">About This Project</Typography>
+            <h5>Overview</h5>
+            <h2>About This Project</h2>
 
-            <Typography variant="body1">
+            <p>
               Our team was tasked with designing a new feature(s) and/or improve
               an existing feature(s) for our assigned client(West Side German
               Shepherd Rescue -shepresue.org), to create a delightful experience
               for the persona(s) we defined through research.
-            </Typography>
-            <Typography variant="h2">The Problem</Typography>
-            <Typography variant="body1">
+            </p>
+            <h2>The Problem</h2>
+            <p>
               German shepherd lovers need a more personable and updated way to
               select an animal rescue in order to find a german shepherd to add
               to her family. One look at sheprescue.org and you can see that
               this site design is 20 years old.
-            </Typography>
+            </p>
             <Box component="div" mt={6} mb={6}>
               <Image layout="responsive"
                 className="imageBorderradius"
@@ -172,8 +172,8 @@ const WestSide = () => {
                 height={705}
               ></Image>
             </Box>
-            <Typography variant="h2">How Might We...?</Typography>
-            <Typography variant="body1">
+            <h2>How Might We...?</h2>
+            <p>
               How might we design an updated experience of sheprescue.org for
               that delivers a more personable experience for their customers?
               The challenge was to design and build a user-centered website for
@@ -181,32 +181,20 @@ const WestSide = () => {
               proper categories and provided navigation and search for the user
               to be able to easily find and purchase wines and have them
               delivered.
-            </Typography>
+            </p>
           </Grid>
 
           <Grid item xs={12} lg={12} md={12} mb={5}>
-            <Typography variant="h5">Discover</Typography>
+            <h5>Discover</h5>
           </Grid>
-          {/* <Grid item xs={12} lg={12} md={12} xl={12} mb={8}>
-            <Box component="div" mb={6}>
-              <Image layout="responsive"
-                loader={myLoader}
-                className="imageBorderradius"
-                src="dthinking.png"
-                alt=""
-                width={1280}
-                height={202}
-              ></Image>
-            </Box>
-          </Grid> */}
 
           <Grid item xs={12} lg={12} mb={8}>
-          <Typography variant="h2">Research Process</Typography>
-            <Typography variant="body1">
+            <h2>Research Process</h2>
+            <p>
               Our research process consisted of user surveys, user interviews,
               heuristic evaluation, competitive analysis, and comparative analysis.
-            </Typography>
-            <Typography variant="h2">1.Heuristic Evaluation</Typography>
+            </p>
+            <h2>1.Heuristic Evaluation</h2>
             <TableContainer className="tableHeuristic">
               <Table aria-label="simple table">
                 <TableHead>
@@ -231,11 +219,11 @@ const WestSide = () => {
             </TableContainer>
           </Grid>
           <Grid item xs={12} md={12} lg={12} mb={8}>
-            <Typography variant="h2">2. User Interview Questions</Typography>
-            <Typography variant="body1">
+            <h2>2. User Interview Questions</h2>
+            <h6>
               1.Tell me about your experience of finding and adopting your dog
               online.
-            </Typography>
+            </h6>
             <ul className="list-disc">
               <li>Website used</li>
               <li>Timeline (from first search to adoption)</li>
@@ -243,9 +231,9 @@ const WestSide = () => {
               <li>Retrieving dog</li>
             </ul>
 
-            <Typography variant="body1">
+            <h6>
               2. What drew you to your dog specifically?
-            </Typography>
+            </h6>
             <ul className="list-disc">
               <li>
                 Did you have any special considerations when searching for your
@@ -253,10 +241,10 @@ const WestSide = () => {
                 housebroken)
               </li>
             </ul>
-            <Typography variant="body1">
+            <h6>
               3. Why did you use (website they answered in survey) over other
               websites?
-            </Typography>
+            </h6>
             <ul className="list-disc">
               <li>
                 Was there anything that stood out to you as something the site
@@ -271,10 +259,10 @@ const WestSide = () => {
                 website again? Why?
               </li>
             </ul>
-            <Typography variant="body1">
+            <h6>
               4. Have you ever volunteered with or donated to a shelter or
               rescue? How was that experience?
-            </Typography>
+            </h6>
             <ul className="list-disc">
               <li>
                 Have you ever/would you ever consider hosting a foster dog?
@@ -283,25 +271,24 @@ const WestSide = () => {
             </ul>
           </Grid>
           <Grid item xs={12} sm={12} lg={12} mb={8}>
-            <Typography variant="h2">3.User Survey</Typography>
-            <Typography variant="body1">
+            <h2>3.User Survey</h2>
+            <p>
               We created a survey and solicited parcipants to participate via
               social media platforms.
-            </Typography>
-       
-         
+            </p>
+
+
           </Grid>
           <Grid item xs={12} sm={12} md={12} lg={12} xl={12} mb={8}>
-            <Typography variant="h2">4. Competitive Analysis</Typography>
-            <Typography variant="body1">
+            <h2>4. Competitive Analysis</h2>
+            <p>
               We searched for dog rescue sites and one can see the stark
               differences between sheprescue.org and the other dog rescue or pet
               sites sites. We looked at a few but for the study I have only
               included two.
-            </Typography>
+            </p>
             <Box component="div" mb={6}>
               <Image layout="responsive"
-                loader={myLoader}
                 src="/assets/WGSRCompetitive-Analysis1.png"
                 className="imageBorderradius"
                 alt="West Side Competitive Analysis 1"
@@ -311,7 +298,6 @@ const WestSide = () => {
             </Box>
             <Box component="div" mb={6}>
               <Image layout="responsive"
-                loader={myLoader}
                 src="/assets/WGSRCompetitive-Analysis2.png"
                 className="imageBorderradius"
                 alt="West Side User Flow"
@@ -321,7 +307,6 @@ const WestSide = () => {
             </Box>
             <Box component="div" mb={6}>
               <Image layout="responsive"
-                loader={myLoader}
                 src="/assets/WGSRCompetitive-Analysis3.png"
                 className="imageBorderradius"
                 alt="West Side User Flow"
@@ -331,7 +316,6 @@ const WestSide = () => {
             </Box>
             <Box component="div" mb={6}>
               <Image layout="responsive"
-                loader={myLoader}
                 src="/assets/WGSRCompetitive-Analysis4.png"
                 className="imageBorderradius"
                 alt="West Side User Flow"
@@ -341,15 +325,15 @@ const WestSide = () => {
             </Box>
           </Grid>
           <Grid item xs={12} lg={12} mb={8}>
-            <Typography variant="h2">5. Comparative Analysis</Typography>
-            <Typography variant="body1">
+            <h2>5. Comparative Analysis</h2>
+            <p>
               We also looked at sites that are not competitor and gatehred a few
               insights on the visuals and layout of those sites. We focused
               onthe mobile versions of those sites for our analysis.
-            </Typography>
-            <Typography variant="body1">A few takeaways:</Typography>
-            <Box component="ul" className="ulStyle">
-              <li>
+            </p>
+            <p>A few takeaways:</p>
+            <ul className="list-disc">
+ <li>
                 Don't include entire global navigation, but do include some
                 dropdowns
               </li>
@@ -358,10 +342,11 @@ const WestSide = () => {
                 -social media links are branded and easy to understand
                 -dropdowns easy to spot
               </li>
-            </Box>
+            </ul>
+             
+        
             <Box component="div" mb={6}>
               <Image layout="responsive"
-               
                 src="/assets/WGSRComparative-Analysis1.png"
                 className="imageBorderradius"
                 alt="West Side User Flow"
@@ -371,15 +356,15 @@ const WestSide = () => {
             </Box>
           </Grid>
           <Grid item xs={12} sm={12} md={12} lg={12} mb={8}>
-            <Typography variant="h2">6. Affinity Mapping</Typography>
-            <Typography variant="body1">
+            <h2>6. Affinity Mapping</h2>
+            <p>
               We synthesized our research data gathered by affinity mapping
               which revealed the consistent things our users wanted and
               expected.
-            </Typography>
+            </p>
             <Box component="div">
               <Image layout="responsive"
-                
+
                 className="imageBorderradius"
                 src="/assets/WGSRAffinity-Map.png"
                 width={900}
@@ -390,12 +375,12 @@ const WestSide = () => {
           </Grid>
 
           <Grid item xs={12} sm={12} md={12} lg={12} mb={8}>
-            <Typography variant="h5">Define</Typography>
+            <h5>Define</h5>
 
-            <Typography variant="h2">Persona:Carol Olsen</Typography>
+            <h2>Persona:Carol Olsen</h2>
             <Box component="div" mb={6}>
               <Image layout="responsive"
-                
+
                 className="imageBorderradius"
                 src="/assets/wsgrpersona.jpg"
                 alt="West Side Persona"
@@ -404,33 +389,31 @@ const WestSide = () => {
               >
               </Image>
             </Box>
-            <Typography variant="h2">User Need</Typography>
-            <Typography variant="body1">
+            <h2>User Need</h2>
+            <p>
               Carol Olsen, a teacher, and tech savvy dog lover needs a process
               that makes it very easy to adopt a german-shepherd.
-            </Typography>
+            </p>
           </Grid>
 
           <Grid item xs={12} lg={12} mb={8}>
-            <Typography variant="h5">Design</Typography>
+            <h5>Design</h5>
 
-            <Typography variant="h2">
+            <h2>
               Design for Search, Dog Bio and Adoption Application
-            </Typography>
+            </h2>
 
-            <Typography variant="body1">
+            <p>
               Here is the new information architecture that we came up with
               based on the insights gathered. We eliminated a few pages that
               made no sense and consolidated that information into other pages.
-            </Typography>
+            </p>
           </Grid>
 
           <Grid item xs={12} lg={12} mb={8}>
-            <Typography variant="h2">User Flow</Typography>
-            <Typography variant="body1"> </Typography>
+            <h2>User Flow</h2>
             <Box component="div">
               <Image layout="responsive"
-               
                 className="imageBorderradius"
                 src="/assets/WGSRUser-Flow.png"
                 alt="West Side User Flow"
@@ -440,10 +423,10 @@ const WestSide = () => {
             </Box>
           </Grid>
           <Grid item xs={12} lg={12} mb={8}>
-            <Typography variant="h2">Site Map</Typography>
+            <h2>Site Map</h2>
             <Box component="div">
               <Image layout="responsive"
-               
+
                 className="imageBorderradius"
                 src="/assets/wgsrsitemapPresentation.png"
                 alt="West Side Sitemap"
@@ -453,10 +436,10 @@ const WestSide = () => {
             </Box>
           </Grid>
           <Grid item xs={12} lg={12} mb={8}>
-            <Typography variant="h2">Sketches</Typography>
+            <h2>Sketches</h2>
             <Box component="div" mb={6}>
               <Image layout="responsive"
-                
+
                 className="imageBorderradius"
                 src="/assets/wgsrsketcheshome.png"
                 alt="West Side Sitemap"
@@ -466,7 +449,7 @@ const WestSide = () => {
             </Box>
             <Box component="div" mb={6}>
               <Image layout="responsive"
-                
+
                 className="imageBorderradius"
                 src="/assets/wgsrsketchesDogs.png"
                 alt="West Side Sitemap"
@@ -476,7 +459,7 @@ const WestSide = () => {
             </Box>
             <Box component="div" mb={6}>
               <Image layout="responsive"
-                
+
                 className="imageBorderradius"
                 src="/assets/wgsrsketchesMobileMenu.png"
                 alt="West Side Sitemap"
@@ -486,7 +469,7 @@ const WestSide = () => {
             </Box>
             <Box component="div" mb={6}>
               <Image layout="responsive"
-              
+
                 className="imageBorderradius"
                 src="/assets/wgsrsketchesDesktop.png"
                 alt="West Side Sitemap"
@@ -496,13 +479,13 @@ const WestSide = () => {
             </Box>
           </Grid>
           <Grid item xs={12} lg={12} mb={8}>
-            <Typography variant="h5">Visual Design</Typography>
-            <Typography variant="h2">Mid-fidelity Wireframes</Typography>
-            <Typography variant="body1">
+            <h5>Visual Design</h5>
+            <h2>Mid-fidelity Wireframes</h2>
+            <p>
               Next in our processs be moved to mid-fidelity wireframes. Here are
               a few of the mobile and desktop wireframes that we came up with
               through some iterations.
-            </Typography>
+            </p>
             <Box component="div" mb={6}>
               <Image layout="responsive"
                 className="imageBorderradius"
@@ -525,13 +508,13 @@ const WestSide = () => {
           </Grid>
 
           <Grid item xs={12} lg={12} mt={5}>
-            <Typography variant="h2">Hi-Fidelity Wireframes</Typography>
-            <Typography variant="body1">
+            <h2>Hi-Fidelity Wireframes</h2>
+            <p>
               We next moved to our hi-fidelity wireframes and final designs.
-            </Typography>
+            </p>
             <Box component="div" mb={6}>
               <Image layout="responsive"
-                
+
                 className="imageBorderradius"
                 src="/assets/wgsrHifidelity1.png"
                 alt="West Side Mid-Fi Wireframe"
@@ -552,20 +535,20 @@ const WestSide = () => {
           </Grid>
 
           <Grid item xs={12} lg={12} mt={5}>
-            <Typography variant="h5">Results & Reflections</Typography>
-            <Typography variant="h2">
+            <h5>Results & Reflections</h5>
+            <h2>
               Fantastic Redesign with Future Improvements to Come
-            </Typography>
-            <Typography variant="body1">
+            </h2>
+            <p>
               With a complete redesign of sheprescue.org we believe that we have
               improved the user experience for their customers. The site is no
               longer outdated and is better organized. The look and feel is
               clean and with consisten colors and typography.
-            </Typography>
-            <Typography variant="body1">
+            </p>
+            <p>
               We will continue working on the design by conducting usability
               testing.
-            </Typography>
+            </p>
           </Grid>
         </Grid>
       </Box>

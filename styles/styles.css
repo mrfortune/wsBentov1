@@ -188,8 +188,7 @@ width:63%
   font-size: clamp(1.602rem, -.22rem + 1.6vw, 3.247rem) !important;
   color: #07e9eb;
   line-height: 1;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: .2rem;
 }
 
 .homeHero .heroText h1.boujee-text span {
@@ -258,7 +257,6 @@ h1{
   font-size: clamp(1.602rem, -.22rem + 1.6vw, 3.247rem) !important;
   color: #07e9eb;
   line-height: 1;
-  text-transform: uppercase;
   letter-spacing: 1px;
 }
 h2 {
@@ -291,7 +289,6 @@ h5 {
   font-size: clamp(1rem, -.22rem + 1.6vw, 1.266rem) !important;
   font-weight: 500;
   text-align: center;
-  margin-bottom: 4rem;
   text-transform: uppercase;
 }
 h6 {
@@ -660,7 +657,7 @@ ul.ulStyle li {
   .homeHero .heroText p {
     align-items: center;
     text-align: center;
-    width: 100%;
+    width: 80vw;
   }
 
   .story {

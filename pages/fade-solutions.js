@@ -34,10 +34,10 @@ const FadeDesign = () => {
         <Grid container spacing={2} sx={{ maxWidth: "sm" }}>
           <Grid item xs={12} lg={12} xl={12} md={12} sm={12}>
             <Box component="div" pt={4} pb={4} sx={{ textAlign: "left" }}>
-              <Typography variant="h1" className="caseStudyHeads">Unleashing Insights at a Glance</Typography>
-              <Typography variant="body1" className="body1">
+              <h1 className="caseStudyHeads">Unleashing Insights at a Glance</h1>
+              <p className="body1">
               Revolutionizing Ad Campaign Management with Fade Technology Solutions' Visual Dashboard for Publishers, Advertisers, and Brands
-              </Typography>
+              </p>
             </Box>
           </Grid>
           <Grid item xs={12} lg={12} xl={12} md={12} sm={12}>
@@ -62,34 +62,34 @@ const FadeDesign = () => {
             >
               <Grid container spacing={2} sx={{ maxWidth: "sm" }}>
                 <Grid item xs={12} sm={3} md={3} lg={3}>
-                  <Typography variant="body2" className="body2">
-                    Client{" "}
-                  </Typography>
-                  <Typography variant="body1">
+                  <h6>
+                    Client
+                  </h6>
+                  <p>
                     Fade Technology - fade.technology{" "}
-                  </Typography>
+                  </p>
                 </Grid>
                 <Grid item xs={12} sm={3} md={3} lg={3}>
-                  <Typography variant="body2">Year</Typography>
-                  <Typography variant="body1">2021</Typography>
+                  <h6>Year</h6>
+                  <p>2021</p>
                 </Grid>
                 <Grid item xs={12} sm={3} md={3} lg={3}>
-                  <Typography variant="body2">Role</Typography>
+                  <h6>Role</h6>
 
-                  <Typography variant="body1">
+                  <p>
                     Information Architect &amp; UX Researcher
-                  </Typography>
+                  </p>
                 </Grid>
 
                 <Grid item xs={12} sm={3} md={3} lg={3}>
-                  <Typography variant="body2">What I Did</Typography>
-                  <Typography variant="body1">
+                  <h6>What I Did</h6>
+                  <p>
                     My principal role was Information Architect and I
                     collaborated on research and visual design. I drew low
                     fidelity sketches in our design studio workshop, designed
                     site maps, user flows, and conducted usability testing to
                     validate prototypes.
-                  </Typography>
+                  </p>
                 </Grid>
               </Grid>
             </Box>
@@ -104,10 +104,10 @@ const FadeDesign = () => {
       >
         <Grid container mt={6} spacing={0} sx={{ maxWidth: "sm" }}>
           <Grid item xs={12} md={12} lg={12} mb={8}>
-            <Typography variant="h5">Overview</Typography>
-            <Typography variant="h2">About This Project</Typography>
+            <h5>Overview</h5>
+            <h2>About This Project</h2>
 
-            <Typography variant="body1">
+            <p>
               Fade Technology is an early-stage startup with a team of
               entertainment technology, payments, and digital leaders from
               leading companies. Fade Technology provides the quickest way to
@@ -118,55 +118,55 @@ const FadeDesign = () => {
               allows a new e-commerce experience that lets viewers instantly
               discover and buy products directly from the video on the platform
               they are on, without redirects.
-            </Typography>
+            </p>
           </Grid>
           <Grid item xs={12} lg={12} md={12} mb={8}>
-            <Typography variant="h2">The Problem</Typography>
+            <h2>The Problem</h2>
 
-            <Typography variant="body1">
+            <p>
               Fade Technology Solutions needs an admin UI for their clients so
               that they can easily track and manage their sales data and
               campaign metrics.
-            </Typography>
+            </p>
           </Grid>
           <Grid item xs={12} sm={12} lg={12} md={12}>
-            <Typography variant="h5">Discovery</Typography>
+            <h5>Discovery</h5>
           </Grid>
           <Grid item xs={12} lg={12} md={12} mb={8}>
-            <Typography variant="h2">The Project Brief</Typography>
-            <Typography variant="body1">
+            <h2>The Project Brief</h2>
+            <p>
               The Fade executives and technology teams came to us with a
               detailed project brief, inclding how their system worked for
               publishers, agencies, brands and admins and examples of Facebook
               Business Suite and Snapchat's Business dashboard. We did not have
               access to user info, nor could we interview users since their
               users are their business clients.
-            </Typography>
+            </p>
 
-            <Typography variant="body1">
+            <p>
               Fade did part of our Double Diamond work for us and we just needed
               to build on what they provided and begin with competitive and
               comparative analysis then moved to sketches and low-fidelity
               wireframing based on the examples.
-            </Typography>
+            </p>
           </Grid>
 
           <Grid item xs={12} lg={12} xl={12} mb={8}>
-            <Typography variant="h2">Competitive Analysis</Typography>
-            <Typography variant="body1">
+            <h2>Competitive Analysis</h2>
+            <p>
               Campaign managment solutions and administrative dashboards are
               nothing new. Many companies, such as Amazon, YouTube and Facebook
               alll have those solutions for their business users. We simply
               looked at those properties and features and applied it to Fades
               project brief.
-            </Typography>
-            <Typography variant="body1">
+            </p>
+            <p>
               Fades business model is an advertiser driven B2B model not for
               consumers, so we focused heavily on their layout and UI components
               including analytics. Fade has no direct competitors based on their
               unique offering.
-            </Typography>
-            <Typography variant="body2">Observations:</Typography>
+            </p>
+            <p>Observations:</p>
             <ul className="list-disc">
               <li>
                 Dashboards all have analytics and charts and features to analyse
@@ -189,15 +189,15 @@ const FadeDesign = () => {
           </Grid>
 
           <Grid item xs={12} lg={12} md={12} mb={8}>
-            <Typography variant="h2">Comparative Analysis</Typography>
-            <Typography variant="body1">
+            <h2>Comparative Analysis</h2>
+            <p>
               Fades proposition is a unique technology and although there are
               similarites in the online ad space they do not have a direct
               competitor. We next looked at Amazon's Seller Central's dashboard.
               Their business model is not an advertishing based model but there
               are similarities in their solutions. This was to gather more data
               on how these solutions are designed, and to get more inspiration.
-            </Typography>
+            </p>
           </Grid>
           <Grid item xs={12} lg={12} md={12} mb={8}>
             <Box
@@ -236,9 +236,9 @@ const FadeDesign = () => {
           </Grid>
 
           <Grid item xs={12} lg={12} mb={8}>
-            <Typography variant="h2" mb={4}>
+            <h2 mb={4}>
               Persona:Meet Pamela Wu
-            </Typography>
+            </h2>
             <Box
               component="div"
               display="flex"
@@ -258,13 +258,13 @@ const FadeDesign = () => {
           </Grid>
 
           <Grid item xs={12} sm={12} md={12} lg={12} mb={8}>
-            <Typography variant="h5">Define</Typography>
-            <Typography variant="h2">Journey Map</Typography>
-            <Typography variant="body1">
+            <h5>Define</h5>
+            <h2>Journey Map</h2>
+            <p>
               In the image below we map the user journey of Pamela Wu, the
               Account Administrator, as she interacts with the proposed solution
               to accomplish various tasks.
-            </Typography>
+            </p>
 
             <Box
               component="div"
@@ -283,16 +283,16 @@ const FadeDesign = () => {
             </Box>
           </Grid>
           <Grid item xs={12} sm={12} md={12} lg={12} mb={8}>
-            <Typography variant="h2">User Need</Typography>
-            <Typography variant="body1">
+            <h2>User Need</h2>
+            <p>
               Pamela Wu needs to set up her account in Fade Technology Solutions
               admi panel and be invite her team to use the system.
-            </Typography>
+            </p>
           </Grid>
           <Grid item xs={12} sm={12} md={12} lg={12} mb={8}>
-            <Typography variant="h5">Design</Typography>
-            <Typography variant="h2">Design Thinking Workshop</Typography>
-            <Typography variant="body1">
+            <h5>Design</h5>
+            <h2>Design Thinking Workshop</h2>
+            <p>
               We began our process by sketching low fidelity wireframes with pen
               and paper. Since the brief informed us of what the dashboard
               should look like, based on the examples provided, and the fact
@@ -300,17 +300,17 @@ const FadeDesign = () => {
               just started sketching. The results were that we got early buyin
               from the client and we could procede to site-mapping and
               mid-fidelity wireframing.
-            </Typography>
+            </p>
           </Grid>
           <Grid item xs={12} sm={12} md={12} lg={12} mb={8}>
-            <Typography variant="h2">User Flows</Typography>
-            <Typography variant="body1">
+            <h2>User Flows</h2>
+            <p>
               Fades user flow was touched on earlier at the journey map but here
               is a bit more detail showing how some users navigate on the
               platform. We focused on the primary flow, which is the 'Sign-Up'
               process for the platform. Below are the user flows that we
               designed.
-            </Typography>
+            </p>
 
             <Box
               component="div"
@@ -403,7 +403,7 @@ const FadeDesign = () => {
           </Grid>
 
           <Grid item xs={12} sm={12} md={12} lg={12} mb={8}>
-            <Typography variant="h5">Visual Design</Typography>
+            <h5>Visual Design</h5>
 
             <Box
               component="div"
@@ -440,13 +440,13 @@ const FadeDesign = () => {
             </Box>
           </Grid>
           <Grid item xs={12} sm={12} md={12} lg={12} mb={8}>
-            <Typography variant="h2">Simple and Intuitive Dashboard</Typography>
-            <Typography variant="body1">
+            <h2>Simple and Intuitive Dashboard</h2>
+            <p>
               A simple and intuitive dashboard with all of the minimal features
               that Fade needs for its clients. These are the final design that
               the team and I came up with for Fade's dashboard. Desktop was
               primary so we did not design a mobile solution{" "}
-            </Typography>
+            </p>
             <Box
               component="div"
               display="flex"
@@ -515,16 +515,16 @@ const FadeDesign = () => {
             </Box>
           </Grid>
           <Grid item xs={12} sm={12} md={12} lg={12} mb={8}>
-            <Typography variant="h5">Testing</Typography>
-            <Typography variant="h2">Usability Testing</Typography>
-            <Typography variant="body1">
+            <h5>Testing</h5>
+            <h2>Usability Testing</h2>
+            <p>
               Finally, we conducted qualitative usability testing sessions with
               our clients to identify problems in our prototype, uncover
               opportunities and to discover users' behaviors and preferences. We
               worked from user testing scripts and guided our users to perform
               specific tasks. We conducted our sessions via Zoom and recorded
               the sessions.
-            </Typography>
+            </p>
             <Box
               component="div"
               display="flex"
@@ -542,17 +542,17 @@ const FadeDesign = () => {
             </Box>
           </Grid>
           <Grid item xs={12} sm={12} md={12} lg={12} mb={8}>
-            <Typography variant="h5">Results & Reflections</Typography>
+            <h5>Results & Reflections</h5>
 
-            <Typography variant="h2">Work With What You Have</Typography>
-            <Typography variant="body1">
+            <h2>Work With What You Have</h2>
+            <p>
               Dashboards are a challenging undertaking due to the
               data-visulization features and figuring out the best user
               experience for those components. In this particualr project we had
               to rely on the brief which gave us a lot of information to begin
               designing our solution and we were then able to validate our
               assumptions by usability-testing.
-            </Typography>
+            </p>
           </Grid>
         </Grid>
       </Box>
