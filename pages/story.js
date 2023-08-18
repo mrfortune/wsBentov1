@@ -13,6 +13,7 @@ import myLoader from "../components/Loader";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { Avatar } from "@nextui-org/react";
+import { useRouter } from 'next/router';
 
 const Story = () => {
   return (

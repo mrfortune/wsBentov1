@@ -8,7 +8,7 @@ import lightThemeTheme from '../styles/theme/lightTheme.js';
 import lightTheme from '../styles/theme/lightTheme.js';
 import { config, library } from '@fortawesome/fontawesome-svg-core';
 import '@fortawesome/fontawesome-svg-core/styles.css';
-
+import { useRouter } from 'next/router'
 config.autoAddCss = false; // Tell Font Awesome to skip adding the CSS automatically since it's being imported above
 // library.add(
 //   faGithub, faAngleDown

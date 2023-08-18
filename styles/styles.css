@@ -17,12 +17,15 @@ body {
   padding: 0;
   margin: 0;
   line-height: 1.4rem;
-  font-family: "futura";
   min-height: 100%;
   height: 100%;
   box-sizing: border-box;
-}
 
+}
+body{
+  background: rgb(230,237,245) !important;
+  background: linear-gradient(180deg, rgba(230,237,245,1) 0%, rgba(220,231,245,1) 46%, rgba(203,222,245,1) 100%) !important; 
+}
 nav a.active {
   font-weight: 500;
   color: #4991e3;
@@ -188,7 +191,7 @@ width:63%
   font-size: clamp(1.602rem, -.22rem + 1.6vw, 3.247rem) !important;
   color: #07e9eb;
   line-height: 1;
-  letter-spacing: .2rem;
+  letter-spacing: .1rem;
 }
 
 .homeHero .heroText h1.boujee-text span {

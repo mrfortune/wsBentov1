@@ -17,7 +17,7 @@ const commonStyles = {
   p: 1,
   border: 0,
 };
-
+import { useRouter } from 'next/router'
 const FadeDesign = () => {
   return (
     <div className="fade">

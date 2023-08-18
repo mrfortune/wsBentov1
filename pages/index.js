@@ -11,7 +11,7 @@ import { Typography } from "@mui/material";
 import Grid from "@mui/material/Grid";
 import { Paper } from "@mui/material";
 import Image from "next/image";
-import { Link } from "@nextui-org/react";
+import Link from 'next/link';
 import { motion } from "framer-motion";
 import Meta from "../components/Meta";
 import { AnimatePresence } from "framer-motion";
@@ -25,7 +25,7 @@ import { faPencil } from '@fortawesome/free-solid-svg-icons';
 import { faCode } from '@fortawesome/free-solid-svg-icons';
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import React, { useState } from "react";
-
+import { useRouter } from 'next/router'
 //useSWR allows the use of SWR inside function components
 
 import useSWR from 'swr';
