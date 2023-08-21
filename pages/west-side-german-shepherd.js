@@ -76,13 +76,13 @@ const WestSide = () => {
       <Meta title="Case Study::West-Side German Shepherd Rescue" />
 
       <Box
-        component="div"
+        component="section"
         display="flex"
         justifyContent="center"
         alignItems="center"
         mt={8}
       >
-        <Grid container spacing={2} maxWidth="sm">
+        <Grid container spacing={2} maxWidth="md">
           <Grid item xs={12} lg={12}>
             <Box component="div" mt={4} mb={3} sx={{ textAlign: "left" }}>
               <h1 className="caseStudyHeads">
@@ -139,7 +139,7 @@ const WestSide = () => {
       </Box>
 
       <Box
-        component="div"
+        component="section"
         display="flex"
         justifyContent="center"
         alignItems="center"
@@ -184,7 +184,13 @@ const WestSide = () => {
               delivered.
             </p>
           </Grid>
-
+          </Grid>
+          </Box>
+<Box component="section" display="flex"
+        justifyContent="center"
+        alignItems="center"
+        mt={8}>
+<Grid container mt={6} spacing={0} sx={{ maxWidth: "sm" }}>
           <Grid item xs={12} lg={12} md={12} mb={5}>
             <h5>Discover</h5>
           </Grid>
@@ -373,9 +379,16 @@ const WestSide = () => {
                 alt=""
               ></Image>
             </Box>
+            </Grid>
           </Grid>
-
-          <Grid item xs={12} sm={12} md={12} lg={12} mb={8}>
+          
+          </Box>
+<Box component="section" display="flex"
+        justifyContent="center"
+        alignItems="center"
+        mt={8}>
+          <Grid container mt={6} spacing={0} sx={{ maxWidth: "sm" }}>
+              <Grid item xs={12} sm={12} md={12} lg={12} mb={8}>
             <h5>Define</h5>
 
             <h2>Persona:Carol Olsen</h2>
@@ -396,8 +409,18 @@ const WestSide = () => {
               that makes it very easy to adopt a german-shepherd.
             </p>
           </Grid>
+          </Grid>
 
-          <Grid item xs={12} lg={12} mb={8}>
+</Box>
+          
+
+<Box component="section" display="flex"
+        justifyContent="center"
+        alignItems="center"
+        mt={8}>
+          <Grid container mt={6} spacing={0} sx={{ maxWidth: "sm" }}>
+
+  <Grid item xs={12} lg={12} mb={8}>
             <h5>Design</h5>
 
             <h2>
@@ -478,7 +501,16 @@ const WestSide = () => {
                 width={900}
               ></Image>
             </Box>
+            </Grid>
           </Grid>
+</Box>
+          
+
+          <Box component="section" display="flex"
+        justifyContent="center"
+        alignItems="center"
+        mt={8}>
+          <Grid container mt={6} spacing={0} sx={{ maxWidth: "sm" }}>
           <Grid item xs={12} lg={12} mb={8}>
             <h5>Visual Design</h5>
             <h2>Mid-fidelity Wireframes</h2>
@@ -533,9 +565,15 @@ const WestSide = () => {
                 width={900}
               ></Image>
             </Box>
+            </Grid>
           </Grid>
-
-          <Grid item xs={12} lg={12} mt={5}>
+          </Box>
+<Box component="section" display="flex"
+        justifyContent="center"
+        alignItems="center"
+        mt={8}>
+          <Grid container mt={6} spacing={0} sx={{ maxWidth: "sm" }}>
+ <Grid item xs={12} lg={12} mt={5}>
             <h5>Results & Reflections</h5>
             <h2>
               Fantastic Redesign with Future Improvements to Come
@@ -550,10 +588,12 @@ const WestSide = () => {
               We will continue working on the design by conducting usability
               testing.
             </p>
+            </Grid>
           </Grid>
-        </Grid>
-      </Box>
-    </div>
+</Box>
+         
+     </div>
+   
   );
 };
 

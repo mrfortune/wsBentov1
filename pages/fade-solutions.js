@@ -25,7 +25,7 @@ const FadeDesign = () => {
 
       <Box
         mt={8}
-        component="div"
+        component="section"
         display="flex"
         justifyContent="center"
         alignItems="center"

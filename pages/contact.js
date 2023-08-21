@@ -31,7 +31,7 @@ const Contact = () => {
       <Meta title="WorldShaker Interactive::Contact" />
       <Box
         className="contact"
-        component="div"
+        component="section"
         direction="row"
         display="flex"
         mt={15}

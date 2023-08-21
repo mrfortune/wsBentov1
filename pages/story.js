@@ -20,7 +20,7 @@ const Story = () => {
     <div>
       <Meta title="WorldShaker Interactive::Story" />
       <Box
-        component="div"
+        component="section"
         mt={15}
         mb={15}
         direction="row"
