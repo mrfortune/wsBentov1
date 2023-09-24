@@ -6,15 +6,20 @@ import SimpleBottomNavigation from '../components/bottom';
 import { Inter } from 'next/font/google'
 import { config, library } from '@fortawesome/fontawesome-svg-core';
 import '@fortawesome/fontawesome-svg-core/styles.css';
-
-export default function Layout({ children }) {
+const inter = Inter({
+  weight: ['400', '500', '600', '700', '800'],
+  subsets: ['latin'],
+  style: ['normal'],
+  display: 'swap',
+})
+export default function RootLayout({ children }) {
   return (
-    <>
-      <AppBar />
+    <> <AppBar />
       <main>{children}</main>
       <FooterNav />
       <SimpleBottomNavigation/>
     </>
+     
   )
   }
   

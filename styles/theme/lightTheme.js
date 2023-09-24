@@ -2,9 +2,6 @@ import { createTheme } from "@mui/material/styles";
 import { red, pink, green, purple, grey, amber, darkOrange, blue, orange, deepOrange } from "@mui/material/colors";
 
 const lightTheme = createTheme({
-  typography:{
-    fontFamily: 'Nunito Sans, sans-serif',
-  },
   palette: {
     primary: {
        main: '#010203',
@@ -79,8 +76,7 @@ const lightTheme = createTheme({
       marginBottom: "1.5rem",
       textTransform: "uppercase",
       fontWeight: 400,
-    },
-    fontFamily: 'Nunito Sans, sans-serif', 
+    }, 
   },
   
 });
