@@ -1,14 +1,13 @@
 import React from "react";
 import { Paper } from "@mui/material";
 import { Container, Box, Grid, Typography } from "@mui/material";
-import { Link } from "@nextui-org/react";
 import LinkedIn from "@mui/icons-material/LinkedIn";
 import Facebook from "@mui/icons-material/Facebook";
 import { Instagram } from "@mui/icons-material";
-import { Card, css, Col, Row, Button, Text } from "@nextui-org/react";
 import Divider from "@mui/material/Divider";
 import Image from "next/image";
 import myLoader from "../components/Loader";
+import Link from "next/link";
 
 const FooterNav = () => {
   return (
@@ -81,9 +80,9 @@ const FooterNav = () => {
                 flexGrow="1"
                 sx={{ paddingLeft: { sm: "0rem" } }}
               >
-                <Text h4 css={{ color: "#fafafa" }}>
+                <h4 css={{ color: "#fafafa" }}>
                   Company
-                </Text>
+                </h4>
                 <Box
                   component="ul"
                   className="mylistStyle"
@@ -101,9 +100,9 @@ const FooterNav = () => {
                 </Box>
               </Box>
               <Box component="div" flexGrow="1">
-                <Text h4 css={{ color: "#fafafa" }}>
+                <h4>
                   Resources
-                </Text>
+                </h4>
                 <Box
                   component="ul"
                   className="mylistStyle"
@@ -144,9 +143,9 @@ const FooterNav = () => {
                 </Box>
               </Box>
               <Box component="div" flexGrow="1">
-                <Text h4 css={{ color: "#fafafa" }}>
+                <h4>
                   Partners
-                </Text>
+                </h4>
                 <Box
                   component="ul"
                   className="mylistStyle"
@@ -171,9 +170,9 @@ const FooterNav = () => {
                 </Box>
               </Box>
               <Box component="div">
-                <Text h4 css={{ color: "#fafafa" }}>
+                <h4>
                   Legal
-                </Text>
+                </h4>
                 <Box
                   component="ul"
                   className="mylistStyle"

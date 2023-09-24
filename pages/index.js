@@ -6,16 +6,14 @@ import {
   Item,
   Container,
 } from "@mui/material";
-import { Button, css } from "@nextui-org/react";
 import { Typography } from "@mui/material";
 import Grid from "@mui/material/Grid";
-import { Paper } from "@mui/material";
+import { Paper, Button } from "@mui/material";
 import Image from "next/image";
 import Link from 'next/link';
 import { motion } from "framer-motion";
 import Meta from "../components/Meta";
 import { AnimatePresence } from "framer-motion";
-import { Text } from "@nextui-org/react";
 import Divider from "@mui/material/Divider";
 import Chip from "@mui/material/Chip";
 import { textAlign } from "@mui/system";

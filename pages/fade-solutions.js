@@ -9,7 +9,6 @@ import myLoader from "../components/Loader";
 import Meta from "../components/Meta";
 import { motion, AnimatePresence} from 'framer-motion';
 import usabilityTest from '/public/assets/FadeUsabilityTest_LoriMarion_2.gif';
-import { Link } from "@nextui-org/react";
 const commonStyles = {
   bgcolor: "#e7e6e2",
   borderColor: "text.primary",
