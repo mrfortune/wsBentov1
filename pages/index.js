@@ -101,9 +101,8 @@ export default function Home() {
   <Button size="lg" color="secondary" css={{ borderRadius: "$2xl" }} >
                 <Link
                   href="/contact"
-                  css={{ color: "primaryLinkText", fontSize: '$sm', fontWeight: "$normal" }}
                 >
-                  Let's Talk About Your Project
+                  Get Started...
                 </Link>
               </Button>
 
