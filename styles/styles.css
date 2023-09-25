@@ -167,6 +167,11 @@ width:63%
 } */
 .homeHero .heroText button {
   max-width: 20rem;
+  width:10rem;
+  background-color:blueviolet;
+}
+.homeHero .heroText button a{
+  text-transform: none;
 }
 
 /* .homeHero .heroText h1.boujee-text {

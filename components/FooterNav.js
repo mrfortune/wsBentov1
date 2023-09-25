@@ -80,7 +80,7 @@ const FooterNav = () => {
                 flexGrow="1"
                 sx={{ paddingLeft: { sm: "0rem" } }}
               >
-                <h4 css={{ color: "#fafafa" }}>
+                <h4>
                   Company
                 </h4>
                 <Box

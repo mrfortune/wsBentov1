@@ -59,7 +59,7 @@ export default function DrawerAppBar (props) {
       <Box sx={{ display:'flex', flexDirection:'column', paddingLeft:'1rem', paddingTop:'1rem' }}>
             {navLinks.map((link, id) => {
           return(
-              <Link key={id} href={link.path} css={{marginBottom:'1rem'}}>
+              <Link key={id} href={link.path}>
                 {link.name}
               </Link>
           );
@@ -135,7 +135,7 @@ export default function DrawerAppBar (props) {
                 // eslint-disable-next-line react/jsx-key
                 return ( <Button key={id} size="sm" className="contactButton" color="secondary" css={{ borderRadius: "$xl", marginLeft:'2rem' }}>
             <Link href={link.path}
-              css={{ color: "primaryLinkText", fontSize: "$md" }}
+              
             >
             {link.name} 
             </Link>

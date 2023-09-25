@@ -98,7 +98,7 @@ export default function Home() {
                 </motion.div>
 
               </Box>
-  <Button size="lg" color="secondary" css={{ borderRadius: "$2xl" }} >
+  <Button size="lg" color="secondary">
                 <Link
                   href="/contact"
                 >
@@ -315,11 +315,11 @@ export default function Home() {
                       <Button
                         size="sm"
                         color="secondary"
-                        css={{ borderRadius: "$xl" }}
+                        
                       >
                         <Link
                           href="/west-side-german-shepherd"
-                          css={{ color: "primaryLinkText", fontSize: "$sm" }}
+                         
                         >
                           Read more...
                         </Link>
@@ -391,11 +391,11 @@ export default function Home() {
                   <Button
                     size="sm"
                     color="secondary"
-                    css={{ borderRadius: "$xl" }}
+                    
                   >
                     <Link
                       href="/fade-solutions"
-                      css={{ color: "primaryLinkText", fontSize: "$sm" }}
+                     
                     >
                       Read more...
                     </Link>
@@ -429,13 +429,13 @@ export default function Home() {
                     where, and why.</p>
                   <Button
                     size="sm"
-                    css={{ borderRadius: "$xl", backgroundColor: '#ccc' }}
+                    
                     disabled
                   >
                     <Link
                       className="disabledBtn"
                       href="/"
-                      css={{ color: "#333", fontSize: "$sm" }}
+                    
                     >
                       Coming soon...
                     </Link>
