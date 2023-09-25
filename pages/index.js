@@ -47,13 +47,11 @@ export default function Home() {
         padding={0}
         direction="column"
         display="grid"
-        alignItems="center"
         justifyContent="center"
-        sx={{ width: "100%" }}
       >
 
-        <Grid container spacing={4} mt={2} sx={{ maxWidth: "lg" }}>
-          <Grid item xs={12} sm={12} md={6} lg={6} xl={6} pt={10} >
+        <Grid container spacing={4} sx={{ maxWidth: "lg" }}>
+          <Grid item xs={12} sm={12} md={12} lg={12} xl={12}  >
             <Box
               className="heroText"
               component="div"
@@ -63,9 +61,9 @@ export default function Home() {
                 textAlign: {
                   xs: "center",
                   sm: "center",
-                  md: "left",
-                  lg: "left",
-                  xl: "left",
+                  md: "center",
+                  lg: "center",
+                  xl: "center",
                 },
 
                 height: "auto",
@@ -73,13 +71,14 @@ export default function Home() {
               }}
             >
               <h1 className="h1Header">
-                Elevating Businesses with Seamless Digital Metamorphosis
+              Data, Insights,
+Creativity, and Transformation
               </h1>
               <p className="body">
                 Unveiling precise challenges via advanced user research methods, designing and delivering solutions centered around people.
               </p>
             
-              <Box component="div" mb={5} sx={{ display: { xs: "block", sm: "block", md: "none", lg: "none", xl: "none" } }}>
+              {/* <Box component="div" mb={5} sx={{ display: { xs: "block", sm: "block", md: "none", lg: "none", xl: "none" } }}>
                 <motion.div
                   initial={{ opacity: 0 }}
                   whileInView={{ opacity: 1 }}
@@ -97,8 +96,8 @@ export default function Home() {
                   ></Image>
                 </motion.div>
 
-              </Box>
-  <Button size="lg" color="secondary">
+              </Box> */}
+  <Button size="lg">
                 <Link
                   href="/contact"
                 >
@@ -109,7 +108,7 @@ export default function Home() {
 
             </Box>
           </Grid>
-          <Grid item xs={12} sm={12} md={6} lg={6} xl={6} sx={{ display: { xs: "none", sm: "none", md: "block", lg: "block", xl: "block" } }}>
+          {/* <Grid item xs={12} sm={12} md={6} lg={6} xl={6} sx={{ display: { xs: "none", sm: "none", md: "block", lg: "block", xl: "block" } }}>
             <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
@@ -124,7 +123,7 @@ export default function Home() {
 
             ></Image>
             </motion.div>
-          </Grid>
+          </Grid> */}
 
         </Grid>
       </Box>
@@ -159,11 +158,6 @@ export default function Home() {
           justifyContent="center"
           component="section"
           id="whatWeDo"
-          sx={{
-            backgroundColor: "#f9f9f9",
-            paddingTop: "3rem",
-            paddingBottom: "3rem",
-          }}
         >
           <Grid container sx={{ maxWidth: "lg", marginTop: "0" }} spacing={2}>
             <Grid item xs={12} sm={12} md={12} lg={12} xl={12} pt={0}>
@@ -278,7 +272,6 @@ export default function Home() {
           display="flex"
           justifyContent="center"
           component="section"
-          sx={{ backgroundColor: "#f1eded" }}
         >
           <Grid container sx={{ maxWidth: "lg" }} spacing={2}>
             <Grid item xs={12} sm={12} md={12} lg={12} xl={12} mt={8}>

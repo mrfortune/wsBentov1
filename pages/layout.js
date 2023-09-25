@@ -7,7 +7,7 @@ import { Inter } from 'next/font/google'
 import { config, library } from '@fortawesome/fontawesome-svg-core';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 const inter = Inter({
-  weight: ['400', '500', '600', '700', '800'],
+  weight: ['100', '400', '500', '600', '700', '800', '900'],
   subsets: ['latin'],
   style: ['normal'],
   display: 'swap',

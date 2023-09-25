@@ -199,6 +199,7 @@ width:63%
   color: #07e9eb;
   line-height: 1;
   letter-spacing: .1rem;
+  font-weight:900;
 }
 
 .homeHero .heroText h1.boujee-text span {
@@ -499,19 +500,13 @@ ul.mylistStyle li {
 }
 
 .homeHero {
-  /*background-image: url("/assets/Desktop1920_bg.png");*/
-  background: linear-gradient(-45deg, #010203, #202a33, #1a354f, #030201);
-  animation: herogradient 15s ease infinite;
   position: relative;
   height: 100vh;
   width: 100%;
   min-height: calc(100vh - 4rem);
   background-size: 400% 400%;
-  /* background: rgb(242,242,242);
-  background: linear-gradient(177deg, rgba(242,242,242,1) 0%, rgba(232,232,232,1) 48%, rgba(219,219,219,1) 100%); */
   background-repeat: no-repeat;
   background-position: center center;
-  transition: all 0.5s ease;
 }
 
 @keyframes herogradient {
@@ -537,7 +532,6 @@ ul.mylistStyle li {
 }
 
 .homePage.work {
-  background-color: #010203;
   min-height: 10rem;
   height: 30vh;
 }

@@ -75,7 +75,7 @@ export default function DrawerAppBar (props) {
   return (
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
-      <AppBar component="nav" sx={{minHeight:'5rem', backgroundColor:'#0a354f'}}>
+      <AppBar component="nav" style={{background:'transparent', boxShadow:'none'}}>
         <Toolbar> 
         <Box sx={{ flexGrow: 1, }}>
 <Typography
