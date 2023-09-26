@@ -375,7 +375,6 @@ a {
 }
 p {
   font-size: clamp(1rem, -.22rem + 1.6vw, 1rem) !important;
-  margin-bottom: 2rem !important;
 }
 .contact {
   display: flex;
