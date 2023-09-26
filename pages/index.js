@@ -106,11 +106,11 @@ export default function Home() {
               className="heroText"
               component="div"
             >
-          <h1 className="h1Header">
+          <h1 className="h1Header mb-8">
               Data, Insights,
 Creativity, and Transformation
               </h1>
-              <p className="body">
+              <p className="mb-8">
                 Unveiling precise challenges via advanced user research methods, designing and delivering solutions centered around people.
               </p>
             
@@ -224,6 +224,7 @@ Creativity, and Transformation
       
         </Box>
         <Box sx={{ gridArea: 'projects' }} className="">
+          <p>Discover the remarkable companies and organizations we've had the privilege to collaborate with on their journeys to success</p>
          <Image
                 src="/assets/workcbanner.png"
                 width={1200}
@@ -240,10 +241,7 @@ Creativity, and Transformation
         <p>Delve into our portfolio of case studies, showcasing how we've partnered with clients to overcome challenges and achieve remarkable outcomes</p>
                   <Box className="expertiseCopy" component="div">
          <Box component="div" className="expertiseCopy">
-           <Box component="div" sx={{ textAlign: "center", display: 'flex', alignItems: 'center' }}>
-             <FontAwesomeIcon icon={faCode} className="fa-1x" style={{ "--fa-primary-color": "#3c6818", "--fa-secondary-color": "#3c6818", marginRight: '.5rem' }} /><h4 className="m-0"> Develop</h4>
-           
-           </Box>
+          
 
           
            <ul className="list-disc list-inside mb-8">
@@ -269,12 +267,6 @@ Creativity, and Transformation
      <p>Delve into our portfolio of case studies, showcasing how we've partnered with clients to overcome challenges and achieve remarkable outcomes</p>
                <Box className="expertiseCopy" component="div">
       <Box component="div" className="expertiseCopy">
-        <Box component="div" sx={{ textAlign: "center", display: 'flex', alignItems: 'center' }}>
-          <FontAwesomeIcon icon={faCode} className="fa-1x" style={{ "--fa-primary-color": "#3c6818", "--fa-secondary-color": "#3c6818", marginRight: '.5rem' }} /><h4 className="m-0"> Develop</h4>
-        
-        </Box>
-
-       
         <ul className="list-disc list-inside mb-8">
           <li>Development process is a symphony of technical expertise and creative ingenuity.</li>
           <li>Ensure functionality, responsiveness, and seamless interactions.</li>
