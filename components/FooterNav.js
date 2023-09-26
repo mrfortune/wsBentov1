@@ -11,14 +11,9 @@ import Link from "next/link";
 
 const FooterNav = () => {
   return (
-    <Paper
-      className="footerBG"
-      square={true}
-      sx={{ bottom: 0, left: 0, right: 0 }}
-      elevation={3}
-    >
       <Box
-        component="div"
+      className="footerBG"
+        component="footer"
         direction="row"
         display="flex"
         flexWrap="wrap"
@@ -191,10 +186,10 @@ const FooterNav = () => {
                 </Box>
               </Box>
             </Box>
+        
           </Grid>
         </Grid>
       </Box>
-    </Paper>
   );
 };
 

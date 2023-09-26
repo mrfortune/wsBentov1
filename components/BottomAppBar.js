@@ -12,7 +12,7 @@ export default function SimpleBottomNavigation() {
 const [value, setValue] = React.useState(0);
 
 return (
-  <Box className="footerBG" sx={{ display: 'flex',  justifyContent:'center', borderTop:1, borderTopColor:'#545252', paddingTop:'1rem', paddingLeft:'1rem', paddingRight:'1rem', textAlign:'center' }}>
+  <Box component="div" className="footerBG" sx={{ display: 'flex',  justifyContent:'center', borderTop:1, borderTopColor:'#545252', paddingTop:'1rem', paddingLeft:'1rem', paddingRight:'1rem', textAlign:'center' }}>
           <Box sx={{ display: { xs: 'block', sm: 'block', md:'block', xl:'block', lg:'block' } }}>
         <Typography variant="subtitle" sx={{ fontSize: ".75rem", color:"#fafafa"}}>
                 &copy; 2023 WorldShaker Interactive, Inc. All rights reserved.
