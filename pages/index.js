@@ -93,12 +93,15 @@ export default function Home() {
         sx={{
           display: 'grid',
           gridTemplateColumns: 'repeat(4, 1fr)',
-          gap: 4,
+          gap: 2,
           gridTemplateRows: 'auto',
           gridTemplateAreas: `"header header header header"
         "projects projects projects projects"  
         "work work work work"
-        "case case main main"`,
+        "case case main main"
+        "tools tools designsystem designsystem"
+        "domain domain domain newsletter"
+        `,
         }}
       >
          <Box sx={{ gridArea: 'header' }} className="mt-40">
@@ -111,13 +114,13 @@ export default function Home() {
 Creativity, and Transformation
               </h1>
               <p className="mb-8">
-                Unveiling precise challenges via advanced user research methods, designing and delivering solutions centered around people.
+              At WorkShaker Interactive, we harness the power of data, unearth insights, and infuse creativity to catalyze transformative solutions for our clients.
               </p>
             
             
   <button className="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium inline-flex rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">
                 <Link className="flex"
-                  href="/contact"
+                  href="/submit-info"
                 >
                  
                   Get Started <svg className="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
@@ -139,7 +142,7 @@ Creativity, and Transformation
 
 </Box>
         
-        <Box className="bentoBox" sx={{ gridArea: 'work' }}>
+        <Box className="bentoBox rounded-2xl" sx={{ gridArea: 'work' }}>
         
          <h2> Our Expertise</h2>
          <p className="w-5/6">Explore our diverse range of services, from data analysis to design innovation, to development all driven by a passion for transforming businesses</p>
@@ -153,7 +156,7 @@ Creativity, and Transformation
 </Box>
 
 
-<ul className="list-disc list-inside mb-8">
+<ul className="list-disc list-outside pl-4 mb-8">
   <li>Elevate your digital experiences with user-centricity at our design and development firm.</li>
   <li>Our meticulous UX research uncovers valuable insights into user behaviors and preferences.</li>
   
@@ -175,7 +178,7 @@ Creativity, and Transformation
 
              {/* <Image src="assets/design1.png" width={88} height={88} alt="Design" layout="fixed" loader={myLoader}></Image> */}
            </Box>
-           <ul className="list-disc list-inside mb-8">
+           <ul className="list-disc list-outside pl-4 mb-8">
              <li>Our design process blends user insight and creative innovation for digital experiences.</li>
              <li>Concepts come alive through sketching, wireframing, and prototyping.</li>
              
@@ -198,7 +201,7 @@ Creativity, and Transformation
            </Box>
 
           
-           <ul className="list-disc list-inside mb-8">
+           <ul className="list-disc list-outside pl-4 mb-8">
              <li>Development process is a symphony of technical expertise and creative ingenuity.</li>
              <li>Ensure functionality, responsiveness, and seamless interactions.</li>
              
@@ -224,7 +227,7 @@ Creativity, and Transformation
       
         </Box>
         <Box sx={{ gridArea: 'projects' }} className="">
-          <p>Discover the remarkable companies and organizations we've had the privilege to collaborate with on their journeys to success</p>
+          <p className="text-center">Discover the remarkable companies and organizations we've had the privilege to collaborate with on their journeys to success</p>
          <Image
                 src="/assets/workcbanner.png"
                 width={1200}
@@ -236,8 +239,9 @@ Creativity, and Transformation
         </Box>
         <Box sx={{ gridArea: 'case' }}>
         
-           <Box component="div" className="bentoBox">   
-           <h2>Case Studies</h2>
+           <Box component="div" className="bentoBox rounded-2xl">   
+           <h6>Case Studies</h6>
+           
         <p>Delve into our portfolio of case studies, showcasing how we've partnered with clients to overcome challenges and achieve remarkable outcomes</p>
                   <Box className="expertiseCopy" component="div">
          <Box component="div" className="expertiseCopy">
@@ -262,7 +266,7 @@ Creativity, and Transformation
           </Box> 
           <Box sx={{ gridArea: 'main' }}>
         
-        <Box component="div" className="bentoBox">   
+        <Box component="div" className="bentoBox rounded-2xl">   
         <h2>Case Studies</h2>
      <p>Delve into our portfolio of case studies, showcasing how we've partnered with clients to overcome challenges and achieve remarkable outcomes</p>
                <Box className="expertiseCopy" component="div">
@@ -283,7 +287,22 @@ Creativity, and Transformation
      </Box>
                  </Box>    
        </Box>   
-       
+       <Box sx={{ gridArea: 'tools' }} className="bentoBox rounded-2xl">
+          <h3>Innovative Toolkit</h3>
+         
+        </Box>
+        <Box sx={{ gridArea: 'designsystem' }} className="bentoBox rounded-2xl">
+          <h6>Media</h6>
+          <h3>Picture Perfect Moments</h3> 
+        </Box>
+        <Box sx={{ gridArea: 'domain' }} className="bentoBox rounded-2xl">
+          <h3>Domain Excellence</h3>
+         
+        </Box>
+        <Box sx={{ gridArea: 'newsletter' }} className="bentoBox rounded-2xl">
+          <h3>Signup for Newsletter</h3>
+         
+        </Box>
       </Box>
   
      </Box>

@@ -14,7 +14,6 @@ import { global } from "styled-jsx/css";
 import Meta from "../components/Meta";
 import Link from 'next/link'
 import { useRouter } from 'next/router';
-
 // import contactform from "../components/contactform";
 
 function Mailto({ email, subject, body, ...props }) {
