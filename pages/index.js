@@ -110,11 +110,11 @@ export default function Home() {
               component="div"
             >
           <h1 className="h1Header mb-8">
-              Data, Insights,
-Creativity, and Transformation
+              Data, Insights, &
+Creativity, <br></br>Produce Transformation
               </h1>
               <p className="mb-8">
-              At WorkShaker Interactive, we harness the power of data, unearth insights, and infuse creativity to catalyze transformative solutions for our clients.
+              At WorkShaker Interactive, we harness the power of data, unearth insights,<br></br> and infuse creativity to catalyze transformative solutions for our clients.
               </p>
             
             
@@ -227,7 +227,7 @@ Creativity, and Transformation
       
         </Box>
         <Box sx={{ gridArea: 'projects' }} className="">
-          <p className="text-center">Discover the remarkable companies and organizations we've had the privilege to collaborate with on their journeys to success</p>
+          <p className="text-center">Discover the remarkable companies and organizations we've had the privilege<br></br> to collaborate with on their journeys to success</p>
          <Image
                 src="/assets/workcbanner.png"
                 width={1200}

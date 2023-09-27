@@ -157,21 +157,22 @@ main {
 /* .nextui-c-iWjDFM .nextui-button-text a{
   font-size:.75rem;
 } */
-.MuiTypography-h1.caseStudyHeads {
-  font-size: clamp(1.953rem, -.22rem + 1.6vw, 3.247rem) !important;
+/* .MuiTypography-h1.caseStudyHeads {
+  font-size: clamp(1rem, 3rem, 5rem);
+  /* font-size: clamp(1.953rem, -.22rem + 1.6vw, 3.247rem) !important; 
   font-weight:800;
-}
+} */
 
-.MuiTypography-h1.display {
+/* .MuiTypography-h1.display {
   font-size: clamp(1.602rem, -.22rem + 1.6vw, 3.247rem);
   color: #fafafa;
   background-clip: text;
   -webkit-background-clip: text;
-}
+} */
 
-.MuiTypography-h1 {
+/* .MuiTypography-h1 {
   font-size: clamp(1.953rem, -.22rem + 1.6vw, 3.247rem) !important;
-}
+} */
 
 .MuiTypography-body1 {
   font-size: clamp(1rem, -.22rem + 1.6vw, 1rem) !important;
@@ -259,8 +260,9 @@ main .bentoBox .bentoContent .expertiseCopy{
 color:#fafafa;
 }
 main .heroText h1.h1Header {
-  font-size: clamp(1.602rem, -.22rem + 1.6vw, 3.247rem) !important;
-  color: #07e9eb;
+  font-size: clamp(1rem, 3rem, 5rem);
+  /* font-size: clamp(1.602rem, -.22rem + 1.6vw, 3.247rem) !important; */
+  color: #fafafa;
   line-height: 1;
   letter-spacing: .1rem;
   font-weight:900;
@@ -329,7 +331,8 @@ main .homeHero .heroText p.body {
   font-weight:500;
 }
 h1{
-  font-size: clamp(1.602rem, -.22rem + 1.6vw, 3.247rem) !important;
+  font-size: clamp(1rem, 3rem, 5rem) !important;
+  /* font-size: clamp(1.602rem, -.22rem + 1.6vw, 3.247rem) !important; */
   color: #07e9eb;
   line-height: 1;
   letter-spacing: 1px;
