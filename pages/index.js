@@ -82,28 +82,63 @@ export default function Home() {
     // >
 
     <div className={styles.container}>
-
       <Head>
         <title>WorldShaker</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Box component="div" maxWidth="lg">
-
         <Box
           sx={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(4, 1fr)',
-            gap: 2,
+            // gridTemplateColumns: 'repeat(4, 1fr)',
+            gridTemplateColumns: { xs: 'repeat(1,1fr)', sm: 'repeat(1,1fr)', md: 'repeat(4, 1fr)', lg: 'repeat(4, 1fr)', xl: 'repeat(4, 1fr)' },
+            // gridTemplateColumns: "repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));",
+            gap: 1,
             gridTemplateRows: 'auto',
-            gridTemplateAreas: `"header header header header"
-        "projects projects projects projects"  
-        "work work work work"
-        "case case main main"
-        "tools tools designsystem designsystem"
-        "domain domain domain newsletter"
-        `,
-          }}
-        >
+                gridTemplateAreas: `"header header header header"
+            "projects projects projects projects"  
+            "work work work work"
+            "case case main main"
+            "tools tools designsystem designsystem"
+            "domain domain domain newsletter"`,
+    //         gridTemplateAreas: {
+    //           xs: `"header"
+    //     "projects"  
+    //    "work"
+    //    "case"
+    //    "main"
+    //     "tools"
+    //     "domain" 
+    //     "designsystem"
+    //     newsletter"
+    //    `, sm: `"header"
+    //    "projects"  
+    //   "work"
+    //   "case"
+    //   "main"
+    //    "tools"
+    //    "domain" 
+    //    "designsystem"
+    //    newsletter"
+    //   `, md: `"header header header header"
+    //    "projects projects projects projects"  
+    //   "work work work work"
+    //   "case case main main"
+    //   "tools tools designsystem designsystem"
+    //   "domain domain domain newsletter"
+    //   `, lg: `"header header header header"
+    //   "projects projects projects projects"  
+    //  "work work work work"
+    //  "case case main main"
+    //  "tools tools designsystem designsystem"
+    //  "domain domain domain newsletter"
+    //  `, xl: `"header header header header"
+    //  "projects projects projects projects"  
+    // "work work work work"
+    // "case case main main"
+    // "tools tools designsystem designsystem"
+    // "domain domain domain newsletter"`},
+          }}>
           <Box sx={{ gridArea: 'header' }} className="mt-40">
             <Box
               className="heroText"
@@ -247,8 +282,8 @@ export default function Home() {
             </Box>
 
           </Box>
-          <Box sx={{ gridArea: 'projects' }} className="">
-            <p className="text-center">Discover the remarkable companies and organizations we've had the privilege<br></br> to collaborate with on their journeys to success</p>
+          <Box sx={{ gridArea: 'projects' }} className="mt-20">
+            <p className="text-center mb-10">Discover the remarkable companies and organizations we've had the privilege<br></br> to collaborate with on their journeys to success</p>
             <Image
               src="/assets/workcbanner.png"
               width={1200}
