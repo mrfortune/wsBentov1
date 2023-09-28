@@ -145,10 +145,10 @@ export default function Home() {
           <Box className="bentoBox rounded-2xl" sx={{ gridArea: 'work' }}>
             <Box component="div" className="bentoContent">
 
-            
-            <Box component="div" className="bentoImg">
-           
-               <Image
+
+              <Box component="div" className="bentoImg">
+
+                <Image
                   priority
                   src="https://ik.imagekit.io/ylqs11u10/doctor.png"
                   // layout="fill"
@@ -159,48 +159,49 @@ export default function Home() {
                   alt="Dream Medical Hero"
                   // display='grid'
                   className="rounded-2xl image"
-                /> 
+                />
                 <Box component="div" className="overlay">
-        
 
-        </Box>
-            </Box>
-         
-                <Box component="div" className="bentoCopy p-4">
-                  <h3 className="mt-4"> Our Expertise</h3>
-            <p className="w-5/6 mt-4">Explore our diverse range of services, from data analysis to design innovation, to development all driven by a passion for transforming businesses.</p>
+
                 </Box>
-            
-</Box>
+              </Box>
+
+              <Box component="div" className="bentoCopy p-4">
+                <h3 className="mt-4"> Our Expertise</h3>
+                <p className="w-5/6 mt-4">Explore our diverse range of services, from data analysis to design innovation, to development all driven by a passion for transforming businesses.</p>
+              </Box>
+
+            </Box>
             <Box component="div" sx={{ display: 'flex' }}>
               <Box component="div" className="bentoContent">
-                
-
-                  <Box component="div" sx={{ textAlign: "center", display: 'flex', alignItems: 'center' }}>
-                    <FontAwesomeIcon icon={faMagnifyingGlass} className="fa-1x" style={{ "--fa-primary-color": "#3c6818", "--fa-secondary-color": "#3c6818", marginRight: '.5rem' }} /><h4 className="m-0"> Research</h4>
-                  </Box>
 
 
-                  <ul className="list-disc list-outside pl-4 mb-8">
-                    <li>Elevate your digital experiences with user-centricity at our design and development firm.</li>
-                    <li>Our meticulous UX research uncovers valuable insights into user behaviors and preferences.</li>
-
-                  </ul>
-
-                  <Link
-                    href="/contact"
-                  >
-                    Learn more...
-                  </Link>
+                <Box component="div" sx={{ textAlign: "center", display: 'flex', alignItems: 'center' }}>
+                  <FontAwesomeIcon icon={faMagnifyingGlass} className="fa-1x" style={{ "--fa-primary-color": "#3c6818", "--fa-secondary-color": "#3c6818", marginRight: '.5rem' }} /><h4 className="m-0"> Research</h4>
+                </Box>
 
 
-                
+                <ul className="list-disc list-outside pl-4 mb-8">
+                  <li>Elevate your digital experiences with user-centricity at our design and development firm.</li>
+                  <li>Our meticulous UX research uncovers valuable insights into user behaviors and preferences.</li>
+
+                </ul>
+
+                <Link
+                  href="/contact"
+                >
+                  Learn more...
+                </Link>
+
+
+
               </Box>
               <Box component="div" className="bentoContent">
-             
+
                 <Box component="div" className="bentoCopy p-2">
                   <Box component="div" sx={{ textAlign: "center", display: 'flex', alignItems: 'center' }}>
-                    <FontAwesomeIcon icon={faPencil} className="fa-1x" style={{ "--fa-primary-color": "#3c6818", "--fa-secondary-color": "#3c6818", marginRight: '.5rem' }} /><h4 className="m-0"> Design</h4>
+                    <FontAwesomeIcon icon={faPencil} className="fa-1x" style={{ "--fa-primary-color": "#3c6818", "--fa-secondary-color": "#3c6818", marginRight: '.5rem' }} />
+                    <h4 className="m-0"> Design</h4>
 
                     {/* <Image src="assets/design1.png" width={88} height={88} alt="Design" layout="fixed" loader={myLoader}></Image> */}
                   </Box>
@@ -219,7 +220,7 @@ export default function Home() {
                 </Box>
               </Box>
               <Box component="div" className="bentoContent">
-              
+
                 <Box className="bentoCopy p-2" component="div">
 
                   <Box component="div" sx={{ textAlign: "center", display: 'flex', alignItems: 'center' }}>
@@ -245,13 +246,6 @@ export default function Home() {
               </Box>
             </Box>
 
-
-
-
-
-
-
-
           </Box>
           <Box sx={{ gridArea: 'projects' }} className="">
             <p className="text-center">Discover the remarkable companies and organizations we've had the privilege<br></br> to collaborate with on their journeys to success</p>
@@ -267,28 +261,27 @@ export default function Home() {
           <Box sx={{ gridArea: 'case' }}>
 
             <Box component="div" className="bentoBox rounded-2xl">
-            <Image
-                  priority
-                  src="https://ik.imagekit.io/ylqs11u10/doctor.png"
-                  // layout="fill"
-                  objectFit="cover"
-                  width="2560"
-                  height="1440"
-                  objectPosition="center"
-                  alt="Dream Medical Hero"
-                  display='grid'
-                  className="rounded-t-xl"
-                />
-                <Box component="div" className="bentoCopy p-4">
-                   <h3>Case Studies</h3>
-
-              <p>Delve into our portfolio of case studies, showcasing how we've partnered with clients to overcome challenges and achieve remarkable outcomes</p>
+              <Box component="div" className="bentoContent">
+                <Box component="div" className="bentoImg">
+                  <Image
+                    priority
+                    src="https://ik.imagekit.io/ylqs11u10/doctor.png"
+                    // layout="fill"
+                    objectFit="cover"
+                    width="2560"
+                    height="1440"
+                    objectPosition="center"
+                    alt="Dream Medical Hero"
+                    display='grid'
+                    className="rounded-t-xl"
+                  />
+                  <Box component="div" className="overlay">
+                  </Box>
                 </Box>
-             
-              <Box className="bentoCopy p-2" component="div">
-                
+                <Box component="div" className="bentoCopy p-4">
+                  <h3 className="mt-4">Case Studies</h3>
 
-
+                  <p className="mt-4">Delve into our portfolio of case studies, showcasing how we've partnered with clients to overcome challenges and achieve remarkable outcomes</p>
 
                   <ul className="list-disc list-outside pl-4 mb-8">
                     <li>Development process is a symphony of technical expertise and creative ingenuity.</li>
@@ -302,32 +295,37 @@ export default function Home() {
                     Learn more...
                   </Link>
 
-                
+
+                </Box>
               </Box>
+
+
             </Box>
           </Box>
           <Box sx={{ gridArea: 'main' }}>
 
             <Box component="div" className="bentoBox rounded-2xl">
-            <Image
-                  priority
-                  src="https://ik.imagekit.io/ylqs11u10/doctor.png"
-                  // layout="fill"
-                  objectFit="cover"
-                  width="2560"
-                  height="1440"
-                  objectPosition="center"
-                  alt="Dream Medical Hero"
-                  display='grid'
-                  className="rounded-t-xl"
-                />
-                 <Box component="div" className="bentoCopy p-4">
-                   <h3 className="mt-4">Case Studies</h3>
-              <p className="mt-4">Delve into our portfolio of case studies, showcasing how we've partnered with clients to overcome challenges and achieve remarkable outcomes</p>
-                 </Box>
-             
-              <Box className="bentoCopy p-2" component="div">
-                
+              <Box component="div" className="bentoContent">
+                <Box component="div" className="bentoImg">
+                  <Image
+                    priority
+                    src="https://ik.imagekit.io/ylqs11u10/doctor.png"
+                    // layout="fill"
+                    objectFit="cover"
+                    width="2560"
+                    height="1440"
+                    objectPosition="center"
+                    alt="Dream Medical Hero"
+                    display='grid'
+                    className="rounded-t-xl"
+                  />
+
+                  <Box component="div" className="overlay">
+                  </Box>
+                </Box>
+                <Box component="div" className="bentoCopy p-4">
+                  <h3 className="mt-4">Case Studies</h3>
+                  <p className="mt-4">Delve into our portfolio of case studies, showcasing how we've partnered with clients to overcome challenges and achieve remarkable outcomes</p>
                   <ul className="list-disc list-outside pl-4 mb-8">
                     <li>Development process is a symphony of technical expertise and creative ingenuity.</li>
                     <li>Ensure functionality, responsiveness, and seamless interactions.</li>
@@ -339,15 +337,17 @@ export default function Home() {
                   >
                     Learn more...
                   </Link>
+                </Box>
 
-                
               </Box>
+
             </Box>
           </Box>
           <Box sx={{ gridArea: 'tools' }} className="bentoBox rounded-2xl">
-         
-            <h3>Innovative Toolkit</h3>
- <Image
+            <Box component="div" className="bentoContent">
+              <Box component="div" className="bentoImg">
+
+                <Image
                   priority
                   src="https://ik.imagekit.io/ylqs11u10/doctor.png"
                   // layout="fill"
@@ -359,11 +359,19 @@ export default function Home() {
                   display='grid'
                   className="rounded-t-xl"
                 />
+                <Box component="div" className="overlay">
+                </Box>
+              </Box>
+              <Box component="div" className="bentoCopy p-4">
+                <h3>Innovative Toolkit</h3>
+              </Box>
+            </Box>
           </Box>
           <Box sx={{ gridArea: 'designsystem' }} className="bentoBox rounded-2xl">
-         
-            <h3>Media</h3> 
-            <Image
+            <Box component="div" className="bentoContent">
+              <Box component="div" className="bentoImg">
+                <h6>Media</h6>
+                <Image
                   priority
                   src="https://ik.imagekit.io/ylqs11u10/doctor.png"
                   // layout="fill"
@@ -375,14 +383,19 @@ export default function Home() {
                   display='grid'
                   className="rounded-t-xl"
                 />
-                 <Box component="div" className="bentoCopy p-4">
-                  <h3>Picture Perfect Moments</h3>
-                 </Box>
-            
+                <Box component="div" className="overlay">
+                </Box>
+              </Box>
+              <Box component="div" className="bentoCopy p-4">
+                <h3>Picture Perfect Moments</h3>
+              </Box>
+            </Box>
           </Box>
           <Box sx={{ gridArea: 'domain' }} className="bentoBox rounded-2xl">
-            <h3>Domain Excellence</h3>
-            <Image
+            <Box component="div" className="bentoContent">
+              <Box component="div" className="bentoImg">
+                <h3>Domain Excellence</h3>
+                <Image
                   priority
                   src="https://ik.imagekit.io/ylqs11u10/doctor.png"
                   // layout="fill"
@@ -393,11 +406,17 @@ export default function Home() {
                   alt="Dream Medical Hero"
                   display='grid'
                   className="rounded-t-xl"
-                />
+                /> <Box component="div" className="overlay">
+                </Box>
+              </Box>
+
+            </Box>
           </Box>
           <Box sx={{ gridArea: 'newsletter' }} className="bentoBox rounded-2xl">
-            <h3>Signup for Newsletter</h3>
-            <Image
+            <Box component="div" className="bentoContent">
+              <Box component="div" className="bentoImg">
+                <h3>Signup for Newsletter</h3>
+                <Image
                   priority
                   src="https://ik.imagekit.io/ylqs11u10/doctor.png"
                   // layout="fill"
@@ -409,12 +428,16 @@ export default function Home() {
                   display='grid'
                   className="rounded-t-xl"
                 />
-                 <Box component="div" className="bentoCopy p-4">
+                <Box component="div" className="overlay">
+                </Box>
+              </Box>
 
-                 </Box>
+              <Box component="div" className="bentoCopy p-4">
+
+              </Box>
+            </Box>
           </Box>
         </Box>
-
       </Box>
 
     </div>
