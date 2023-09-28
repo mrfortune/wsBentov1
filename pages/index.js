@@ -119,7 +119,7 @@ Creativity, <br></br>Produce Transformation
             
             
   <button className="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium inline-flex rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">
-                <Link className="flex"
+                <Link className="flex leading-4"
                   href="/submit-info"
                 >
                  
@@ -128,8 +128,8 @@ Creativity, <br></br>Produce Transformation
   </svg>
                 </Link>
               </button>
-              <button className="text-white hover:text-white border border-purple-700 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-purple-400 dark:text-purple-400 dark:hover:text-white dark:hover:bg-purple-500 dark:focus:ring-purple-900">
-                <Link
+              <button className="text-white hover:text-white border border-purple-700 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-purple-400 dark:text-purple-400 dark:hover:text-white dark:hover:bg-purple-500 dark:focus:ring-purple-900 leading-4">
+                <Link className="leading-4"
                   href="/contact"
                 >
                   Learn more...
@@ -193,8 +193,19 @@ Creativity, <br></br>Produce Transformation
          </Box>  
          </Box>
          <Box component="div" className="bentoContent"> 
-                  <Box className="expertiseCopy" component="div">
-         <Box component="div" className="expertiseCopy">
+         <Image
+            priority
+            src="https://ik.imagekit.io/ylqs11u10/doctor.png"
+            // layout="fill"
+            objectFit="cover"
+            width="2560"
+            height="1440"
+            objectPosition="center"
+            alt="Dream Medical Hero"
+            display='grid'
+          />
+                  <Box className="expertiseC" component="div">
+        
            <Box component="div" sx={{ textAlign: "center", display: 'flex', alignItems: 'center' }}>
              <FontAwesomeIcon icon={faCode} className="fa-1x" style={{ "--fa-primary-color": "#3c6818", "--fa-secondary-color": "#3c6818", marginRight: '.5rem' }} /><h4 className="m-0"> Develop</h4>
            
@@ -213,7 +224,7 @@ Creativity, <br></br>Produce Transformation
                   Learn more...
                 </Link>
               
-         </Box>
+         
         </Box>
                     </Box> 
                 </Box>
@@ -248,7 +259,7 @@ Creativity, <br></br>Produce Transformation
           
 
           
-           <ul className="list-disc list-inside mb-8">
+           <ul className="list-disc list-outside pl-4 mb-8">
              <li>Development process is a symphony of technical expertise and creative ingenuity.</li>
              <li>Ensure functionality, responsiveness, and seamless interactions.</li>
              
@@ -271,7 +282,7 @@ Creativity, <br></br>Produce Transformation
      <p>Delve into our portfolio of case studies, showcasing how we've partnered with clients to overcome challenges and achieve remarkable outcomes</p>
                <Box className="expertiseCopy" component="div">
       <Box component="div" className="expertiseCopy">
-        <ul className="list-disc list-inside mb-8">
+        <ul className="list-disc list-outside pl-4 mb-8">
           <li>Development process is a symphony of technical expertise and creative ingenuity.</li>
           <li>Ensure functionality, responsiveness, and seamless interactions.</li>
           

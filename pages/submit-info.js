@@ -98,7 +98,7 @@ export default function UserForm() {
             value={formData.name}
             onChange={handleChange}
             required
-            className="rounded-md"
+            className="rounded-md p-2"
           />
         </div>
         <div className="flex flex-col mb-8 w-full">
@@ -110,7 +110,7 @@ export default function UserForm() {
             value={formData.email}
             onChange={handleChange}
             required
-            className="rounded-md"
+            className="rounded-md p-2"
           />
         </div>
 
@@ -124,7 +124,7 @@ export default function UserForm() {
             value={formData.projectName}
             onChange={handleChange}
             required
-            className="rounded-md"
+            className="rounded-md p-2"
           />
         </div>
         <div className="flex flex-col mb-8 w-full">
@@ -135,7 +135,7 @@ export default function UserForm() {
             value={formData.projectDescription}
             onChange={handleChange}
             required
-            className="rounded-md"
+            className="rounded-md p-2"
           />
         </div>
         <div className="flex flex-col mb-8 w-full">
@@ -147,7 +147,7 @@ export default function UserForm() {
             value={formData.budget}
             onChange={handleChange}
             required
-            className="rounded-md"
+            className="rounded-md p-2"
           />
         </div>
         <div className="flex flex-col mb-8 w-full">
@@ -159,7 +159,7 @@ export default function UserForm() {
             value={formData.timeline}
             onChange={handleChange}
             required
-            className="rounded-md"
+            className="rounded-md p-2"
           />
         </div>
 
@@ -173,7 +173,7 @@ export default function UserForm() {
             value={formData.companyInfo.companyName}
             onChange={handleChange}
             required
-            className="rounded-md"
+            className="rounded-md p-2"
           />
         </div>
         <div className="flex flex-col mb-8 w-full">
@@ -185,7 +185,7 @@ export default function UserForm() {
             value={formData.companyInfo.industry}
             onChange={handleChange}
             required
-            className="rounded-md"
+            className="rounded-md p-2"
           />
         </div>
         <div className="flex flex-col mb-8 w-full">
@@ -197,7 +197,7 @@ export default function UserForm() {
             value={formData.companyInfo.website}
             onChange={handleChange}
             required
-            className="rounded-md"
+            className="rounded-md p-2"
           />
         </div>
         <div className="flex flex-col mb-8 w-full">
@@ -208,7 +208,7 @@ export default function UserForm() {
             value={formData.companyInfo.description}
             onChange={handleChange}
             required
-            className="rounded-md"
+            className="rounded-md p-2"
           />
         </div>
 

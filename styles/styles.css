@@ -18,10 +18,8 @@ html,
 body {
   padding: 0;
   margin: 0;
-  line-height: 1.4rem;
-  min-height: 100%;
+  /* line-height: 1.4rem; */
   box-sizing: border-box;
-  height: 100%;
   margin: 0;
   padding: 0;
   background-image: url("/assets/BgGradient.png");/* Replace with your image URL */
@@ -30,12 +28,17 @@ body {
   background-color:#010203;
 }
 section {
-  height: 100%;
   background-color: rgba(0, 0, 0, 0); /* Transparent black (0, 0, 0) with alpha 0 */
+}
+footer {
+  margin-top: auto;
 }
 body{
   font-family: 'Inter', sans-serif;
   color:#fafafa;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 } 
 #_next{
   display: grid;
@@ -95,7 +98,7 @@ nav {
 
 nav a {
   color: #fafafa;
-  margin-left: 1.5rem; 
+  margin-left: 1rem; 
   text-transform: capitalize;
   font-weight: 500;
 }
@@ -251,6 +254,8 @@ main .bentoBox{
   border:1px solid hsl(0, 0%, 44%);
   background-color:rgba(41, 41, 41, 0.6);
   padding:2rem;
+  display:flex;
+  flex-direction:column;
 }
 main .bentoBox .bentoContent{
 max-width:30vw;
@@ -260,8 +265,7 @@ main .bentoBox .bentoContent .expertiseCopy{
 color:#fafafa;
 }
 main .heroText h1.h1Header {
-  font-size: clamp(1rem, 3rem, 5rem);
-  /* font-size: clamp(1.602rem, -.22rem + 1.6vw, 3.247rem) !important; */
+  font-size: clamp(1.602rem, 1.981rem + 1.33vw, 4.11rem) !important; 
   color: #fafafa;
   line-height: 1;
   letter-spacing: .1rem;
@@ -331,14 +335,13 @@ main .homeHero .heroText p.body {
   font-weight:500;
 }
 h1{
-  font-size: clamp(1rem, 3rem, 5rem) !important;
-  /* font-size: clamp(1.602rem, -.22rem + 1.6vw, 3.247rem) !important; */
-  color: #07e9eb;
+  font-size: clamp(1.602rem, 1.981rem + 1.33vw, 4.11rem) !important; 
   line-height: 1;
+  font-weight:800 !important;
   letter-spacing: 1px;
 }
 h2 {
-  font-size: clamp(1.424rem, -.22rem + 1.6vw, 2.887rem) !important;
+  font-size: clamp(1.424rem, -.22rem + 1.6vw, 1.802rem) !important;
   font-weight: 600;
 }
 
@@ -347,13 +350,13 @@ h2 span {
 }
 
 h3 {
-  font-size: clamp(1.266rem, -.22rem + 1.6vw, 1.802rem) !important;
+  font-size: clamp(1.266rem, -.22rem + 1.6vw, 1.602rem) !important;
   font-weight: 500;
   margin-bottom:0px !important;
 }
 
 h3.cardHeader {
-  font-size: clamp(1rem, -.22rem + 1.6vw, 1.802rem);
+  font-size: clamp(1rem, -.22rem + 1.6vw, 1.602rem);
   margin-bottom:0px !important;
 }
 
@@ -377,11 +380,25 @@ a {
   text-decoration: none;
 }
 p {
-  font-size: clamp(1rem, -.22rem + 1.6vw, 1rem) !important;
+  font-size: clamp(.889rem, -.22rem + 1.6vw, 1rem) !important;
+}
+li {
+  font-size: clamp(.889rem, -.22rem + 1.6vw, 1rem) !important;
+}
+label {
+  font-size: clamp(.889rem, -.22rem + 1.6vw, 1rem) !important;
+}
+input{
+  padding:.5rem;
+  color:#010203 !important;
+}
+textarea{
+  padding:.5rem;
+  color:#010203 !important;
 }
 .contact {
   display: flex;
-  height: calc(100vh - 590px);
+  height: calc(100vh - 0px);
 }
 
 .MuiTableCell-head {
