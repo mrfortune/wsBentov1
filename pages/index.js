@@ -92,7 +92,6 @@ export default function Home() {
             display: 'grid',
             // gridTemplateColumns: 'repeat(4, 1fr)',
             gridTemplateColumns: { xs: 'repeat(1,1fr)', sm: 'repeat(1,1fr)', md: 'repeat(4, 1fr)', lg: 'repeat(4, 1fr)', xl: 'repeat(4, 1fr)' },
-            // gridTemplateColumns: "repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));",
             gap: 1,
             gridTemplateRows: 'auto',
                 gridTemplateAreas: `"header header header header"
