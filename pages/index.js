@@ -87,19 +87,19 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Box component="div" maxWidth="lg">
-        <Box
-          sx={{
-            display: 'grid',
-            // gridTemplateColumns: 'repeat(4, 1fr)',
-            gridTemplateColumns: { xs: 'repeat(1,1fr)', sm: 'repeat(1,1fr)', md: 'repeat(4, 1fr)', lg: 'repeat(4, 1fr)', xl: 'repeat(4, 1fr)' },
-            gap: 1,
-            gridTemplateRows: 'auto',
-                gridTemplateAreas: `"header header header header"
-            "projects projects projects projects"  
-            "work work work work"
-            "case case main main"
-            "tools tools designsystem designsystem"
-            "domain domain domain newsletter"`,
+        <Box component="div" className="grid-container"
+          //sx={{
+            // display: 'grid',
+            // // gridTemplateColumns: 'repeat(4, 1fr)',
+            // gridTemplateColumns: { xs: 'repeat(1,auto)', sm: 'repeat(1,auto)', md: 'repeat(4, 1fr)', lg: 'repeat(4, 1fr)', xl: 'repeat(4, 1fr)' },
+            // gap: 1,
+            // gridTemplateRows: 'auto)',
+            //     gridTemplateAreas: `"header header header header"
+            // "projects projects projects projects"  
+            // "work work work work"
+            // "case case main main"
+            // "tools tools designsystem designsystem"
+            // "domain domain domain newsletter"`,
     //         gridTemplateAreas: {
     //           xs: `"header"
     //     "projects"  
@@ -137,7 +137,8 @@ export default function Home() {
     // "case case main main"
     // "tools tools designsystem designsystem"
     // "domain domain domain newsletter"`},
-          }}>
+         // }}
+         >
           <Box sx={{ gridArea: 'header' }} className="mt-40">
             <Box
               className="heroText"

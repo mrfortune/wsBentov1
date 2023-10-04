@@ -137,11 +137,34 @@ nav .contactButton:hover a {
   /* For modern browsers */
   color: #010203;
 }
-main {
+/* main {
   display: flex;
   justify-content: center;
   align-items:center;
   padding:1rem;
+}   */
+main {
+  display: grid;
+  --auto-grid-minsize:16rem;
+  grid-template-columns:repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
+  grid-gap:1rem;
+  justify-content: center;
+  align-items:center;
+} 
+.grid-container {
+  display: grid;
+  --auto-grid-minsize:16rem;
+  grid-template-columns:repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
+  grid-gap:1rem;
+  justify-content: center;
+  align-items:center;
+  grid-template-rows: auto;
+  grid-template-areas: "header header header header"
+  "projects projects projects projects"  
+  "work work work work"
+  "case case main main"
+  "tools tools designsystem designsystem"
+  "domain domain domain newsletter";
 } 
 .drawer {
   display: flex;
@@ -761,7 +784,25 @@ ul.ulStyle li {
     width: 100%;
     text-align: center;
   }
-
+  .grid-container {
+    display: grid;
+    --auto-grid-minsize:16rem;
+    grid-template-columns:repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
+    grid-gap:1rem;
+    justify-content: center;
+    align-items:center;
+    grid-template-rows: auto;
+    grid-template-areas: "header"
+    "projects"  
+    "work"
+    "case"
+    "main"
+    "tools"
+    "tools" 
+    "designsystem"
+    "domain" 
+    "newsletter";
+  } 
   /* footer .MuiGrid-item{
     margin-left:16px;
     margin-right:16px;
@@ -823,7 +864,25 @@ ul.ulStyle li {
     width: 100%;
     padding-left: 1rem;
   }
-
+  .grid-container {
+    display: grid;
+    --auto-grid-minsize:16rem;
+    grid-template-columns:repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
+    grid-gap:1rem;
+    justify-content: center;
+    align-items:center;
+    grid-template-rows: auto;
+    grid-template-areas: "header"
+    "projects"  
+    "work"
+    "case"
+    "main"
+    "tools"
+    "tools" 
+    "designsystem"
+    "domain" 
+    "newsletter";
+  } 
   /* footer .MuiGrid-item{
     margin-left:16px;
     margin-right:16px;

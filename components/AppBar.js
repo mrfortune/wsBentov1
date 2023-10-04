@@ -18,6 +18,11 @@ import { transform } from 'framer-motion';
 import { useRouter } from 'next/router'
 import myLoader from "../components/Loader";
 import Image from "next/image";
+import { ThemeProvider } from '@emotion/react';
+import { useState, useEffect } from "react";
+import useScrollTrigger from '@mui/material/useScrollTrigger';
+import lightTheme from '../styles/theme/lightTheme';
+
 // interface Props {
 //   /**
 //    * Injected by the documentation to work in an iframe.
@@ -25,6 +30,8 @@ import Image from "next/image";
 //    */
 //   window?: () => Window;
 // }
+
+
 
 const drawerWidth = 240;
 //const navItems = ['home', 'story', 'media', 'contact'];
@@ -47,6 +54,7 @@ const navLinks = [
 ];
 
 export default function DrawerAppBar (props) {
+ 
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
 
@@ -56,7 +64,8 @@ export default function DrawerAppBar (props) {
   //const { asPath: currentPath } = useRouter();
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'left' }}>
-      <Box sx={{ display:'flex', flexDirection:'column', paddingLeft:'1rem', paddingTop:'1rem' }}>
+      <Box sx={{ display:'flex', flexDirection:'column', paddingLeft:'1rem', paddingTop:'1rem' }} 
+>
             {navLinks.map((link, id) => {
           return(
               <Link key={id} href={link.path}>
@@ -71,11 +80,18 @@ export default function DrawerAppBar (props) {
   const container = window !== undefined ? () => window().document.body : undefined;
   const router = useRouter();
   const currentRoute = router.pathname;
-
+  const trigger = useScrollTrigger({
+    threshold: 100, // Adjust the threshold as needed
+  });
   return (
     <Box component="nav" sx={{ display: 'flex' }}>
       <CssBaseline />
-      <AppBar style={{background:'transparent', boxShadow:'none'}}>
+      <ThemeProvider theme={lightTheme}>
+
+    
+      <AppBar style={{ boxShadow:'none'}}  color={trigger ? 'primary' : 'transparent'}
+        elevation={trigger ? 4 : 0}
+>
         <Toolbar> 
         <Box sx={{ flexGrow: 1, }}>
 {/* <Typography
@@ -158,6 +174,7 @@ export default function DrawerAppBar (props) {
           </Box>
         </Toolbar>
       </AppBar>
+      </ThemeProvider>
       <Box component="nav" >
         <Drawer
         anchor="right"
