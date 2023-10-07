@@ -151,13 +151,11 @@ main {
   justify-content: center;
   align-items:center;
 } 
-.grid-container {
+main .grid-container {
   display: grid;
   --auto-grid-minsize:16rem;
   grid-template-columns:repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
   grid-gap:1rem;
-  justify-content: center;
-  align-items:center;
   grid-template-rows: auto;
   grid-template-areas: "header header header header"
   "projects projects projects projects"  
@@ -210,26 +208,26 @@ main {
     background-position: var(--bg-size) 0;
   }
 } */
-main .homeHero .nextui-button-text a {
+main .grid-container .homeHero .nextui-button-text a {
   color: #fafafa;
   font-size: medium;
 }
 
-main .homePage .nextui-button-text a {
+main .grid-container .homePage .nextui-button-text a {
   color: #fafafa;
   font-size: medium;
   text-transform: capitalize;
 }
 
-main .homePage .nextui-button-text a.disabledBtn {
+main .grid-container .homePage .nextui-button-text a.disabledBtn {
   color: #333;
 }
 
-main .homePage button .nextui-c-iWjDFM-icVqQtu-css {
+main .grid-container .homePage button .nextui-c-iWjDFM-icVqQtu-css {
   background: #b1b0b0;
 }
 
-main .homeHero .heroText {
+main .grid-container .homeHero .heroText {
   display: flex;
   flex-direction: column;
 }
@@ -239,12 +237,12 @@ main .homeHero .heroText {
 {
 width:63%
 } */
-main .homeHero .heroText button {
+main .grid-container .homeHero .heroText button {
   max-width: 20rem;
   width:10rem;
   background-color:blueviolet;
 }
-main .homeHero .heroText button a{
+main .grid-container .homeHero .heroText button a{
   text-transform: none;
 }
 
@@ -268,28 +266,28 @@ main .homeHero .heroText button a{
   text-transform: uppercase;
   letter-spacing: 1px;
 } */
-main .heroText{
+main .grid-container .heroText{
   text-align:center;
 }
 
-main .bentoBox{
+main .grid-container .bentoBox{
   border:1px solid hsl(0, 0%, 44%);
   background-color:rgba(41, 41, 41, 1);
-  display:flex;
+  display:grid;
   flex-direction:column;
 }
-main .bentoBox .bentoContent{
+main .grid-container .bentoBox .bentoContent{
 display:flex;
 flex-direction:column;
 }
-main .bentoBox .bentoContent .bentoImg{
+main .grid-container .bentoBox .bentoContent .bentoImg{
   display: grid;
   grid-template: "container" 1fr;
-  place-items: center;
-  place-content: center;
+  place-items:stretch;
+  align-content: space-between;
   overflow: hidden;
 }
-main .bentoBox .bentoContent .bentoImg .image{
+main .grid-container .bentoBox .bentoContent .bentoImg .image{
   width: 100%;
   height: auto;
   object-fit: cover;
@@ -303,17 +301,19 @@ main .bentoBox .bentoContent .bentoImg > * {
 /* main .bentoBox .bentoContent .bentoImg {
   grid-area: 1 / 1 / 2 / 2; 
 } */
-main .bentoBox .bentoContent .bentoImg .overlay{
+main .grid-container .bentoBox .bentoContent .bentoImg .overlay{
   grid-area: 1 / 1;
   width: 100%;
   height:100%;
   background: rgb(41,41,41);
   background: linear-gradient(180deg, rgba(41,41,41,0) 0%, rgba(41,41,41,0.6) 40%, rgba(41,41,41,0.8) 64%, rgba(41,41,41,1) 77%); 
 }
-main .bentoBox .bentoContent .bentoCopy{
+main .grid-container .bentoBox .bentoContent .bentoImg .bentoCopy{
 color:#fafafa;
+display:grid;
+grid-area: 1 / 1;
 }
-main .heroText h1.h1Header {
+main .grid-container .heroText h1.h1Header {
   font-size: clamp(1.602rem, 1.981rem + 1.33vw, 4.11rem) !important; 
   color: #fafafa;
   line-height: 1;
@@ -326,7 +326,7 @@ main .heroText h1.boujee-text span {
   font-weight: 300;
 }
 
-main .headerBody {
+main .grid-container .headerBody {
   font-size: clamp(1rem, -.22rem + 1.6vw, 1rem);
   /* background-image: linear-gradient(to bottom, #CBCBCB, #FF5B19); */
   font-weight: 400;
@@ -335,7 +335,7 @@ main .headerBody {
   color: #fafafa;
 }
 
-main .homeHero .heroText p.body {
+main .grid-container .homeHero .heroText p.body {
   text-transform: none;
   color: #fafafa;
 }
@@ -747,7 +747,10 @@ ul.ulStyle li {
     padding: 1rem;
     min-height: 48rem;
   }
-
+  main .grid-container{
+    padding-left:1rem;
+    padding-right:1rem;
+  }
   main .homeHero .heroText,
   main .homeHero .heroText p {
     align-items: center;
@@ -835,7 +838,10 @@ ul.ulStyle li {
     padding-right: 2rem;
     min-height: 45rem;
   }
-
+  main .grid-container{
+    padding-left:1rem;
+    padding-right:1rem;
+  }
   p.headerBody {
     width: 100%;
     text-align: center;
@@ -896,7 +902,10 @@ ul.ulStyle li {
     padding-left: 2rem;
     padding-right: 2rem;
   }
-
+  main .grid-container{
+    padding-left:1rem;
+    padding-right:1rem;
+  }
   p.headerBody {
     width: 100%;
     text-align: center;
@@ -943,6 +952,10 @@ ul.ulStyle li {
     padding-right: 2rem;
     /*background-image: url("/assets/Desktop1440_bg2.png"); */
     min-height: 45rem;
+  }
+  main .grid-container{
+    padding-left:1rem;
+    padding-right:1rem;
   }
   .homeHero .heroText {
    margin-left:1rem;

@@ -86,7 +86,7 @@ export default function Home() {
         <title>WorldShaker</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Box component="div" maxWidth="lg">
+      <Box component="div" className="container mx-auto max-w-7xl">
         <Box component="div" className="grid-container"
           //sx={{
             // display: 'grid',
@@ -159,7 +159,7 @@ export default function Home() {
                 >
 
                   Get Started <svg className="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                    <path stroke="currentColor" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
                   </svg>
                 </Link>
               </button>
@@ -195,20 +195,21 @@ export default function Home() {
                   // display='grid'
                   className="rounded-2xl image"
                 />
-                <Box component="div" className="overlay">
+                <Box component="div" className="overlay rounded-2xl">
 
 
-                </Box>
-              </Box>
-
-              <Box component="div" className="bentoCopy p-4">
-                <h3 className="mt-4"> Our Expertise</h3>
+                </Box>  
+                <Box component="div" className="bentoCopy p-4">
+                <h3 className="mt-4">Our Expertise</h3>
                 <p className="w-5/6 mt-4">Explore our diverse range of services, from data analysis to design innovation, to development all driven by a passion for transforming businesses.</p>
               </Box>
 
+              </Box>
+
+            
             </Box>
             <Box component="div" sx={{ display: 'flex' }}>
-              <Box component="div" className="bentoContent">
+              {/* <Box component="div" className="bentoContent">
 
 
                 <Box component="div" sx={{ textAlign: "center", display: 'flex', alignItems: 'center' }}>
@@ -230,15 +231,15 @@ export default function Home() {
 
 
 
-              </Box>
+              </Box> */}
               <Box component="div" className="bentoContent">
 
-                <Box component="div" className="bentoCopy p-2">
+                {/* <Box component="div" className="bentoCopy p-2">
                   <Box component="div" sx={{ textAlign: "center", display: 'flex', alignItems: 'center' }}>
                     <FontAwesomeIcon icon={faPencil} className="fa-1x" style={{ "--fa-primary-color": "#3c6818", "--fa-secondary-color": "#3c6818", marginRight: '.5rem' }} />
                     <h4 className="m-0"> Design</h4>
 
-                    {/* <Image src="assets/design1.png" width={88} height={88} alt="Design" layout="fixed" loader={myLoader}></Image> */}
+                    {/* <Image src="assets/design1.png" width={88} height={88} alt="Design" layout="fixed" loader={myLoader}></Image> 
                   </Box>
                   <ul className="list-disc list-outside pl-4 mb-8">
                     <li>Our design process blends user insight and creative innovation for digital experiences.</li>
@@ -252,11 +253,11 @@ export default function Home() {
                     Learn more...
                   </Link>
 
-                </Box>
+                </Box> */}
               </Box>
               <Box component="div" className="bentoContent">
 
-                <Box className="bentoCopy p-2" component="div">
+                {/* <Box className="bentoCopy p-2" component="div">
 
                   <Box component="div" sx={{ textAlign: "center", display: 'flex', alignItems: 'center' }}>
                     <FontAwesomeIcon icon={faCode} className="fa-1x" style={{ "--fa-primary-color": "#3c6818", "--fa-secondary-color": "#3c6818", marginRight: '.5rem' }} /><h4 className="m-0"> Develop</h4>
@@ -277,7 +278,7 @@ export default function Home() {
                   </Link>
 
 
-                </Box>
+                </Box> */}
               </Box>
             </Box>
 
@@ -307,13 +308,11 @@ export default function Home() {
                     height="1440"
                     objectPosition="center"
                     alt="Dream Medical Hero"
-                    display='grid'
-                    className="rounded-t-xl"
+                    className="rounded-2xl"
                   />
-                  <Box component="div" className="overlay">
-                  </Box>
-                </Box>
-                <Box component="div" className="bentoCopy p-4">
+                  <Box component="div" className="overlay rounded-2xl">
+                  </Box> 
+                  <Box component="div" className="bentoCopy p-4">
                   <h3 className="mt-4">Case Studies</h3>
 
                   <p className="mt-4">Delve into our portfolio of case studies, showcasing how we've partnered with clients to overcome challenges and achieve remarkable outcomes</p>
@@ -332,12 +331,14 @@ export default function Home() {
 
 
                 </Box>
+                </Box>
+               
               </Box>
 
 
             </Box>
           </Box>
-          <Box sx={{ gridArea: 'main' }}>
+          {/* <Box sx={{ gridArea: 'main' }}>
 
             <Box component="div" className="bentoBox rounded-2xl">
               <Box component="div" className="bentoContent">
@@ -351,14 +352,12 @@ export default function Home() {
                     height="1440"
                     objectPosition="center"
                     alt="Dream Medical Hero"
-                    display='grid'
-                    className="rounded-t-xl"
+                    className="rounded-2xl"
                   />
 
-                  <Box component="div" className="overlay">
+                  <Box component="div" className="overlay rounded-2xl">
                   </Box>
-                </Box>
-                <Box component="div" className="bentoCopy p-4">
+                  <Box component="div" className="bentoCopy p-4">
                   <h3 className="mt-4">Case Studies</h3>
                   <p className="mt-4">Delve into our portfolio of case studies, showcasing how we've partnered with clients to overcome challenges and achieve remarkable outcomes</p>
                   <ul className="list-disc list-outside pl-4 mb-8">
@@ -373,11 +372,13 @@ export default function Home() {
                     Learn more...
                   </Link>
                 </Box>
+                </Box>
+                
 
               </Box>
 
             </Box>
-          </Box>
+          </Box> */}
           <Box sx={{ gridArea: 'tools' }} className="bentoBox rounded-2xl">
             <Box component="div" className="bentoContent">
               <Box component="div" className="bentoImg">
@@ -391,15 +392,15 @@ export default function Home() {
                   height="1440"
                   objectPosition="center"
                   alt="Dream Medical Hero"
-                  display='grid'
-                  className="rounded-t-xl"
+                  className="rounded-2xl"
                 />
-                <Box component="div" className="overlay">
+                <Box component="div" className="overlay rounded-2xl">
                 </Box>
-              </Box>
-              <Box component="div" className="bentoCopy p-4">
+                <Box component="div" className="bentoCopy p-4">
                 <h3>Innovative Toolkit</h3>
               </Box>
+              </Box>
+              
             </Box>
           </Box>
           <Box sx={{ gridArea: 'designsystem' }} className="bentoBox rounded-2xl">
@@ -416,14 +417,15 @@ export default function Home() {
                   objectPosition="center"
                   alt="Dream Medical Hero"
                   display='grid'
-                  className="rounded-t-xl"
+                  className="rounded-2xl"
                 />
-                <Box component="div" className="overlay">
-                </Box>
-              </Box>
-              <Box component="div" className="bentoCopy p-4">
+                <Box component="div" className="overlay rounded-2xl">
+                </Box> 
+                <Box component="div" className="bentoCopy p-4">
                 <h3>Picture Perfect Moments</h3>
               </Box>
+              </Box>
+             
             </Box>
           </Box>
           <Box sx={{ gridArea: 'domain' }} className="bentoBox rounded-2xl">
@@ -440,8 +442,9 @@ export default function Home() {
                   objectPosition="center"
                   alt="Dream Medical Hero"
                   display='grid'
-                  className="rounded-t-xl"
-                /> <Box component="div" className="overlay">
+                  className="rounded-2xl"
+                /> 
+                <Box component="div" className="overlay rounded-2xl">
                 </Box>
               </Box>
 
@@ -461,15 +464,16 @@ export default function Home() {
                   objectPosition="center"
                   alt="Dream Medical Hero"
                   display='grid'
-                  className="rounded-t-xl"
+                  className="rounded-2xl"
                 />
-                <Box component="div" className="overlay">
-                </Box>
-              </Box>
-
-              <Box component="div" className="bentoCopy p-4">
+                <Box component="div" className="overlay rounded-2xl">
+                </Box> 
+                <Box component="div" className="bentoCopy p-4">
 
               </Box>
+              </Box>
+
+             
             </Box>
           </Box>
         </Box>
