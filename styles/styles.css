@@ -22,10 +22,8 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-image: url("/assets/BgGradient.png");/* Replace with your image URL */
-  background-size: cover; /* Ensures the image covers the entire page */
-  background-repeat: no-repeat; /* Prevents image from repeating */
   background-color:#010203;
+
 }
 section {
   background-color: rgba(0, 0, 0, 0); /* Transparent black (0, 0, 0) with alpha 0 */
@@ -39,6 +37,10 @@ body{
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  /*background-image: url("/assets/BgGradient.png");/* Replace with your image URL 
+  background-size: cover;  Ensures the image covers the entire page 
+  background-repeat: no-repeat; /* Prevents image from repeating 
+  background-color:#010203;*/
 } 
 #_next{
   display: grid;
