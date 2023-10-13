@@ -37,8 +37,8 @@ body{
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  /*background-image: url("/assets/BgGradient.png");/* Replace with your image URL 
-  background-size: cover;  Ensures the image covers the entire page 
+  background-image: url("/assets/BgGradient.png");
+  background-size: cover;  
   background-repeat: no-repeat; /* Prevents image from repeating 
   background-color:#010203;*/
 } 
