@@ -10,6 +10,7 @@ config.autoAddCss = false; // Tell Font Awesome to skip adding the CSS automatic
 // library.add(
 //   faGithub, faAngleDown
 // );
+
 export default function MyApp({ Component, pageProps }) {
   return (
     <Layout><Component {...pageProps} />

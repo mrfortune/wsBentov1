@@ -1,7 +1,23 @@
 import { createTheme } from "@mui/material/styles";
 import { red, pink, green, purple, grey, amber, darkOrange, blue, orange, deepOrange } from "@mui/material/colors";
-
+import { Inconsolata } from 'next/font/google';
+const inconsolata = Inconsolata({
+  weight: ['200', '400', '500', '600', '700', '800', '900'],
+  subsets: ['latin'],
+  style: ['normal'],
+  display: 'swap',
+})
 const lightTheme = createTheme({
+  typography: {
+    fontFamily: ['"Open Sans"', 'Inconsolata', 'Roboto'].join(','),
+  },
+  overrides: {
+    MuiCssBaseline: {
+      '@global': {
+        '@font-face': [inconsolata],
+      },
+    }
+  },
   palette: {
     primary: {
        main: '#010203',

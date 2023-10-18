@@ -149,7 +149,7 @@ export default function Home() {
                 Creativity, <br></br>Produce Transformation
               </h1>
               <p className="mb-8">
-                At WorkShaker Interactive, we harness the power of data, unearth insights,<br></br> and infuse creativity to catalyze transformative solutions for our clients.
+                At WorldShaker Interactive, we harness the power of data, unearth insights,<br></br> and infuse creativity to catalyze transformative solutions for our clients.
               </p>
 
 
