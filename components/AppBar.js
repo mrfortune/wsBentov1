@@ -5,11 +5,7 @@ import CssBaseline from '@mui/material/CssBaseline';
 import Divider from '@mui/material/Divider';
 import Drawer from '@mui/material/Drawer';
 import IconButton from '@mui/material/IconButton';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
 import { Paper, Button } from "@mui/material";
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemText from '@mui/material/ListItemText';
 import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
@@ -89,7 +85,7 @@ export default function DrawerAppBar (props) {
       <ThemeProvider theme={lightTheme}>
 
     
-      <AppBar style={{ boxShadow:'none'}}  color={trigger ? 'primary' : 'transparent'}
+      <AppBar style={{ boxShadow:'none'}}  color={trigger  ? 'primary' : 'transparent'}
         elevation={trigger ? 4 : 0}
 >
         <Toolbar> 
