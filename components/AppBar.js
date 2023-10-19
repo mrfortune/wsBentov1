@@ -57,6 +57,7 @@ export default function DrawerAppBar (props) {
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState);
   };
+  
   //const { asPath: currentPath } = useRouter();
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'left' }}>
@@ -76,18 +77,19 @@ export default function DrawerAppBar (props) {
   const container = window !== undefined ? () => window().document.body : undefined;
   const router = useRouter();
   const currentRoute = router.pathname;
-  const trigger = useScrollTrigger({
-    threshold: 100, // Adjust the threshold as needed
-  });
+  // const trigger = useScrollTrigger({
+  //   threshold: 100, // Adjust the threshold as needed
+  // });
   return (
     <Box component="nav" sx={{ display: 'flex' }}>
-      <CssBaseline />
-      <ThemeProvider theme={lightTheme}>
-
-    
-      <AppBar style={{ boxShadow:'none'}}  color={trigger  ? 'primary' : 'transparent'}
-        elevation={trigger ? 4 : 0}
+      
+      <AppBar position="fixed"
+      sx={{
+        boxShadow: 'none',
+      }}
 >
+
+
         <Toolbar> 
         <Box sx={{ flexGrow: 1, }}>
 {/* <Typography
@@ -169,8 +171,8 @@ export default function DrawerAppBar (props) {
        
           </Box>
         </Toolbar>
+     
       </AppBar>
-      </ThemeProvider>
       <Box component="nav" >
         <Drawer
         anchor="right"
