@@ -1,6 +1,6 @@
-import DrawerAppBar from '../components/AppBar';
+import DrawerAppBar from '../components/NavBar';
 import FooterNav from '../components/FooterNav';
-import AppBar from '../components/AppBar';
+import NavBar from '../components/NavBar';
 import Meta from '../components/Meta';
 import { ThemeProvider } from '@mui/material';
 import { config, library } from '@fortawesome/fontawesome-svg-core';
@@ -16,28 +16,30 @@ const inconsolata = Inconsolata({
 })
 
 export default function RootLayout({ children }) {
-  const [scrollY, setScrollY] = useState(0);
+  const [navbar, setNavbar] = useState(false)
+
+  //logo scroll when active
+  // const [navbarLogo, setNavbarLogo] = useState(logo)
+
+  //navbar scroll changeBackground function
+  const changeBackground = () => {
+    console.log(window.scrollY)
+    if (window.scrollY >= 66) {
+      setNavbar(true)
+    } else {
+      setNavbar(false)
+    }
+  }
 
   useEffect(() => {
-    const handleScroll = () => {
-      setScrollY(window.scrollY || 0);
-    };
-
-    // Attach the scroll event listener if window is available (client-side)
-    if (typeof window !== 'undefined') {
-      window.addEventListener('scroll', handleScroll);
-
-      return () => {
-        // Remove the scroll event listener when the component unmounts
-        window.removeEventListener('scroll', handleScroll);
-      };
-    }
-  }, []);
-  const backgroundColor = scrollY >= 100 ? 'black' : 'transparent';
+    changeBackground()
+    // adding the event when scroll change background
+    window.addEventListener("scroll", changeBackground)
+  })
   return (
     <> 
     <CssBaseline/>
-    <AppBar backgroundColor={backgroundColor} />
+    <NavBar/>
       <main className={inconsolata.className}>{children}</main>
       <FooterNav />
     </>

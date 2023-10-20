@@ -100,7 +100,6 @@ nav {
 
 nav a {
   color: #fafafa;
-  margin-left: 1rem; 
   text-transform: capitalize;
   font-weight: 500;
 }
@@ -110,7 +109,12 @@ nav button {
 nav button a {
   margin-left: 0rem;
 }
-
+nav header.navbar{
+  background-color: transparent;
+}
+nav header.navbar.active{
+  background-color:#010203;
+}
 /* nav .contactButton.MuiButton-root{
   background-color:#7A2048;
 } */

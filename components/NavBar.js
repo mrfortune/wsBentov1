@@ -12,7 +12,7 @@ import Typography from '@mui/material/Typography';
 import Link from 'next/link';
 import { transform } from 'framer-motion';
 import { useRouter } from 'next/router'
-import myLoader from "../components/Loader";
+import myLoader from "./Loader";
 import Image from "next/image";
 import { ThemeProvider } from '@emotion/react';
 import { useState, useEffect } from "react";
@@ -49,15 +49,15 @@ const navLinks = [
   },
 ];
 
-export default function DrawerAppBar (props) {
+export default function NavBar (props) {
  
-  const { window } = props;
+  // const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
 
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState);
   };
-  
+  const { children, window } = props;
   //const { asPath: currentPath } = useRouter();
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'left' }}>
@@ -80,14 +80,46 @@ export default function DrawerAppBar (props) {
   // const trigger = useScrollTrigger({
   //   threshold: 100, // Adjust the threshold as needed
   // });
+
+  const [triggered, setTriggered] = useState(false);
+
+  // Define the container variable
+  const trigger = useScrollTrigger({
+    target: container, // Use the container as the target
+    disableHysteresis: true,
+    threshold: 100, // Adjust the threshold as needed
+  });
+
+  useEffect(() => {
+    if (trigger) {
+      setTriggered(true);
+    } else {
+      setTriggered(false);
+    }
+  }, [trigger]);
+
+  // return React.cloneElement(children, {
+  //   elevation: triggered ? 4 : 0,
+  //   sx: {
+  //     backgroundColor: triggered ? 'black' : 'transparent',
+  //     transition: 'background-color 0.3s', // Add a smooth transition effect
+  //   },
+  // });
+
   return (
     <Box component="nav" sx={{ display: 'flex' }}>
       
-      <AppBar position="fixed"
+      {/* <AppBar className={navbar ? "navbar active" : "navbar"} position="fixed" 
       sx={{
-        boxShadow: 'none',
+        boxShadow: 'none'
       }}
->
+> */}
+<AppBar elevation={triggered ? 4 : 0}
+      sx={{
+        backgroundColor: triggered ? 'black' : 'transparent',
+        transition: 'background-color 0.3s', // Add a smooth transition effect
+      }}>
+
 
 
         <Toolbar> 
@@ -116,7 +148,7 @@ export default function DrawerAppBar (props) {
 
           </Image>
           </Typography>  */}
-          <h6 className="leading-4">
+          {/* <h6 className="leading-4"> */}
               <Link href="/">
               <Image 
           loader={myLoader}
@@ -126,7 +158,7 @@ export default function DrawerAppBar (props) {
 
           </Image>
               </Link>
-            </h6>
+            {/* </h6> */}
             </Box>
           
           <IconButton
@@ -140,18 +172,18 @@ export default function DrawerAppBar (props) {
             <MenuIcon />
           </IconButton>
          
-          <Typography
+          {/* <Typography
             variant="h6"
             component="div"
             sx={{ flexGrow: 1, display: { xs: 'none', sm: 'none' } }}
           >
             worldshaker
-          </Typography>
-          <Box alignItems="center" sx={{ display: { xs: 'none', sm: 'none', md:'flex', xl:'flex', lg:'flex' } }}>
+          </Typography> */}
+          <Box alignItems="center" component="div" className="navItems" sx={{ display: { xs: 'none', sm: 'none', md:'flex', xl:'flex', lg:'flex' } }}>
             {navLinks.map((link, id) => {
               if (link.name != "Contact"){
                 return(
-                  <Link key={id} href={link.path} className={currentRoute === "/" ? "nav.active" : "nonActive"}>
+                  <Link key={id} href={link.path} >
                     {link.name}
                   </Link>
         
