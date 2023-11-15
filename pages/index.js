@@ -183,7 +183,7 @@ export default function Home() {
 
               <Box component="div" className="bentoImg">
 
-                <Image
+                {/* <Image
                   priority
                   src="https://ik.imagekit.io/ylqs11u10/doctor.png"
                   // layout="fill"
@@ -194,7 +194,7 @@ export default function Home() {
                   alt="Dream Medical Hero"
                   // display='grid'
                   className="rounded-2xl image"
-                />
+                /> */}
                 <Box component="div" className="overlay rounded-2xl">
 
 
@@ -285,21 +285,21 @@ export default function Home() {
           </Box>
           <Box sx={{ gridArea: 'projects' }} className="mt-20">
             <p className="text-center mb-10">Discover the remarkable companies and organizations we've had the privilege<br></br> to collaborate with on their journeys to success</p>
-            <Image
+            {/* <Image
               src="/assets/workcbanner.png"
               width={1200}
               height={150}
               alt="Work Banner"
               layout="responsive"
             >
-            </Image>
+            </Image> */}
           </Box>
           <Box sx={{ gridArea: 'case' }}>
 
             <Box component="div" className="bentoBox rounded-2xl">
               <Box component="div" className="bentoContent">
                 <Box component="div" className="bentoImg">
-                  <Image
+                  {/* <Image
                     priority
                     src="https://ik.imagekit.io/ylqs11u10/doctor.png"
                     // layout="fill"
@@ -309,7 +309,7 @@ export default function Home() {
                     objectPosition="center"
                     alt="Dream Medical Hero"
                     className="rounded-2xl"
-                  />
+                  /> */}
                   <Box component="div" className="overlay rounded-2xl">
                   </Box> 
                   <Box component="div" className="bentoCopy p-4">
@@ -383,7 +383,7 @@ export default function Home() {
             <Box component="div" className="bentoContent">
               <Box component="div" className="bentoImg">
 
-                <Image
+                {/* <Image
                   priority
                   src="https://ik.imagekit.io/ylqs11u10/doctor.png"
                   // layout="fill"
@@ -393,7 +393,7 @@ export default function Home() {
                   objectPosition="center"
                   alt="Dream Medical Hero"
                   className="rounded-2xl"
-                />
+                /> */}
                 <Box component="div" className="overlay rounded-2xl">
                 </Box>
                 <Box component="div" className="bentoCopy p-4">
@@ -407,7 +407,7 @@ export default function Home() {
             <Box component="div" className="bentoContent">
               <Box component="div" className="bentoImg">
                 <h6>Media</h6>
-                <Image
+                {/* <Image
                   priority
                   src="https://ik.imagekit.io/ylqs11u10/doctor.png"
                   // layout="fill"
@@ -418,7 +418,7 @@ export default function Home() {
                   alt="Dream Medical Hero"
                   display='grid'
                   className="rounded-2xl"
-                />
+                /> */}
                 <Box component="div" className="overlay rounded-2xl">
                 </Box> 
                 <Box component="div" className="bentoCopy p-4">
@@ -432,7 +432,7 @@ export default function Home() {
             <Box component="div" className="bentoContent">
               <Box component="div" className="bentoImg">
                 <h3>Domain Excellence</h3>
-                <Image
+                {/* <Image
                   priority
                   src="https://ik.imagekit.io/ylqs11u10/doctor.png"
                   // layout="fill"
@@ -443,7 +443,7 @@ export default function Home() {
                   alt="Dream Medical Hero"
                   display='grid'
                   className="rounded-2xl"
-                /> 
+                />  */}
                 <Box component="div" className="overlay rounded-2xl">
                 </Box>
               </Box>
@@ -454,7 +454,7 @@ export default function Home() {
             <Box component="div" className="bentoContent">
               <Box component="div" className="bentoImg">
                 <h3>Signup for Newsletter</h3>
-                <Image
+                {/* <Image
                   priority
                   src="https://ik.imagekit.io/ylqs11u10/doctor.png"
                   // layout="fill"
@@ -465,7 +465,7 @@ export default function Home() {
                   alt="Dream Medical Hero"
                   display='grid'
                   className="rounded-2xl"
-                />
+                /> */}
                 <Box component="div" className="overlay rounded-2xl">
                 </Box> 
                 <Box component="div" className="bentoCopy p-4">
