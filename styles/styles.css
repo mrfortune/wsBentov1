@@ -102,6 +102,7 @@ nav a {
   color: #fafafa;
   text-transform: capitalize;
   font-weight: 500;
+  font-family: 'Inconsolata', sans-serif;
 }
 nav button {
   margin-left:1rem;
