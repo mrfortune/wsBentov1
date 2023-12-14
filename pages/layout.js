@@ -13,6 +13,7 @@ const inconsolata = Inconsolata({
   subsets: ['latin'],
   style: ['normal'],
   display: 'swap',
+  preload: false,
 })
 
 export default function RootLayout({ children }) {
