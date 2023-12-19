@@ -40,7 +40,7 @@ export default function RootLayout({ children }) {
   return (
     <> 
     <CssBaseline/>
-    <NavBar/>
+       <NavBar/>
       <main className={inconsolata.className}>{children}</main>
       <FooterNav />
     </>
