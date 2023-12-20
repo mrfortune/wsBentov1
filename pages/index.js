@@ -27,40 +27,7 @@ import PropTypes from 'prop-types';
 //import useSWR from 'swr';
 
 const { heroContent, heroWrapper, overlay, imageWrapper, heroImage } = styles;
-//Write a fetcher function to wrap the native fetch function and return the result of a call to url in json format
-// function Item(props) {
-//   const { sx, ...other } = props;
-//   return (
-//     <Box
-//       sx={{
-//         bgcolor: (theme) => (theme.palette.mode === 'dark' ? '#101010' : '#fff'),
-//         color: (theme) => (theme.palette.mode === 'dark' ? 'grey.300' : 'grey.800'),
-//         border: '1px solid',
-//         borderColor: (theme) =>
-//           theme.palette.mode === 'dark' ? 'grey.800' : 'grey.300',
-//         p: 1,
-//         m: 1,
-//         borderRadius: 2,
-//         fontSize: '0.875rem',
-//         fontWeight: '700',
-//         ...sx,
-//       }}
-//       {...other}
-//     />
-//   );
-// }
-// Item.propTypes = {
-//   /**
-//    * The system prop that allows defining system overrides as well as additional CSS styles.
-//    */
-//   sx: PropTypes.oneOfType([
-//     PropTypes.arrayOf(
-//       PropTypes.oneOfType([PropTypes.func, PropTypes.object, PropTypes.bool]),
-//     ),
-//     PropTypes.func,
-//     PropTypes.object,
-//   ]),
-// };
+
 const fetcher = (url) => fetch(url).then((res) => res.json());
 
 export default function Home() {
@@ -86,58 +53,9 @@ export default function Home() {
         <title>WorldShaker</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Box component="div" className="container mx-auto max-w-7xl">
+      <Box component="section" className="container mx-auto max-w-7xl">
         <Box component="div" className="grid-container"
-          //sx={{
-            // display: 'grid',
-            // // gridTemplateColumns: 'repeat(4, 1fr)',
-            // gridTemplateColumns: { xs: 'repeat(1,auto)', sm: 'repeat(1,auto)', md: 'repeat(4, 1fr)', lg: 'repeat(4, 1fr)', xl: 'repeat(4, 1fr)' },
-            // gap: 1,
-            // gridTemplateRows: 'auto)',
-            //     gridTemplateAreas: `"header header header header"
-            // "projects projects projects projects"  
-            // "work work work work"
-            // "case case main main"
-            // "tools tools designsystem designsystem"
-            // "domain domain domain newsletter"`,
-    //         gridTemplateAreas: {
-    //           xs: `"header"
-    //     "projects"  
-    //    "work"
-    //    "case"
-    //    "main"
-    //     "tools"
-    //     "domain" 
-    //     "designsystem"
-    //     newsletter"
-    //    `, sm: `"header"
-    //    "projects"  
-    //   "work"
-    //   "case"
-    //   "main"
-    //    "tools"
-    //    "domain" 
-    //    "designsystem"
-    //    newsletter"
-    //   `, md: `"header header header header"
-    //    "projects projects projects projects"  
-    //   "work work work work"
-    //   "case case main main"
-    //   "tools tools designsystem designsystem"
-    //   "domain domain domain newsletter"
-    //   `, lg: `"header header header header"
-    //   "projects projects projects projects"  
-    //  "work work work work"
-    //  "case case main main"
-    //  "tools tools designsystem designsystem"
-    //  "domain domain domain newsletter"
-    //  `, xl: `"header header header header"
-    //  "projects projects projects projects"  
-    // "work work work work"
-    // "case case main main"
-    // "tools tools designsystem designsystem"
-    // "domain domain domain newsletter"`},
-         // }}
+         
          >
           <Box sx={{ gridArea: 'header' }} className="mt-40">
             <Box
@@ -338,47 +256,7 @@ export default function Home() {
 
             </Box>
           </Box>
-          {/* <Box sx={{ gridArea: 'main' }}>
-
-            <Box component="div" className="bentoBox rounded-2xl">
-              <Box component="div" className="bentoContent">
-                <Box component="div" className="bentoImg">
-                  <Image
-                    priority
-                    src="https://ik.imagekit.io/ylqs11u10/doctor.png"
-                    // layout="fill"
-                    objectFit="cover"
-                    width="2560"
-                    height="1440"
-                    objectPosition="center"
-                    alt="Dream Medical Hero"
-                    className="rounded-2xl"
-                  />
-
-                  <Box component="div" className="overlay rounded-2xl">
-                  </Box>
-                  <Box component="div" className="bentoCopy p-4">
-                  <h3 className="mt-4">Case Studies</h3>
-                  <p className="mt-4">Delve into our portfolio of case studies, showcasing how we've partnered with clients to overcome challenges and achieve remarkable outcomes</p>
-                  <ul className="list-disc list-outside pl-4 mb-8">
-                    <li>Development process is a symphony of technical expertise and creative ingenuity.</li>
-                    <li>Ensure functionality, responsiveness, and seamless interactions.</li>
-
-                  </ul>
-
-                  <Link
-                    href="/contact"
-                  >
-                    Learn more...
-                  </Link>
-                </Box>
-                </Box>
-                
-
-              </Box>
-
-            </Box>
-          </Box> */}
+         
           <Box sx={{ gridArea: 'tools' }} className="bentoBox rounded-2xl">
             <Box component="div" className="bentoContent">
               <Box component="div" className="bentoImg">

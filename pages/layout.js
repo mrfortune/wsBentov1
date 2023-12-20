@@ -17,28 +17,13 @@ const inconsolata = Inconsolata({
 })
 
 export default function RootLayout({ children }) {
-  // const [navbar, setNavbar] = useState(false)
-
-  // //logo scroll when active
-  // // const [navbarLogo, setNavbarLogo] = useState(logo)
-
-  // //navbar scroll changeBackground function
-  // const changeBackground = () => {
-  //   console.log(window.scrollY)
-  //   if (window.scrollY >= 66) {
-  //     setNavbar(true)
-  //   } else {
-  //     setNavbar(false)
-  //   }
-  // }
-
-  // useEffect(() => {
-  //   changeBackground()
-  //   // adding the event when scroll change background
-  //   window.addEventListener("scroll", changeBackground)
-  // })
   return (
     <> 
+      <style jsx global>{`
+        html {
+          font-family: ${inconsolata.style.fontFamily};
+        }
+      `}</style>
     <CssBaseline/>
        <NavBar/>
       <main className={inconsolata.className}>{children}</main>
