@@ -1,4 +1,4 @@
-import Layout from './layout';
+import Layout from './layout.js';
 import  '../styles/styles.css';
 import './globals.css';
 import { ThemeProvider } from '@mui/material';
