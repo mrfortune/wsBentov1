@@ -1,18 +1,18 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
-import {
-  Box,
-  Stack,
-  Container
-} from "@mui/material";
-import { Typography } from "@mui/material";
-import { Paper, Button } from "@mui/material";
+import Box from '@mui/material/Box'; 
+import Container from '@mui/material/Container'; 
+import Grid from '@mui/material/Grid'; 
+import Typography from '@mui/material/Typography'; 
+import Card from '@mui/material/Card'; import CardContent from '@mui/material/CardContent'; 
+import CardMedia from '@mui/material/CardMedia'; 
+import Divider from '@mui/material/Divider'; 
+import Button from '@mui/material/Button';
 import Image from "next/image";
 import Link from 'next/link';
 import { motion } from "framer-motion";
 import Meta from "../components/Meta";
 import { AnimatePresence } from "framer-motion";
-import Divider from "@mui/material/Divider";
 import Chip from "@mui/material/Chip";
 import { textAlign } from "@mui/system";
 import myLoader from "../components/Loader";
@@ -21,10 +21,10 @@ import { faPencil } from '@fortawesome/free-solid-svg-icons';
 import { faCode } from '@fortawesome/free-solid-svg-icons';
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import React, { useState } from "react";
-import { useRouter } from 'next/router';
+//import { useRouter } from 'next/router';
 import PropTypes from 'prop-types';
 //useSWR allows the use of SWR inside function components
-import useSWR from 'swr';
+//import useSWR from 'swr';
 
 const { heroContent, heroWrapper, overlay, imageWrapper, heroImage } = styles;
 //Write a fetcher function to wrap the native fetch function and return the result of a call to url in json format
