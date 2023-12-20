@@ -17,11 +17,15 @@ const inconsolata = Inconsolata({
   display: 'swap',
   preload: false,
 })
-
+import { useRouter } from 'next/navigation'
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={inconsolata.className}>
-    <body>{children}</body>
+    <html lang="en" >
+    <body className={inconsolata.className}>
+      <NavBar/>
+      {children}
+      <FooterNav/>
+    </body>
   </html> 
   )
   }

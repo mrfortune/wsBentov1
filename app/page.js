@@ -34,27 +34,12 @@ const fetcher = (url) => fetch(url).then((res) => res.json());
 export default function Home() {
   const [showMore, setShowMore] = useState(false);
   return (
-    //   <Box
-    //   sx={{
-    //     width: '100%',
-    //     height: '140px',
-    //     color: '#fff',
-    //     '& > .MuiBox-root > .MuiBox-root': {
-    //       p: 1,
-    //       border:'1px solid #ccc',
-    //       borderRadius: 2,
-    //       fontSize: '0.875rem',
-    //       fontWeight: '700',
-    //     },
-    //   }}
-    // >
-
-    <div className={styles.container}>
+    <div className="grid-container">
       <Head>
         <title>WorldShaker</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className='grid-container'>
+      <div>
 <div>
       <h1 className="h1Header mb-8">
                 Data, Insights, &

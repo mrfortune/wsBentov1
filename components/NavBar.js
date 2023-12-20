@@ -76,8 +76,8 @@ export default function NavBar (props) {
   );
 
   const container = window !== undefined ? () => window().document.body : undefined;
-  const router = useRouter();
-  const currentRoute = router.pathname;
+  // const router = useRouter();
+  // const currentRoute = router.pathname;
   // const trigger = useScrollTrigger({
   //   threshold: 100, // Adjust the threshold as needed
   // });

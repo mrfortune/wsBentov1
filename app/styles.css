@@ -176,7 +176,7 @@ nav .contactButton:hover a {
 .full {
   grid-column: full;
 }  
-main .grid-container {
+.grid-container {
   --gap: clamp(1rem, 6vw, 3rem);
   --full: minmax(var(--gap), 1fr);
   --content: min(50ch, 100% - var(--gap) * 2);
