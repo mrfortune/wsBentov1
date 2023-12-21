@@ -1,5 +1,5 @@
 'use client'
-import styles from '../styles/Home.module.css';
+// import styles from '../styles/Home.module.css';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
@@ -21,12 +21,12 @@ import { faCode } from '@fortawesome/free-solid-svg-icons';
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import React, { useState } from "react";
 import Head from 'next/head';
-//import { useRouter } from 'next/router';
+import { useRouter } from 'next/router';
 import PropTypes from 'prop-types';
 //useSWR allows the use of SWR inside function components
 //import useSWR from 'swr';
 // import type { Metadata } from 'next';
-const { heroContent, heroWrapper, overlay, imageWrapper, heroImage } = styles;
+// const { heroContent, heroWrapper, overlay, imageWrapper, heroImage } = styles;
 
 const fetcher = (url) => fetch(url).then((res) => res.json());
 export const metadata = {

@@ -12,9 +12,7 @@ module.exports = {
   ],
   theme: {
       fontFamily: {
-        // 👇 Add CSS variables
-        sans: ["var(--font-inconsolata)"],
-        mono: ["var(--font-roboto-mono)"],
+        'sans': ['Inconsolata', 'sans-serif'],
     },
   },
   plugins: [],
