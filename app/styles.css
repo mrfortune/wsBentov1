@@ -192,6 +192,7 @@ nav .contactButton:hover a {
     var(--feature) [feature-end]
     var(--full) [full-end];
     margin-bottom:10rem;
+    margin-top:10rem;
 } 
 .drawer {
   display: flex;
@@ -518,7 +519,7 @@ color:#7A2048;*/
   /* background: rgb(27,27,27);
 background: linear-gradient(180deg, rgba(27,27,27,1) 19%, rgba(38,38,38,1) 53%, rgba(10,10,10,1) 100%
   ); */
-  padding: 1.5rem 1rem;
+  padding: 0rem;
 }
 
 .footerBG a {
