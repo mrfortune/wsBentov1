@@ -5,8 +5,6 @@ import { Box, Grid, Container, Item, Paper } from "@mui/material";
 import { Typography } from "@mui/material";
 import Divider from "@mui/material/Divider";
 import Image from "next/image";
-import myLoader from "../components/Loader";
-import Meta from "../components/Meta";
 import Table from "@mui/material/Table";
 import TableBody from "@mui/material/TableBody";
 import TableCell from "@mui/material/TableCell";
@@ -18,6 +16,7 @@ import { useRouter } from 'next/router';
 function createData(criteria, test, evaluation) {
   return { criteria, test, evaluation };
 }
+
 const rows = [
   createData(
     "Visibility of system status ",
@@ -74,7 +73,7 @@ const rows = [
 const WestSide = () => {
   return (
     <div className="wgsr">
-      <Meta title="Case Study::West-Side German Shepherd Rescue" />
+      
 
       <Box
         component="section"

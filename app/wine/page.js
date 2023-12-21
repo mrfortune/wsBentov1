@@ -5,13 +5,11 @@ import { Box, Grid, Container, Item, Paper } from "@mui/material";
 import { Typography } from "@mui/material";
 import Divider from "@mui/material/Divider";
 import Image from "next/image";
-import Meta from "../components/Meta";
-import myLoader from "../components/Loader";
 import { useEffect, useState } from 'react'
 const WineStore = () => {
   return (
     <>
-      <Meta title="Case Study::The Winery, Brooklyn" />
+     
         <Box
           mt={8}
           component="div"
