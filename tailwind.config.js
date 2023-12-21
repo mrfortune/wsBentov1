@@ -11,12 +11,10 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {
       fontFamily: {
         // 👇 Add CSS variables
         sans: ["var(--font-inconsolata)"],
         mono: ["var(--font-roboto-mono)"],
-      },
     },
   },
   plugins: [],

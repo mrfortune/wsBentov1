@@ -16,6 +16,7 @@ const inconsolata = Inconsolata({
   style: ['normal'],
   display: 'swap',
   preload: false,
+  variable: '--font-inconsolata',
 })
 
 export const metadata = {
@@ -23,14 +24,9 @@ export const metadata = {
   description: '...',
 }
 
-
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={inconsolata.className}>
-      {/* <head>
-        <title>Title</title>
-        <meta name='description' content='Description' />
-      </head> */}
     <body >
       <NavBar/>
       {children}
