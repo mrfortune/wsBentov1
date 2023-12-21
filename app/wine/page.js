@@ -29,7 +29,7 @@ const WineStore = () => {
           <Grid item xs={12} lg={12} xl={12} md={12} sm={12}>
             <Box component="div">
               <Image
-                loader={myLoader}
+                
                 src="wineryBK.png"
                 width={960}
                 height={648}
@@ -126,7 +126,7 @@ const WineStore = () => {
           <Grid item xs={12} sm={6} md={6} lg={6}>
             <Box component="div" mb={6}>
               <Image
-                loader={myLoader}
+                
                 src="winery.jpg"
                 className="imageBorderradius"
                 alt="Competitors"
@@ -138,7 +138,7 @@ const WineStore = () => {
           <Grid item xs={12} sm={6} lg={6} xl={6} md={6}>
             <Box component="div" mb={6}>
               <Image
-                loader={myLoader}
+                
                 src="problem2.png"
                 className="imageBorderradius"
                 alt="Competitors"
@@ -196,7 +196,7 @@ const WineStore = () => {
           <Grid item xs={12} sm={6} lg={6} md={6} xl={6} mt={5}>
             <Box component="div" mb={6}>
               <Image
-                loader={myLoader}
+                
                 src="Malikka.jpg"
                 className="imageBorderradius"
                 alt="Competitors"
@@ -208,7 +208,7 @@ const WineStore = () => {
           <Grid item xs={12} lg={12} md={12} xl={12} mt={5}>
             <Box component="div" mb={6}>
               <Image
-                loader={myLoader}
+                
                 src="FarrahD.jpg"
                 className="imageBorderradius"
                 alt="Competitors"
@@ -220,7 +220,7 @@ const WineStore = () => {
           <Grid item xs={12} lg={12} md={12} xl={12} mt={5}>
             <Box component="div" mb={6}>
               <Image
-                loader={myLoader}
+                
                 src="DanielleT.jpg"
                 className="imageBorderradius"
                 alt="Competitors"
@@ -232,7 +232,7 @@ const WineStore = () => {
           <Grid item xs={12} lg={12} mt={5}>
             <Box component="div" mb={6}>
               <Image
-                loader={myLoader}
+                
                 src="Chanel.jpg"
                 className="imageBorderradius"
                 alt="Competitors"
@@ -251,7 +251,7 @@ const WineStore = () => {
             <Typography variant="h3">Drink PlG</Typography>
             <Box component="div" mb={6}>
               <Image
-                loader={myLoader}
+                
                 src="drinkplg.png"
                 className="imageBorderradius"
                 alt="Competitors"
@@ -263,7 +263,7 @@ const WineStore = () => {
             <Typography variant="h3">Lil Mos Wine and Spirits</Typography>
             <Box component="div" mb={6}>
               <Image
-                loader={myLoader}
+                
                 src="lilmos.png"
                 className="imageBorderradius"
                 alt="Competitors"
@@ -276,7 +276,7 @@ const WineStore = () => {
             <Typography variant="h2">Persona</Typography>
             <Box component="div" mb={6}>
               <Image
-                loader={myLoader}
+                
                 src="BKWinePersona.jpg"
                 className="imageBorderradius"
                 alt="Persona"

@@ -6,8 +6,6 @@ import { Typography } from "@mui/material";
 import Divider from "@mui/material/Divider";
 import Image from "next/image";
 import { borders } from "@mui/system";
-import myLoader from "../components/Loader";
-import Meta from "../components/Meta";
 import { motion, AnimatePresence } from 'framer-motion';
 import usabilityTest from '/public/assets/FadeUsabilityTest_LoriMarion_2.gif';
 const commonStyles = {
@@ -21,8 +19,7 @@ import { useRouter } from 'next/router'
 const FadeDesign = () => {
   return (
     <div className="fade">
-      <Meta title="Case study::Fade Solutions Case Study" />
-
+  
       <Box
         mt={8}
         component="section"
@@ -320,7 +317,6 @@ const FadeDesign = () => {
               alignItems="center"
             >
               <Image layout="responsive"
-                loader={myLoader}
                 src="/assets/FadeB2B_Page_userflow1.png"
                 alt="User Flow"
                 className="imageBorderradius"
