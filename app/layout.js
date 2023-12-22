@@ -2,7 +2,6 @@ import './global.css'
 import DrawerAppBar from '../components/NavBar';
 import FooterNav from '../components/FooterNav';
 import NavBar from '../components/NavBar';
-import { Metadata } from 'next';
 import { ThemeProvider } from '@mui/material';
 import { config, library } from '@fortawesome/fontawesome-svg-core';
 import '@fortawesome/fontawesome-svg-core/styles.css';

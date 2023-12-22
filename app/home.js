@@ -38,7 +38,6 @@ export const metadata = {
 export default function HomePage() {
   const [showMore, setShowMore] = useState(false);
   return (
-
     <div className="grid-container">
       <div className="content">
         <div className="bentoBox rounded-2xl">
