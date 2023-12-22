@@ -162,20 +162,10 @@ nav .contactButton:hover a {
   align-items:center;
 } */
 
-.grid-container > * {
-  grid-column: content;
-}
- .popout {
-  grid-column: popout;
-}
-.feature {
-  grid-column: feature;
-}
-.full {
-  grid-column: full;
-}  
+
 .grid-container {
-  --gap: clamp(1rem, 6vw, 3rem);
+  gap:3rem;
+   --gap: clamp(1rem, 6vw, 3rem); 
   --full: minmax(var(--gap), 1fr);
   --content: min(50ch, 100% - var(--gap) * 2);
   --popout: minmax(0, 2rem);
@@ -192,6 +182,18 @@ nav .contactButton:hover a {
     margin-bottom:10rem;
     margin-top:10rem;
 } 
+.grid-container .content > * {
+  grid-column: content;
+}
+.grid-container .popout {
+  grid-column: popout;
+}
+.grid-container .feature {
+  grid-column: feature;
+}
+.grid-container .full {
+  grid-column: full;
+}  
 .drawer {
   display: flex;
   flex-direction: column;
@@ -206,26 +208,6 @@ nav .contactButton:hover a {
   color: #fafafa;
 }
 
-/* .nextui-c-iWjDFM .nextui-button-text a{
-  font-size:.75rem;
-} */
-/* .MuiTypography-h1.caseStudyHeads {
-  font-size: clamp(1rem, 3rem, 5rem);
-  /* font-size: clamp(1.953rem, -.22rem + 1.6vw, 3.247rem) !important; 
-  font-weight:800;
-} */
-
-/* .MuiTypography-h1.display {
-  font-size: clamp(1.602rem, -.22rem + 1.6vw, 3.247rem);
-  color: #fafafa;
-  background-clip: text;
-  -webkit-background-clip: text;
-} */
-
-/* .MuiTypography-h1 {
-  font-size: clamp(1.953rem, -.22rem + 1.6vw, 3.247rem) !important;
-} */
-
 .MuiTypography-body1 {
   font-size: clamp(1rem, -.22rem + 1.6vw, 1rem) !important;
   margin-bottom: 2rem;
@@ -236,26 +218,26 @@ nav .contactButton:hover a {
     background-position: var(--bg-size) 0;
   }
 } */
-main .grid-container .homeHero .nextui-button-text a {
+.grid-container .nextui-button-text a {
   color: #fafafa;
   font-size: medium;
 }
 
-main .grid-container .homePage .nextui-button-text a {
+.grid-container .nextui-button-text a {
   color: #fafafa;
   font-size: medium;
   text-transform: capitalize;
 }
 
-main .grid-container .homePage .nextui-button-text a.disabledBtn {
+.grid-container .nextui-button-text a.disabledBtn {
   color: #333;
 }
 
-main .grid-container .homePage button .nextui-c-iWjDFM-icVqQtu-css {
+/* .grid-container  button  {
   background: #b1b0b0;
-}
+} */
 
-main .grid-container .homeHero .heroText {
+.grid-container .heroText {
   display: flex;
   flex-direction: column;
 }
@@ -265,12 +247,12 @@ main .grid-container .homeHero .heroText {
 {
 width:63%
 } */
-main .grid-container .homeHero .heroText button {
+.grid-container button {
   max-width: 20rem;
   width:10rem;
   background-color:blueviolet;
 }
-main .grid-container .homeHero .heroText button a{
+.grid-container button a{
   text-transform: none;
 }
 
@@ -294,54 +276,54 @@ main .grid-container .homeHero .heroText button a{
   text-transform: uppercase;
   letter-spacing: 1px;
 } */
-main .grid-container .heroText{
+.grid-container .heroText{
   text-align:center;
 }
 
-main .grid-container .bentoBox{
-  border:1px solid hsl(0, 0%, 44%);
-  background-color:rgba(41, 41, 41, 1);
+.grid-container .bentoBox{
+  border:1px solid hsl(0, 0%, 19%);
+  background-color:#121212;
   display:grid;
   flex-direction:column;
 }
-main .grid-container .bentoBox .bentoContent{
+.grid-container .bentoBox .bentoContent{
 display:flex;
 flex-direction:column;
 }
-main .grid-container .bentoBox .bentoContent .bentoImg{
+.grid-container .bentoBox .bentoContent .bentoImg{
   display: grid;
   grid-template: "container" 1fr;
   place-items:stretch;
   align-content: space-between;
   overflow: hidden;
 }
-main .grid-container .bentoBox .bentoContent .bentoImg .image{
+.grid-container .bentoBox .bentoContent .bentoImg .image{
   width: 100%;
   height: auto;
   object-fit: cover;
   aspect-ratio: 16 / 9;
 }
 
-main .bentoBox .bentoContent .bentoImg > * {
+.bentoBox .bentoContent .bentoImg > * {
   grid-area: container;
   max-width: 100%;
 }
 /* main .bentoBox .bentoContent .bentoImg {
   grid-area: 1 / 1 / 2 / 2; 
 } */
-main .grid-container .bentoBox .bentoContent .bentoImg .overlay{
+.grid-container .bentoBox .bentoContent .bentoImg .overlay{
   grid-area: 1 / 1;
   width: 100%;
   height:100%;
   background: rgb(41,41,41);
   background: linear-gradient(180deg, rgba(41,41,41,0) 0%, rgba(41,41,41,0.6) 40%, rgba(41,41,41,0.8) 64%, rgba(41,41,41,1) 77%); 
 }
-main .grid-container .bentoBox .bentoContent .bentoImg .bentoCopy{
+.grid-container .bentoBox .bentoContent .bentoImg .bentoCopy{
 color:#fafafa;
 display:grid;
 grid-area: 1 / 1;
 }
-main .grid-container .heroText h1.h1Header {
+.grid-container .heroText h1.h1Header {
   font-size: clamp(1.602rem, 1.981rem + 1.33vw, 4.11rem) !important; 
   color: #fafafa;
   line-height: 1;
@@ -349,12 +331,12 @@ main .grid-container .heroText h1.h1Header {
   font-weight:900;
 }
 
-main .heroText h1.boujee-text span {
+.heroText h1.boujee-text span {
   text-decoration: underline;
   font-weight: 300;
 }
 
-main .grid-container .headerBody {
+.grid-container .headerBody {
   font-size: clamp(1rem, -.22rem + 1.6vw, 1rem);
   /* background-image: linear-gradient(to bottom, #CBCBCB, #FF5B19); */
   font-weight: 400;
@@ -363,7 +345,7 @@ main .grid-container .headerBody {
   color: #fafafa;
 }
 
-main .grid-container .homeHero .heroText p.body {
+.grid-container .homeHero .heroText p.body {
   text-transform: none;
   color: #fafafa;
 }
