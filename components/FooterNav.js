@@ -15,7 +15,7 @@ const FooterNav = () => {
   return (
 
     <footer>
-      <div className="footerBG grid grid-cols-5">
+      <div className="footerBG grid gap-x-2 gap-y-2 grid-cols-5">
         <div>
           <Link href="/">
             <Image
@@ -28,15 +28,15 @@ const FooterNav = () => {
 
             </Image>
           </Link>
-          <ul>
+          <ul className="flex">
             <li><Link href="http://linkedin.com/in/robertsharris">
               <LinkedIn fontSize="large" />
             </Link>
-
+</li><li>
               <Link href="/">
                 <Facebook fontSize="large" />
               </Link>
-
+</li><li>
               <Link href="/">
                 <Instagram fontSize="large" />
               </Link></li>
