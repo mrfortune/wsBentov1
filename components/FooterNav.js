@@ -13,185 +13,120 @@ import Link from "next/link";
 
 const FooterNav = () => {
   return (
-      <Box
-      className="footerBG"
-        component="footer"
-        direction="row"
-        display="flex"
-        flexWrap="wrap"
-        justifyContent="center"
-      >
-        <Grid container sx={{ maxWidth: "lg" }} spacing={2}>
-          <Grid item xs={12} sm={12} md={4} lg={4} xl={4}>
-            <Box flexGrow="1" component="div">
+
+    <footer>
+      <div className="footerBG grid grid-cols-5">
+        <div>
+          <Link href="/">
+            <Image
+              loader={myLoader}
+              src="assets/wslogo8.png"
+              width={200}
+              height={24}
+              alt="Logo"
+            >
+
+            </Image>
+          </Link>
+          <ul>
+            <li><Link href="http://linkedin.com/in/robertsharris">
+              <LinkedIn fontSize="large" />
+            </Link>
+
               <Link href="/">
-                <Image
-                  loader={myLoader}
-                  src="assets/wslogo8.png"
-                  width={200}
-                  height={24}
-                  alt="Logo"
-                >
-
-                </Image>
+                <Facebook fontSize="large" />
               </Link>
-              <Box
-                component="ul"
-                className="mylistStyle"
-                sx={{
-                  padding: "0 0",
-                  listStyle: "none",
-                }}
-              >
-                <Box
-                  component="li"
-                  mt={1}
-                  display="flex"
-                  sx={{
-                    padding: "0 0",
-                  }}
-                >
-                  <Link href="http://linkedin.com/in/robertsharris">
-                    <LinkedIn fontSize="large" />
-                  </Link>
 
-                  <Link href="/">
-                    <Facebook fontSize="large" />
-                  </Link>
+              <Link href="/">
+                <Instagram fontSize="large" />
+              </Link></li>
+          </ul>
 
-                  <Link href="/">
-                    <Instagram fontSize="large" />
-                  </Link>
-                </Box>
-              </Box>
-            </Box>
-          </Grid>
-          {/* <Grid item xs={12} sm={12} md={4} lg={4} xl={4} mt={8}>
-           <Divider orientation="vertical" variant="middle" flexItem sx={{borderColor:'#ccc', display:{sm:'block', xs:'none', md:'block', lg:'block'}}}/> 
-        </Grid> */}
+        </div>
+        <div>
+          <h4>
+            Company
+          </h4>
+          <ul>
+            <li>
+              <Link href="/story">Story</Link>
+            </li>
+            <li>
+              <Link href="/contact">Contact</Link>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4>
+            Resources
+          </h4>
+          <ul>
+            <li>
+              <Link href="http://www.adobe.com">Adobe</Link>
+            </li>
+            <li>
+              <Link href="http://www.figma.com">OpenAI</Link>
+            </li>
+            <li>
+              <Link href="http://www.figma.com">ChatGPT</Link>
+            </li>
+            <li>
+              <Link href="http://www.figma.com">Figma</Link>
+            </li>
+            <li>
+              <Link href="https://www.framer.com/motion">
+                Framer Motion
+              </Link>
+            </li>
+            <li>
+              <Link href="https://m3.material.io">Material</Link>
+            </li>
+            <li>
+              <Link href="http://www.figma.com">Midjourney</Link>
+            </li>
+            <li>
+              <Link href="https://nextjs.org/">Next.js</Link>
+            </li>
+            <li>
+              <Link href="https://react.dev/">React</Link>
+            </li>
+          </ul>
 
-          <Grid item xs={12} sm={12} md={8} lg={8} xl={8}>
-            <Box component="div" display="flex" flexGrow="1">
-              <Box
-                component="div"
-                flexGrow="1"
-                sx={{ paddingLeft: { sm: "0rem" } }}
-              >
-                <h4>
-                  Company
-                </h4>
-                <Box
-                  component="ul"
-                  className="mylistStyle"
-                  sx={{
-                    padding: "0 0",
-                    listStyle: "none",
-                  }}
-                >
-                  <Box component="li">
-                    <Link href="/story">Story</Link>
-                  </Box>
-                  <Box component="li">
-                    <Link href="/contact">Contact</Link>
-                  </Box>
-                </Box>
-              </Box>
-              <Box component="div" flexGrow="1">
-                <h4>
-                  Resources
-                </h4>
-                <Box
-                  component="ul"
-                  className="mylistStyle"
-                  sx={{
-                    padding: "0 0",
-                    listStyle: "none",
-                  }}
-                >
-                  <Box component="li">
-                    <Link href="http://www.adobe.com">Adobe</Link>
-                  </Box>
-                  <Box component="li">
-                    <Link href="http://www.figma.com">OpenAI</Link>
-                  </Box>
-                  <Box component="li">
-                    <Link href="http://www.figma.com">ChatGPT</Link>
-                  </Box>
-                  <Box component="li">
-                    <Link href="http://www.figma.com">Figma</Link>
-                  </Box>
-                  <Box component="li">
-                    <Link href="https://www.framer.com/motion">
-                      Framer Motion
-                    </Link>
-                  </Box>
-                  <Box component="li">
-                    <Link href="https://m3.material.io">Material</Link>
-                  </Box>
-                  <Box component="li">
-                    <Link href="http://www.figma.com">Midjourney</Link>
-                  </Box>
-                  <Box component="li">
-                    <Link href="https://nextjs.org/">Next.js</Link>
-                  </Box>
-                  <Box component="li">
-                    <Link href="https://react.dev/">React</Link>
-                  </Box>
-                </Box>
-              </Box>
-              <Box component="div" flexGrow="1">
-                <h4>
-                  Partners
-                </h4>
-                <Box
-                  component="ul"
-                  className="mylistStyle"
-                  sx={{
-                    padding: "0 0",
-                    listStyle: "none",
-                  }}
-                >
-                  <Box component="li"></Box>
-                  <Box component="li">
-                    <Link href="https://ionblade.com/">IONBLADE</Link>
-                  </Box>
-                  <Box component="li">
-                    <Link href="https://www.godaddy.com/">GoDaddy</Link>
-                  </Box>
-                  {/* <Box component="li">
-              <Link href="/">Privacy</Link>
-            </Box>
+
+        </div>
+        <div>
+          <h4>
+            Partners
+          </h4>
+          <ul>
+
             <Box component="li">
-              <Link href="/">Privacy</Link>
-            </Box> */}
-                </Box>
-              </Box>
-              <Box component="div">
-                <h4>
-                  Legal
-                </h4>
-                <Box
-                  component="ul"
-                  className="mylistStyle"
-                  sx={{
-                    padding: "0 0",
-                    listStyle: "none",
-                  }}
-                >
-                  <Box component="li"></Box>
-                  <Box component="li">
-                    <Link href="/">Terms</Link>
-                  </Box>
-                  <Box component="li">
-                    <Link href="/">Privacy</Link>
-                  </Box>
-                </Box>
-              </Box>
+              <Link href="https://ionblade.com/">IONBLADE</Link>
+            </Box> <Box component="li">
+              <Link href="https://www.godaddy.com/">GoDaddy</Link>
             </Box>
-        
-          </Grid>
-        </Grid>
-      </Box>
+          </ul>
+
+
+
+
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <ul>
+            <li>
+              <Link href="/">Terms</Link>
+            </li>
+            <li>
+              <Link href="/">Privacy</Link>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+
   );
 };
 

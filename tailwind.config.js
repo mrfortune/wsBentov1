@@ -14,6 +14,9 @@ module.exports = {
       fontFamily: {
         'sans': ['Inconsolata', 'sans-serif'],
     },
+    container: {
+      center: true,
+    },
   },
   plugins: [],
 };

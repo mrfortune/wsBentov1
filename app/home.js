@@ -38,136 +38,46 @@ export const metadata = {
 export default function HomePage() {
   const [showMore, setShowMore] = useState(false);
   return (
-    <div className="grid-container">
-      <div className="content">
-        <div className="bentoBox rounded-2xl">
-          <h1 className="h1Header mb-8">
-            Data, Insights, &
-            Creativity, <br></br>Produce Transformation
-          </h1>
-          <p className="mb-8">
-            At WorldShaker Interactive, we harness the power of data, unearth insights,<br></br> and infuse creativity to catalyze transformative solutions for our clients.
-          </p>
-
-
-          <button className="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium inline-flex rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">
-            <Link className="flex leading-4"
-              href="/submit-info"
+    <div className="grid gap-x-2 gap-y-2 grid-rows-[auto] my-2 container max-w-full mt-32 p-16 auto-rows-max">
+          <div className="flex w-full col-span-2 flex-col items-start gap-x-8 gap-y-8 bg-[#131315] px-12 py-10 rounded-3xl max-mdd:max-w-none max-md:p-8">
+            {/* <img
+              src={pranay}
+              alt="sai pranay"
+              className="overflow-hidden w-[108px] h-[108px] flex-[0_0_auto] rounded-full"
+            /> */}
+            <h1 className="max-md:text-[40px] max-md:leading-[48px] max-md:tracking-[-0.01em]">
+              sai pranay
+              <br />
+              frontend developer{" "}
+              <span className="text-[#8a8a93]">
+                {" "}
+                who build things for the web.
+              </span>
+            </h1>
+          </div>
+          <div className="flex flex-col justify-between items-stretch gap-x-8 gap-y-8 bg-[#131315] text-center p-12 rounded-3xl max-md:p-8">
+            <div className="flex flex-col justify-center items-center mb-8 gap-3 max-md:mb-4">
+              {/* <ContactIcon className="w-[112px] h-[112px] flex-[0_0_auto]" /> */}
+              <h2 className="max-md:text-[40px] max-md:leading-[48px] max-md:tracking-[-0.01em]">
+                Have a project in mind?
+              </h2>
+            </div>
+            <a
+              href="mailto:saipranayadepu@gmail.com"
+              className="min-h-[96px] bg-[#ff5e1a] transition-[background-color] duration-300 ease-[ease-out] text-[40px] leading-[48px] font-medium text-center tracking-[-0.01em] px-8 py-6 rounded-[99px] max-md:min-h-[80px] max-md:text-2xl max-md:leading-8 text-white"
             >
-
-              Get Started <svg className="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                <path stroke="currentColor" d="M1 5h12m0 0L9 1m4 4L9 9" />
-              </svg>
-            </Link>
-          </button>
-          <button className="text-white hover:text-white border border-purple-700 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-purple-400 dark:text-purple-400 dark:hover:text-white dark:hover:bg-purple-500 dark:focus:ring-purple-900 leading-4">
-            <Link className="leading-4"
-              href="/contact"
-            >
-              Learn more...
-            </Link>
-          </button>
-
+              hey@pranay.com
+              {/* <span className=" animate-pulse">👋</span> */}
+            </a>
+          </div>
+          <div className="flex w-full max-w-[746px] flex-col items-start gap-x-8 gap-y-8 bg-[#131315] px-12 py-10 rounded-3xl max-mdd:max-w-none max-md:p-8"></div>
+          <div className="flex w-full max-w-[746px] flex-col items-start gap-x-8 gap-y-8 bg-[#131315] px-12 py-10 rounded-3xl max-mdd:max-w-none max-md:p-8"></div>
+          <div className="flex w-full col-span-2 flex-col items-start gap-x-8 gap-y-8 bg-[#131315] px-12 py-10 rounded-3xl max-mdd:max-w-none max-md:p-8"></div>
+          <div className="flex w-full max-w-[746px] flex-col items-start gap-x-8 gap-y-8 bg-[#131315] px-12 py-10 rounded-3xl max-mdd:max-w-none max-md:p-8"></div>
+          <div className="flex w-full max-w-[746px] flex-col items-start gap-x-8 gap-y-8 bg-[#131315] px-12 py-10 rounded-3xl max-mdd:max-w-none max-md:p-8"></div>
+          <div className="flex w-full max-w-[746px] flex-col items-start gap-x-8 gap-y-8 bg-[#131315] px-12 py-10 rounded-3xl max-mdd:max-w-none max-md:p-8"></div>
         </div>
-      </div>
-
-      <div className="popout">
-        <div className="bentoBox rounded-2xl">
-          <h1 className="h1Header mb-8">
-            Data, Insights, &
-            Creativity, <br></br>Produce Transformation
-          </h1>
-          <p className="mb-8">
-            At WorldShaker Interactive, we harness the power of data, unearth insights,<br></br> and infuse creativity to catalyze transformative solutions for our clients.
-          </p>
-
-
-          <button className="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium inline-flex rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">
-            <Link className="flex leading-4"
-              href="/submit-info"
-            >
-
-              Get Started <svg className="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                <path stroke="currentColor" d="M1 5h12m0 0L9 1m4 4L9 9" />
-              </svg>
-            </Link>
-          </button>
-          <button className="text-white hover:text-white border border-purple-700 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-purple-400 dark:text-purple-400 dark:hover:text-white dark:hover:bg-purple-500 dark:focus:ring-purple-900 leading-4">
-            <Link className="leading-4"
-              href="/contact"
-            >
-              Learn more...
-            </Link>
-          </button>
-
-        </div>
-      </div>
-      <div className="feature">
-        <div className="bentoBox rounded-2xl">
-          <h1 className="h1Header mb-8">
-            Data, Insights, &
-            Creativity, <br></br>Produce Transformation
-          </h1>
-          <p className="mb-8">
-            At WorldShaker Interactive, we harness the power of data, unearth insights,<br></br> and infuse creativity to catalyze transformative solutions for our clients.
-          </p>
-
-
-          <button className="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium inline-flex rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">
-            <Link className="flex leading-4"
-              href="/submit-info"
-            >
-
-              Get Started <svg className="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                <path stroke="currentColor" d="M1 5h12m0 0L9 1m4 4L9 9" />
-              </svg>
-            </Link>
-          </button>
-          <button className="text-white hover:text-white border border-purple-700 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-purple-400 dark:text-purple-400 dark:hover:text-white dark:hover:bg-purple-500 dark:focus:ring-purple-900 leading-4">
-            <Link className="leading-4"
-              href="/contact"
-            >
-              Learn more...
-            </Link>
-          </button>
-
-        </div>
-      </div>
-      <div className="full">
-        <div className="bentoBox rounded-2xl">
-          <h1 className="h1Header mb-8">
-            Data, Insights, &
-            Creativity, <br></br>Produce Transformation
-          </h1>
-          <p className="mb-8">
-            At WorldShaker Interactive, we harness the power of data, unearth insights,<br></br> and infuse creativity to catalyze transformative solutions for our clients.
-          </p>
-
-
-          <button className="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium inline-flex rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">
-            <Link className="flex leading-4"
-              href="/submit-info"
-            >
-
-              Get Started <svg className="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                <path stroke="currentColor" d="M1 5h12m0 0L9 1m4 4L9 9" />
-              </svg>
-            </Link>
-          </button>
-          <button className="text-white hover:text-white border border-purple-700 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-purple-400 dark:text-purple-400 dark:hover:text-white dark:hover:bg-purple-500 dark:focus:ring-purple-900 leading-4">
-            <Link className="leading-4"
-              href="/contact"
-            >
-              Learn more...
-            </Link>
-          </button>
-
-        </div>
-      </div>
-
-    </div>
-
-
+    
 
 
   )
