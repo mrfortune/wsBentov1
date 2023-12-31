@@ -14,9 +14,9 @@ import Link from "next/link";
 const FooterNav = () => {
   return (
 
-    <footer>
-      <div className="footerBG grid gap-x-2 gap-y-2 grid-cols-5">
-        <div>
+    <footer className="footerBG grid grid-cols-5">
+ 
+        <div className="flex flex-col">
           <Link href="/">
             <Image
               loader={myLoader}
@@ -32,18 +32,18 @@ const FooterNav = () => {
             <li><Link href="http://linkedin.com/in/robertsharris">
               <LinkedIn fontSize="large" />
             </Link>
-</li><li>
+            </li><li>
               <Link href="/">
                 <Facebook fontSize="large" />
               </Link>
-</li><li>
+            </li><li>
               <Link href="/">
                 <Instagram fontSize="large" />
               </Link></li>
           </ul>
 
         </div>
-        <div>
+        <div className="flex flex-col">
           <h4>
             Company
           </h4>
@@ -56,7 +56,7 @@ const FooterNav = () => {
             </li>
           </ul>
         </div>
-        <div>
+        <div className="flex flex-col">
           <h4>
             Resources
           </h4>
@@ -94,7 +94,7 @@ const FooterNav = () => {
 
 
         </div>
-        <div>
+        <div className="flex flex-col">
           <h4>
             Partners
           </h4>
@@ -106,12 +106,8 @@ const FooterNav = () => {
               <Link href="https://www.godaddy.com/">GoDaddy</Link>
             </Box>
           </ul>
-
-
-
-
         </div>
-        <div>
+        <div className="flex flex-col">
           <h4>Legal</h4>
           <ul>
             <li>
@@ -123,7 +119,7 @@ const FooterNav = () => {
 
           </ul>
         </div>
-      </div>
+
     </footer>
 
 

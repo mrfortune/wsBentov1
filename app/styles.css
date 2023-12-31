@@ -496,22 +496,19 @@ nav .MuiToolbar-root {
 }
 footer{
   padding:4rem;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-rows: repeat(6, 200px);
 }
-.footerBG {
+footer .footerBG {
   background-color: #010203 !important;
-  /*background: linear-gradient(177deg, rgba(50,34,148,1) 0%, rgba(72,49,212,1) 46%, rgba(108,90,220,1) 100%);
-color:#7A2048;*/
-  /* background: rgb(27,27,27);
-background: linear-gradient(180deg, rgba(27,27,27,1) 19%, rgba(38,38,38,1) 53%, rgba(10,10,10,1) 100%
-  ); */
   padding: 0rem;
 }
 
-.footerBG a {
+footer .footerBG a {
   color: #fafafa;
 }
 
-.footerBG a:hover {
+footer .footerBG a:hover {
   color: #4991e3;
 }
 
