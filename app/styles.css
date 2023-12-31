@@ -164,7 +164,7 @@ nav .contactButton:hover a {
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
 
-.grid-container {
+/* .grid-container {
   gap:3rem;
    --gap: clamp(1rem, 6vw, 3rem); 
   --full: minmax(var(--gap), 1fr);
@@ -194,7 +194,7 @@ nav .contactButton:hover a {
 }
 .grid-container .full {
   grid-column: full;
-}  
+}   */
 .drawer {
   display: flex;
   flex-direction: column;
