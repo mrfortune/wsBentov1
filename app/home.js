@@ -39,7 +39,7 @@ export default function HomePage() {
   const [showMore, setShowMore] = useState(false);
   return (
     <div className="grid gap-x-2 gap-y-2 grid-rows-[auto] my-2 container max-w-full mt-32 p-16 auto-rows-max">
-          <div className="flex w-full col-span-2 flex-col items-start gap-x-8 gap-y-8 bg-[#131315] px-12 py-10 rounded-3xl max-mdd:max-w-none max-md:p-8">
+          <div className="flex bg-[#131315] px-12 py-10 rounded-3xl max-mdd:max-w-none max-md:p-8">
             {/* <img
               src={pranay}
               alt="sai pranay"
@@ -55,7 +55,7 @@ export default function HomePage() {
               </span>
             </h1>
           </div>
-          <div className="flex flex-col justify-between items-stretch gap-x-8 gap-y-8 bg-[#131315] text-center p-12 rounded-3xl max-md:p-8">
+          <div className="flex bg-[#131315] text-center p-12 rounded-3xl max-md:p-8">
             <div className="flex flex-col justify-center items-center mb-8 gap-3 max-md:mb-4">
               {/* <ContactIcon className="w-[112px] h-[112px] flex-[0_0_auto]" /> */}
               <h2 className="max-md:text-[40px] max-md:leading-[48px] max-md:tracking-[-0.01em]">
@@ -70,12 +70,12 @@ export default function HomePage() {
               {/* <span className=" animate-pulse">👋</span> */}
             </a>
           </div>
-          <div className="flex w-full flex-col items-start gap-x-8 gap-y-8 bg-[#131315] px-12 py-10 rounded-3xl max-mdd:max-w-none max-md:p-8"></div>
-          <div className="flex w-full flex-col items-start gap-x-8 gap-y-8 bg-[#131315] px-12 py-10 rounded-3xl max-mdd:max-w-none max-md:p-8"></div>
-          <div className="flex w-full flex-col items-start gap-x-8 gap-y-8 bg-[#131315] px-12 py-10 rounded-3xl max-mdd:max-w-none max-md:p-8"></div>
-          <div className="flex w-full flex-col items-start gap-x-8 gap-y-8 bg-[#131315] px-12 py-10 rounded-3xl max-mdd:max-w-none max-md:p-8"></div>
-          <div className="flex w-full flex-col items-start gap-x-8 gap-y-8 bg-[#131315] px-12 py-10 rounded-3xl max-mdd:max-w-none max-md:p-8"></div>
-          <div className="flex w-full flex-col items-start gap-x-8 gap-y-8 bg-[#131315] px-12 py-10 rounded-3xl max-mdd:max-w-none max-md:p-8"></div>
+          <div className="flex bg-[#131315] px-12 py-10 rounded-3xl max-mdd:max-w-none max-md:p-8"></div>
+          <div className="flex  bg-[#131315] px-12 py-10 rounded-3xl max-mdd:max-w-none max-md:p-8"></div>
+          <div className="flex  bg-[#131315] px-12 py-10 rounded-3xl max-mdd:max-w-none max-md:p-8"></div>
+          <div className="flex bg-[#131315] px-12 py-10 rounded-3xl max-mdd:max-w-none max-md:p-8"></div>
+          <div className="flex  bg-[#131315] px-12 py-10 rounded-3xl max-mdd:max-w-none max-md:p-8"></div>
+          <div className="flex  bg-[#131315] px-12 py-10 rounded-3xl max-mdd:max-w-none max-md:p-8"></div>
         </div>
     
 
