@@ -56,84 +56,152 @@ const servicesData = [
   },
   // ... Other categories
 ];
-
 export default function HomePage() {
-  const [showMore, setShowMore] = useState(false);
   return (
-    <div className="grid gap-x-2 gap-y-2 grid-rows-[auto] my-2 container max-w-full mt-32 p-16 auto-rows-max">
-      {/* <div className="flex bg-[#131315] col-span-2 px-12 py-10 rounded-3xl max-mdd:max-w-none max-md:p-8">
-            {/* <img
-              src={pranay}
-              alt="sai pranay"
-              className="overflow-hidden w-[108px] h-[108px] flex-[0_0_auto] rounded-full"
-            /> 
-            <h1 className="max-md:text-[40px] max-md:leading-[48px] max-md:tracking-[-0.01em]">
-              sai pranay
-              <br />
-              frontend developer{" "}
-              <span className="text-[#8a8a93]">
-                {" "}
-                who build things for the web.
-              </span>
-            </h1>
-          </div>
-          <div className="flex bg-[#131315] text-center p-12 rounded-3xl max-md:p-8">
-            <div className="flex flex-col justify-center items-center mb-8 gap-3 max-md:mb-4">
-              {/* <ContactIcon className="w-[112px] h-[112px] flex-[0_0_auto]" /> 
-              <h2 className="max-md:text-[40px] max-md:leading-[48px] max-md:tracking-[-0.01em]">
-                Have a project in mind?
-              </h2>
-            </div>
-            <a
-              href="mailto:saipranayadepu@gmail.com"
-              className="min-h-[96px] bg-[#ff5e1a] transition-[background-color] duration-300 ease-[ease-out] text-[40px] leading-[48px] font-medium text-center tracking-[-0.01em] px-8 py-6 rounded-[99px] max-md:min-h-[80px] max-md:text-2xl max-md:leading-8 text-white"
-            >
-              hey@pranay.com
-               <span className=" animate-pulse">👋</span> 
-            </a>
-          </div>
-          <div className="flex bg-[#131315] px-12 py-10 rounded-3xl max-mdd:max-w-none max-md:p-8"></div>
-          <div className="flex  bg-[#131315] px-12 py-10 rounded-3xl max-mdd:max-w-none max-md:p-8"></div>
-          <div className="flex  bg-[#131315] px-12 py-10 rounded-3xl max-mdd:max-w-none max-md:p-8"></div>
-          <div className="flex bg-[#131315] px-12 py-10 rounded-3xl max-mdd:max-w-none max-md:p-8"></div>
-          <div className="flex  bg-[#131315] px-12 py-10 rounded-3xl max-mdd:max-w-none max-md:p-8"></div>
-          <div className="flex  bg-[#131315] px-12 py-10 rounded-3xl max-mdd:max-w-none max-md:p-8"></div> */}
+    <div className="grid gap-2 grid-rows-[auto] my-2 container max-w-full mt-32 p-8 auto-rows-max md:grid-cols-2 lg:grid-cols-3">
+      <div className="row-span-1 grid grid-rows-2 rounded-3xl border-2 overflow-hidden border-slate-400/10 max-mdd:max-w-none max-md:p-8 p-4 dark:bg-neutral-900 relative xl:col-span-2 lg:col-span-2 md:col-span-2 sm:col-span-1 xs:col-span-1">
+        <div className="flex flex-col justify-center items-center text-white text-center p-4">
+          <h2 className="text-xl font-bold mb-2">Bento Box 1</h2>
+          {/* Add more content as needed */}
+        </div>
+        <div className="relative h-40 grid">
+          <Image
+            src="/your_image_1.jpg" // Add your image path
+            alt="Bento Box 1 Image"
+            layout="fill"
+            objectFit="cover"
+            className="rounded-t-xl"
+          />
+        </div>
+      </div>
 
-      {[...Array(7)].map((_, i) => (
-        <div
-          key={i}
-          className={`row-span-1 rounded-3xl border-2 border-slate-400/10 bg-[#131315] p-4 dark:bg-neutral-900 ${i === 3 || i === 6 ? "col-span-2" : ""
-            }`}
-        > <div className="flex bg-[#131315] col-span-2 px-12 py-10 rounded-3xl max-mdd:max-w-none max-md:p-8">
-           {servicesData.map((category, categoryIndex) => (
-        <div key={categoryIndex}>
-          <h2 className="text-xl font-bold mb-2">{category.category}</h2>
-          {category.image && (
-            <Image
-              src={category.image}
-              alt={`${category.category} Image`}
-              width={300}
-              height={200}
-              className="mb-2 rounded-md"
-            />
-          )}
-        
-            {/* {category.services.map((service, serviceIndex) => (
-              <div key={serviceIndex} className="border p-4 rounded-md">
-                {service}
-              </div>
-            ))} */}
-          
+      <div className="row-span-1 grid grid-rows-2 rounded-3xl border-2 overflow-hidden border-slate-400/10 max-mdd:max-w-none max-md:p-8 p-4 dark:bg-neutral-900 relative lg:col-span-2 md:col-span-2 sm:col-span-1 xs:col-span-1">
+        <div className="flex flex-col justify-center items-center text-white text-center p-4">
+          <h2 className="text-xl font-bold mb-2">Bento Box 2</h2>
+          {/* Add more content as needed */}
         </div>
-      ))}
-            
-          </div>
+        <div className="relative h-40 grid">
+          <Image
+            src="/your_image_2.jpg" // Add your image path
+            alt="Bento Box 2 Image"
+            layout="fill"
+            objectFit="cover"
+            className="rounded-t-xl"
+          />
         </div>
-      ))}
+      </div>
+      <div className="row-span-1 grid grid-rows-2 rounded-3xl border-2 overflow-hidden border-slate-400/10 max-mdd:max-w-none max-md:p-8 p-4 dark:bg-neutral-900 relative lg:col-span-2 md:col-span-2 sm:col-span-1 xs:col-span-1">
+        <div className="flex flex-col justify-center items-center text-white text-center p-4">
+          <h2 className="text-xl font-bold mb-2">Bento Box 2</h2>
+          {/* Add more content as needed */}
+        </div>
+        <div className="relative h-40 grid">
+          <Image
+            src="/your_image_2.jpg" // Add your image path
+            alt="Bento Box 2 Image"
+            layout="fill"
+            objectFit="cover"
+            className="rounded-t-xl"
+          />
+        </div>
+      </div>
+      <div className="row-span-1 grid grid-rows-2 rounded-3xl border-2 overflow-hidden border-slate-400/10 max-mdd:max-w-none max-md:p-8 p-4 dark:bg-neutral-900 relative lg:col-span-2 md:col-span-2 sm:col-span-1 xs:col-span-1">
+        <div className="flex flex-col justify-center items-center text-white text-center p-4">
+          <h2 className="text-xl font-bold mb-2">Bento Box 2</h2>
+          {/* Add more content as needed */}
+        </div>
+        <div className="relative h-40 grid">
+          <Image
+            src="/your_image_2.jpg" // Add your image path
+            alt="Bento Box 2 Image"
+            layout="fill"
+            objectFit="cover"
+            className="rounded-t-xl"
+          />
+        </div>
+      </div>
+      <div className="row-span-1 grid grid-rows-2 rounded-3xl border-2 overflow-hidden border-slate-400/10 max-mdd:max-w-none max-md:p-8 p-4 dark:bg-neutral-900 relative lg:col-span-2 md:col-span-2 sm:col-span-1 xs:col-span-1">
+        <div className="flex flex-col justify-center items-center text-white text-center p-4">
+          <h2 className="text-xl font-bold mb-2">Bento Box 2</h2>
+          {/* Add more content as needed */}
+        </div>
+        <div className="relative h-40 grid">
+          <Image
+            src="/your_image_2.jpg" // Add your image path
+            alt="Bento Box 2 Image"
+            layout="fill"
+            objectFit="cover"
+            className="rounded-t-xl"
+          />
+        </div>
+      </div>
+      <div className="row-span-1 grid grid-rows-2 rounded-3xl border-2 overflow-hidden border-slate-400/10 max-mdd:max-w-none max-md:p-8 p-4 dark:bg-neutral-900 relative lg:col-span-2 md:col-span-2 sm:col-span-1 xs:col-span-1">
+        <div className="flex flex-col justify-center items-center text-white text-center p-4">
+          <h2 className="text-xl font-bold mb-2">Bento Box 2</h2>
+          {/* Add more content as needed */}
+        </div>
+        <div className="relative h-40 grid">
+          <Image
+            src="/your_image_2.jpg" // Add your image path
+            alt="Bento Box 2 Image"
+            layout="fill"
+            objectFit="cover"
+            className="rounded-t-xl"
+          />
+        </div>
+      </div>
+      <div className="row-span-1 grid grid-rows-2 rounded-3xl border-2 overflow-hidden border-slate-400/10 max-mdd:max-w-none max-md:p-8 p-4 dark:bg-neutral-900 relative lg:col-span-2 md:col-span-2 sm:col-span-1 xs:col-span-1">
+        <div className="flex flex-col justify-center items-center text-white text-center p-4">
+          <h2 className="text-xl font-bold mb-2">Bento Box 2</h2>
+          {/* Add more content as needed */}
+        </div>
+        <div className="relative h-40 grid">
+          <Image
+            src="/your_image_2.jpg" // Add your image path
+            alt="Bento Box 2 Image"
+            layout="fill"
+            objectFit="cover"
+            className="rounded-t-xl"
+          />
+        </div>
+      </div>
+      {/* Repeat this pattern for the remaining boxes */}
     </div>
-
-
-
-
-  )
+  );
 }
+// export default function HomePage() {
+//   return (
+//     <div className="grid gap-x-2 gap-y-2 grid-rows-[auto] my-2 container max-w-full mt-32 p-16 auto-rows-max">
+//       {[...Array(7)].map((_, i) => (
+//         <div
+//           key={i}
+//           className={`row-span-1 flex flex-col rounded-3xl border-2 overflow-hidden border-slate-400/10 bg-[#131315] max-mdd:max-w-none max-md:p-8 p-4 dark:bg-neutral-900 ${i === 3 || i === 6 ? 'col-span-2' : ''}`}
+//         > 
+//           {servicesData[i] && (
+//             <div key={i} className="relative w-full h-full">
+//               {servicesData[i].image && (
+//                 <Image
+//                   src={servicesData[i].image}
+//                   alt={`${servicesData[i].category} Image`}
+//                   layout="fill"
+//                   objectFit="cover"
+//                   className="mb-2 rounded-md"
+//                 />
+//               )}
+//               <div className="relative flex flex-col justify-center items-center h-full text-white text-center">
+//                 <h2 className="text-xl font-bold mb-2">{servicesData[i].category}</h2>
+//                 <div className="grid gap-2">
+//                   {servicesData[i].services.map((service, serviceIndex) => (
+//                     <div key={serviceIndex} className="border p-2 rounded-md">
+//                       {service}
+//                     </div>
+//                   ))}
+//                 </div>
+//               </div>
+//             </div>
+//           )}
+//         </div>
+//       ))}
+//     </div>
+//   );
+// }
