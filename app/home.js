@@ -59,7 +59,7 @@ export const metadata = {
 export default function HomePage() {
   return (
     <div className="grid gap-2 grid-rows-[auto] my-2 container max-w-full mt-32 p-8 auto-rows-max md:grid-cols-2 lg:grid-cols-3">
-      <div className="row-span-1 grid grid-rows-2 rounded-3xl border-2 overflow-hidden border-slate-400/10 max-mdd:max-w-none max-md:p-8 p-4 bg-slate-950 relative xl:col-span-2 lg:col-span-2 md:col-span-2 sm:col-span-1 xs:col-span-1 xl:w-full lg:w-full md:w-full sm:w-full xs:w-full">
+      <div className="row-span-1 grid grid-rows-2 rounded-3xl border-2 overflow-hidden border-slate-400/10 max-mdd:max-w-none max-md:p-8 p-4 bg-gray-900 relative xl:col-span-2 lg:col-span-2 md:col-span-2 sm:col-span-1 xs:col-span-1 xl:w-full lg:w-full md:w-full sm:w-full xs:w-full">
         <div className="flex flex-col justify-center items-center text-white text-center p-4">
           <h2 className="text-xl font-bold mb-2">Bento Box 1</h2>
           {/* Add more content as needed */}
@@ -75,7 +75,7 @@ export default function HomePage() {
         </div>
       </div>
 
-      <div className="row-span-1 grid grid-rows-2 rounded-3xl border-2 overflow-hidden border-slate-400/10 max-mdd:max-w-none max-md:p-8 p-4 bg-slate-950 relative lg:col-span-2 md:col-span-2 sm:col-span-1 xs:col-span-1 lg:w-full md:w-full sm:w-full xs:w-full">
+      <div className="row-span-1 grid grid-rows-2 rounded-3xl border-2 overflow-hidden border-slate-400/10 max-mdd:max-w-none max-md:p-8 p-4 bg-gray-900 relative lg:col-span-2 md:col-span-2 sm:col-span-1 xs:col-span-1 lg:w-full md:w-full sm:w-full xs:w-full">
         <div className="flex flex-col justify-center items-center text-white text-center p-4">
           <h2 className="text-xl font-bold mb-2">Bento Box 2</h2>
           {/* Add more content as needed */}
@@ -90,7 +90,7 @@ export default function HomePage() {
           />
         </div>
       </div>
-      <div className="row-span-1 grid grid-rows-2 rounded-3xl border-2 overflow-hidden border-slate-400/10 max-mdd:max-w-none max-md:p-8 p-4 bg-slate-950 relative lg:col-span-2 md:col-span-2 sm:col-span-1 xs:col-span-1 lg:w-full md:w-full sm:w-full xs:w-full">
+      <div className="row-span-1 grid grid-rows-2 rounded-3xl border-2 overflow-hidden border-slate-400/10 max-mdd:max-w-none max-md:p-8 p-4 bg-gray-900 relative lg:col-span-2 md:col-span-2 sm:col-span-1 xs:col-span-1 lg:w-full md:w-full sm:w-full xs:w-full">
         <div className="flex flex-col justify-center items-center text-white text-center p-4">
           <h2 className="text-xl font-bold mb-2">Bento Box 2</h2>
           {/* Add more content as needed */}
@@ -105,7 +105,7 @@ export default function HomePage() {
           />
         </div>
       </div>
-      <div className="row-span-1 grid grid-rows-2 rounded-3xl border-2 overflow-hidden border-slate-400/10 max-mdd:max-w-none max-md:p-8 p-4 bg-slate-950 relative lg:col-span-2 md:col-span-2 sm:col-span-1 xs:col-span-1 lg:w-full md:w-full sm:w-full xs:w-full">
+      <div className="row-span-1 grid grid-rows-2 rounded-3xl border-2 overflow-hidden border-slate-400/10 max-mdd:max-w-none max-md:p-8 p-4 bg-gray-900 relative lg:col-span-2 md:col-span-2 sm:col-span-1 xs:col-span-1 lg:w-full md:w-full sm:w-full xs:w-full">
         <div className="flex flex-col justify-center items-center text-white text-center p-4">
           <h2 className="text-xl font-bold mb-2">Bento Box 2</h2>
           {/* Add more content as needed */}

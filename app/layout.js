@@ -28,7 +28,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={inconsolata.className}>
-    <body className="bg-gray-900">
+    <body className="bg-gray-950">
       <NavBar/>
       {children}
       <FooterNav/>
