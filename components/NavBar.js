@@ -121,7 +121,8 @@ export default function NavBar(props) {
                 loader={myLoader}
                 src="assets/wslogo8.png"
                 width={200} height={24}
-                alt="Logo">
+                alt="Logo" 
+                className="logo">
 
               </Image>
             </Link>

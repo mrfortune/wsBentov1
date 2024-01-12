@@ -496,7 +496,6 @@ nav .MuiToolbar-root {
 footer{
   padding:4rem;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  grid-template-rows: repeat(6, 200px);
 }
 footer .footerBG {
   background-color: #010203 !important;
