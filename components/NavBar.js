@@ -12,7 +12,7 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Link from 'next/link';
 import { transform } from 'framer-motion';
-import { useRouter } from 'next/router'
+import { useRouter } from 'next/navigation'
 import myLoader from "./Loader";
 import Image from "next/image";
 import { ThemeProvider } from '@emotion/react';
@@ -36,6 +36,16 @@ const navLinks = [
   },
   {
     id: "3",
+    name: "Services",
+    path: "/services",
+  },
+  {
+    id: "4",
+    name: "Portfolio",
+    path: "/portfolio",
+  },
+  {
+    id: "5",
     name: "Contact",
     path: "/contact",
   },
@@ -67,8 +77,8 @@ export default function NavBar(props) {
   );
 
   const container = window !== undefined ? () => window().document.body : undefined;
-  // const router = useRouter();
-  // const currentRoute = router.pathname;
+  const router = useRouter();
+  const currentRoute = router.pathname;
 
   const [triggered, setTriggered] = useState(false);
 
@@ -129,17 +139,17 @@ export default function NavBar(props) {
           </IconButton>
 
           <Box alignItems="center" component="ul" className="navItems" sx={{ display: { xs: 'none', sm: 'none', md: 'flex', xl: 'flex', lg: 'flex' } }}>
-
             {navLinks.map((link, id) => (
               <li key={id} className="ml-4">
                 {link.name === 'Contact' && showConditionalItem ? (
-                  <button size="sm" className=" text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center leading-4" color="secondary" color="primary">
+                  <Link href={link.path}><button size="sm" className=" text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center leading-4" color="secondary" color="primary">
                     {link.name}
                   </button>
+                  </Link>
                 ) : (
-                  <a href="#">
+                  <Link href={link.path} className={currentRoute === "/" ? "nav.active" : "nonActive"}>
                     {link.name}
-                  </a>
+                  </Link>
                 )}
               </li>
             ))}
