@@ -113,7 +113,7 @@ export default function NavBar(props) {
 
 
 
-        <Toolbar>
+        <Toolbar className="flex justify-between">
           <Box component="div" >
 
             <Link href="/">
@@ -142,7 +142,7 @@ export default function NavBar(props) {
             <MenuIcon />
           </IconButton>
 
-          <Box alignItems="center" component="ul" className="navItems self-end" sx={{ display: { xs: 'none', sm: 'none', md: 'flex', xl: 'flex', lg: 'flex' } }}>
+          <Box alignItems="center" component="ul" className="navItems" sx={{ display: { xs: 'none', sm: 'none', md: 'flex', xl: 'flex', lg: 'flex' } }}>
             {navLinks.map((link, id) => (
               <li key={id} className="ml-4">
                 {link.name === 'Contact' && showConditionalItem ? (
