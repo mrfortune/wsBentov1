@@ -58,11 +58,11 @@ export const metadata = {
 // ];
 export default function HomePage() {
   return (
-    <div className="grid gap-2 grid-rows-3 grid-cols-3 my-2 container max-w-full mt-32 p-8 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3">
-      <div className="rounded-3xl border-2 col-span-2 border-slate-400/10 max-mdd:max-w-none max-md:p-8 p-4 bg-gray-900">
+    <div className="grid gap-2 grid-rows-3 grid-cols-3 my-2 container max-w-screen-2xl mt-32 p-8 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3">
+      <div className="rounded-3xl border-2 col-span-2 border-slate-400/10 max-mdd:max-w-none max-md:p-8 p-2">
         <div className="flex flex-col text-white  p-4">
-        <h2 class="text-2xl font-bold mb-2">Insider Insights Unleashed:</h2>
-      <ul class="mt-2">
+        <h2 className="text-2xl font-bold mb-2">Insider Insights Unleashed:</h2>
+      <ul className="mt-2">
         <li>Unearth Trends, Outsmart Competitors—We’re Spilling the Savvy Secrets.</li>
       </ul>
           {/* Add more content as needed */}
@@ -78,10 +78,10 @@ export default function HomePage() {
         </div>
       </div>
 
-      <div className="row-span-1 rounded-3xl border-2  border-slate-400/10 max-mdd:max-w-none max-md:p-8 p-4 bg-gray-900">
+      <div className="row-span-1 rounded-3xl border-2  border-slate-400/10 max-mdd:max-w-none max-md:p-8 p-2 bg-gray-900">
         <div className="flex flex-col  text-white  p-4">
-        <h2 class="text-2xl font-bold mb-2">Digital Dynamo Blueprint Unlocked:</h2>
-      <ul class="mt-2">
+        <h2 className="text-2xl font-bold mb-2">Digital Dynamo Blueprint Unlocked:</h2>
+      <ul className="mt-2">
         <li>Crafting Digital Prowess and Dominance—Blueprints for the Modern Trailblazer.</li>
       </ul>
           {/* Add more content as needed */}
@@ -96,10 +96,10 @@ export default function HomePage() {
           />
         </div>
       </div>
-      <div className="row-span-1 rounded-3xl border-2  border-slate-400/10 max-mdd:max-w-none max-md:p-8 p-4 bg-gray-900">
+      <div className="row-span-1 rounded-3xl border-2  border-slate-400/10 max-mdd:max-w-none max-md:p-8 p-2 bg-gray-900">
         <div className="flex flex-col  text-white  p-4">
-        <h2 class="text-2xl font-bold mb-2">SEO Magic for the Modern Maven</h2>
-      <ul class="mt-2">
+        <h2 className="text-2xl font-bold mb-2">SEO Magic for the Modern Maven</h2>
+      <ul className="mt-2">
         <li>Elevate Visibility with Keyword Elegance and a Touch of Tech Magic.</li>
       </ul>
           {/* Add more content as needed */}
@@ -114,10 +114,10 @@ export default function HomePage() {
           />
         </div>
       </div>
-      <div className="row-span-1 col-span-2 rounded-3xl border-2  border-slate-400/10 max-mdd:max-w-none max-md:p-8 p-4 bg-gray-900">
+      <div className="row-span-1 col-span-2 rounded-3xl border-2  border-slate-400/10 max-mdd:max-w-none max-md:p-8 p-2 bg-gray-900">
         <div className="flex flex-col text-white  p-4">
-        <h2 class="text-2xl font-bold mb-2">Content Brilliance Wave in 3, 2, 1</h2>
-      <ul class="mt-2">
+        <h2 className="text-2xl font-bold mb-2">Content Brilliance Wave in 3, 2, 1</h2>
+      <ul className="mt-2">
         <li>Captivate Audiences with Expertly Crafted Content—Prepare for the Brilliance Wave.</li>
       </ul>
           {/* Add more content as needed */}
@@ -132,10 +132,10 @@ export default function HomePage() {
           />
         </div>
       </div>
-      <div className="row-span-1 col-span-2 rounded-3xl border-2 border-slate-400/10 max-mdd:max-w-none max-md:p-8 p-4 bg-gray-900">
+      <div className="row-span-1 col-span-2 rounded-3xl border-2 border-slate-400/10 max-mdd:max-w-none max-md:p-8 p-2">
         <div className="flex flex-col  text-white  p-4">
-        <h2 class="text-2xl font-bold mb-2">Social Media Vibes Unleashed</h2>
-      <ul class="mt-2">
+        <h2 className="text-2xl font-bold mb-2">Social Media Vibes Unleashed</h2>
+      <ul className="mt-2">
         <li>Mastering Social Media with Chic Panache—Vibes That Resonate.</li>
       </ul>
           {/* Add more content as needed */}
@@ -150,10 +150,10 @@ export default function HomePage() {
           />
         </div>
       </div>
-      <div className="row-span-1 rounded-3xl border-2 border-slate-400/10 max-mdd:max-w-none max-md:p-8 p-4 bg-gray-900">
+      <div className="row-span-1 rounded-3xl border-2 border-slate-400/10 max-mdd:max-w-none max-md:p-8 p-2 bg-gray-900">
         <div className="flex flex-col  text-white  p-4">
-        <h2 class="text-2xl font-bold mb-2">Precision in PPC Powerplay Demystified</h2>
-      <ul class="mt-2">
+        <h2 className="text-2xl font-bold mb-2">Precision in PPC Powerplay Demystified</h2>
+      <ul className="mt-2">
         <li>Nailing Campaigns with Precision—Your Guide to PPC Excellence</li>
       </ul>
           {/* Add more content as needed */}

@@ -103,7 +103,9 @@ nav a {
   text-transform: capitalize;
   font-weight: 500;
 }
-
+nav ul li a.active{
+color:aqua;
+}
 nav button a {
   margin-left: 0rem;
 }
