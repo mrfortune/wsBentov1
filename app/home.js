@@ -172,39 +172,3 @@ export default function HomePage() {
     </div>
   );
 }
-// export default function HomePage() {
-//   return (
-//     <div className="grid gap-x-2 gap-y-2 grid-rows-[auto] my-2 container max-w-full mt-32 p-16 auto-rows-max">
-//       {[...Array(7)].map((_, i) => (
-//         <div
-//           key={i}
-//           className={`row-span-1 flex flex-col rounded-3xl border-2 overflow-hidden border-slate-400/10 bg-[#131315] max-mdd:max-w-none max-md:p-8 p-4 dark:bg-neutral-900 ${i === 3 || i === 6 ? 'col-span-2' : ''}`}
-//         > 
-//           {servicesData[i] && (
-//             <div key={i} className="relative w-full h-full">
-//               {servicesData[i].image && (
-//                 <Image
-//                   src={servicesData[i].image}
-//                   alt={`${servicesData[i].category} Image`}
-//                   layout="fill"
-//                   objectFit="cover"
-//                   className="mb-2 rounded-md"
-//                 />
-//               )}
-//               <div className="relative flex flex-col  h-full text-white ">
-//                 <h2 className="text-xl font-bold mb-2">{servicesData[i].category}</h2>
-//                 <div className="grid gap-2">
-//                   {servicesData[i].services.map((service, serviceIndex) => (
-//                     <div key={serviceIndex} className="border p-2 rounded-md">
-//                       {service}
-//                     </div>
-//                   ))}
-//                 </div>
-//               </div>
-//             </div>
-//           )}
-//         </div>
-//       ))}
-//     </div>
-//   );
-// }
