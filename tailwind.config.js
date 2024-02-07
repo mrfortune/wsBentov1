@@ -12,7 +12,7 @@ module.exports = {
   ],
   theme: {
       fontFamily: {
-        'sans': ['Inconsolata', 'sans-serif'],
+        'sans': ['Open Sans', 'sans-serif'],
     },
     container: {
       center: true,
